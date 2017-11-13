@@ -1283,26 +1283,8 @@
 		<key>repository.transpose.name</key>
 		<string>meta.transpose.matlab</string>
 	</dict>
-	<key>deleted</key>
-	<array>
-		<string>keyEquivalent</string>
-		<string>uuid</string>
-		<string>repository.brackets</string>
-		<string>repository.builtin_keywords</string>
-		<string>repository.constants_override</string>
-		<string>repository.curlybrackets</string>
-		<string>repository.double_quote</string>
-		<string>repository.end_in_parens</string>
-		<string>repository.not_equal_invalid</string>
-		<string>repository.number</string>
-		<string>repository.operators</string>
-		<string>repository.parens</string>
-		<string>repository.variable</string>
-		<string>repository.variable_assignment</string>
-		<string>repository.variable_invalid</string>
-	</array>
-	<key>isDelta</key>
-	<true/>
+	<key>scopeName</key>
+	<string>source.matlab</string>
 	<key>uuid</key>
 	<string>48F8858B-72FF-11D9-BFEE-000D93589AF6</string>
 </dict>
