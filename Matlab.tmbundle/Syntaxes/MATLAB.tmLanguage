@@ -593,7 +593,7 @@
 									<key>match</key>
 									<string>[a-zA-Z][a-zA-Z0-9_]*</string>
 									<key>name</key>
-									<string>variable.parameter.class.matlab</string>
+									<string>meta.parameter.class.matlab</string>
 								</dict>
 								<dict>
 									<key>begin</key>
@@ -606,7 +606,7 @@
 											<key>match</key>
 											<string>true|false</string>
 											<key>name</key>
-											<string>constant.language.boolean.matlab</string>
+											<string>meta.language.boolean.matlab</string>
 										</dict>
 										<dict>
 											<key>include</key>
@@ -624,12 +624,12 @@
 						<key>5</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.section.class.matlab</string>
+							<string>meta.name.section.class.matlab</string>
 						</dict>
 						<key>6</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.operator.other.matlab</string>
+							<string>meta.other.matlab</string>
 						</dict>
 						<key>7</key>
 						<dict>
@@ -639,13 +639,13 @@
 									<key>match</key>
 									<string>[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z][a-zA-Z0-9_]*)*</string>
 									<key>name</key>
-									<string>entity.other.inherited-class.matlab</string>
+									<string>meta.inherited-class.matlab</string>
 								</dict>
 								<dict>
 									<key>match</key>
 									<string>&amp;</string>
 									<key>name</key>
-									<string>keyword.operator.other.matlab</string>
+									<string>meta.other.matlab</string>
 								</dict>
 							</array>
 						</dict>
@@ -690,7 +690,7 @@
 											<key>match</key>
 											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
 											<key>name</key>
-											<string>variable.parameter.properties.matlab</string>
+											<string>meta.parameter.properties.matlab</string>
 										</dict>
 										<dict>
 											<key>begin</key>
@@ -703,13 +703,13 @@
 													<key>match</key>
 													<string>true|false</string>
 													<key>name</key>
-													<string>constant.language.boolean.matlab</string>
+													<string>meta.language.boolean.matlab</string>
 												</dict>
 												<dict>
 													<key>match</key>
 													<string>public|protected|private</string>
 													<key>name</key>
-													<string>constant.language.access.matlab</string>
+													<string>meta.language.access.matlab</string>
 												</dict>
 											</array>
 										</dict>
@@ -762,7 +762,7 @@
 											<key>match</key>
 											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
 											<key>name</key>
-											<string>variable.parameter.methods.matlab</string>
+											<string>meta.parameter.methods.matlab</string>
 										</dict>
 										<dict>
 											<key>begin</key>
@@ -775,13 +775,13 @@
 													<key>match</key>
 													<string>true|false</string>
 													<key>name</key>
-													<string>constant.language.boolean.matlab</string>
+													<string>meta.language.boolean.matlab</string>
 												</dict>
 												<dict>
 													<key>match</key>
 													<string>public|protected|private</string>
 													<key>name</key>
-													<string>constant.language.access.matlab</string>
+													<string>meta.language.access.matlab</string>
 												</dict>
 											</array>
 										</dict>
@@ -834,7 +834,7 @@
 											<key>match</key>
 											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
 											<key>name</key>
-											<string>variable.parameter.events.matlab</string>
+											<string>meta.parameter.events.matlab</string>
 										</dict>
 										<dict>
 											<key>begin</key>
@@ -847,13 +847,13 @@
 													<key>match</key>
 													<string>true|false</string>
 													<key>name</key>
-													<string>constant.language.boolean.matlab</string>
+													<string>meta.language.boolean.matlab</string>
 												</dict>
 												<dict>
 													<key>match</key>
 													<string>public|protected|private</string>
 													<key>name</key>
-													<string>constant.language.access.matlab</string>
+													<string>meta.language.access.matlab</string>
 												</dict>
 											</array>
 										</dict>
