@@ -1088,7 +1088,7 @@
 									<key>match</key>
 									<string>\w+</string>
 									<key>name</key>
-									<string>variable.parameter.output.matlab</string>
+									<string>meta.parameter.output.matlab</string>
 								</dict>
 							</array>
 						</dict>
@@ -1100,12 +1100,12 @@
 						<key>6</key>
 						<dict>
 							<key>name</key>
-							<string>variable.parameter.output.function.matlab</string>
+							<string>meta.parameter.output.function.matlab</string>
 						</dict>
 						<key>7</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.function.matlab</string>
+							<string>meta.name.function.matlab</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -1135,7 +1135,7 @@
 									<key>match</key>
 									<string>\w+</string>
 									<key>name</key>
-									<string>variable.parameter.input.matlab</string>
+									<string>meta.parameter.input.matlab</string>
 								</dict>
 							</array>
 						</dict>
