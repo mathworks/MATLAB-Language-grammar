@@ -1,7 +1,7 @@
 classdef Account < handle & BaseAccount % Models a bank account
    % Some properties
    properties
-      Value 
+      persistent Value 
    end
    % Some methods
    methods
