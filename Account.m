@@ -6,7 +6,7 @@ classdef Account < handle & BaseAccount % Models a bank account
    % Some methods
    methods
        % Object constructor
-       function obj = Account;(value)
+       function obj = Account(value)
            obj.Value = value;
        end
        
