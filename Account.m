@@ -1,7 +1,7 @@
 classdef Account < handle & BaseAccount % Models a bank account
    % Some properties
    properties
-      global Value 
+   	Value 
    end
    % Some methods
    methods
@@ -14,7 +14,7 @@ classdef Account < handle & BaseAccount % Models a bank account
          if nargin == 1
             if isnumeric(val)
                obj.Value = val;
-			else 
+	    else 
                error('Value must be numeric')
             end
          end
