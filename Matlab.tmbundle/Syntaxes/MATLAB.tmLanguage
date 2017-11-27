@@ -1331,7 +1331,7 @@
 			<key>comment</key>
 			<string>MATLAB Constants</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(eps|false|Inf|inf|intmax|intmin|namelengthmax|NaN|nan|on|off|realmax|realmin|true)\b</string>
+			<string>(?&lt;!\.)\b(eps|false|Inf|inf|intmax|intmin|namelengthmax|NaN|nan|on|off|realmax|realmin|true|pi)\b</string>
 			<key>name</key>
 			<string>constant.language.matlab</string>
 		</dict>
