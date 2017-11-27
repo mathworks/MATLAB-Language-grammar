@@ -52,6 +52,26 @@
 			<key>include</key>
 			<string>#transpose</string>
 		</dict>
+		<dict>
+			<key>include</key>
+			<string>#constants</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#variables</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>end_in_parens</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>numbers</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>operators</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -593,7 +613,7 @@
 									<key>match</key>
 									<string>[a-zA-Z][a-zA-Z0-9_]*</string>
 									<key>name</key>
-									<string>meta.parameter.class.matlab</string>
+									<string>variable.parameter.class.matlab</string>
 								</dict>
 								<dict>
 									<key>begin</key>
@@ -606,7 +626,7 @@
 											<key>match</key>
 											<string>true|false</string>
 											<key>name</key>
-											<string>meta.language.boolean.matlab</string>
+											<string>constant.language.boolean.matlab</string>
 										</dict>
 										<dict>
 											<key>include</key>
@@ -624,12 +644,12 @@
 						<key>5</key>
 						<dict>
 							<key>name</key>
-							<string>meta.name.section.class.matlab</string>
+							<string>entity.name.section.class.matlab</string>
 						</dict>
 						<key>6</key>
 						<dict>
 							<key>name</key>
-							<string>meta.other.matlab</string>
+							<string>keyword.operator.other.matlab</string>
 						</dict>
 						<key>7</key>
 						<dict>
@@ -639,13 +659,13 @@
 									<key>match</key>
 									<string>[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z][a-zA-Z0-9_]*)*</string>
 									<key>name</key>
-									<string>meta.inherited-class.matlab</string>
+									<string>entity.other.inherited-class.matlab</string>
 								</dict>
 								<dict>
 									<key>match</key>
 									<string>&amp;</string>
 									<key>name</key>
-									<string>meta.other.matlab</string>
+									<string>keyword.operator.other.matlab</string>
 								</dict>
 							</array>
 						</dict>
@@ -690,7 +710,7 @@
 											<key>match</key>
 											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
 											<key>name</key>
-											<string>meta.parameter.properties.matlab</string>
+											<string>variable.parameter.properties.matlab</string>
 										</dict>
 										<dict>
 											<key>begin</key>
@@ -703,13 +723,13 @@
 													<key>match</key>
 													<string>true|false</string>
 													<key>name</key>
-													<string>meta.language.boolean.matlab</string>
+													<string>constant.language.boolean.matlab</string>
 												</dict>
 												<dict>
 													<key>match</key>
 													<string>public|protected|private</string>
 													<key>name</key>
-													<string>meta.language.access.matlab</string>
+													<string>constant.language.access.matlab</string>
 												</dict>
 											</array>
 										</dict>
@@ -762,7 +782,7 @@
 											<key>match</key>
 											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
 											<key>name</key>
-											<string>meta.parameter.methods.matlab</string>
+											<string>variable.parameter.methods.matlab</string>
 										</dict>
 										<dict>
 											<key>begin</key>
@@ -775,13 +795,13 @@
 													<key>match</key>
 													<string>true|false</string>
 													<key>name</key>
-													<string>meta.language.boolean.matlab</string>
+													<string>constant.language.boolean.matlab</string>
 												</dict>
 												<dict>
 													<key>match</key>
 													<string>public|protected|private</string>
 													<key>name</key>
-													<string>meta.language.access.matlab</string>
+													<string>constant.language.access.matlab</string>
 												</dict>
 											</array>
 										</dict>
@@ -834,7 +854,7 @@
 											<key>match</key>
 											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
 											<key>name</key>
-											<string>meta.parameter.events.matlab</string>
+											<string>variable.parameter.events.matlab</string>
 										</dict>
 										<dict>
 											<key>begin</key>
@@ -847,13 +867,13 @@
 													<key>match</key>
 													<string>true|false</string>
 													<key>name</key>
-													<string>meta.language.boolean.matlab</string>
+													<string>constant.language.boolean.matlab</string>
 												</dict>
 												<dict>
 													<key>match</key>
 													<string>public|protected|private</string>
 													<key>name</key>
-													<string>meta.language.access.matlab</string>
+													<string>constant.language.access.matlab</string>
 												</dict>
 											</array>
 										</dict>
@@ -1088,7 +1108,7 @@
 									<key>match</key>
 									<string>\w+</string>
 									<key>name</key>
-									<string>meta.parameter.output.matlab</string>
+									<string>variable.parameter.output.matlab</string>
 								</dict>
 							</array>
 						</dict>
@@ -1100,12 +1120,12 @@
 						<key>6</key>
 						<dict>
 							<key>name</key>
-							<string>meta.parameter.output.function.matlab</string>
+							<string>variable.parameter.output.function.matlab</string>
 						</dict>
 						<key>7</key>
 						<dict>
 							<key>name</key>
-							<string>meta.name.function.matlab</string>
+							<string>entity.name.function.matlab</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -1135,7 +1155,7 @@
 									<key>match</key>
 									<string>\w+</string>
 									<key>name</key>
-									<string>meta.parameter.input.matlab</string>
+									<string>variable.parameter.input.matlab</string>
 								</dict>
 							</array>
 						</dict>
@@ -1302,9 +1322,54 @@
 		<key>transpose</key>
 		<dict>
 			<key>match</key>
-			<string>\.?'</string>
+			<string>((\w+)|(?&lt;=\])|(?&lt;=\)))\.?'</string>
 			<key>name</key>
-			<string>meta.transpose.matlab</key>
+			<string>keyword.operator.transpose.matlab</string>
+		</dict>
+		<key>constants</key>
+		<dict>
+			<key>comment</key>
+			<string>MATLAB Constants</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(eps|false|Inf|inf|intmax|intmin|namelengthmax|NaN|nan|on|off|realmax|realmin|true)\b</string>
+			<key>name</key>
+			<string>constant.language.matlab</string>
+		</dict>
+		<key>variables</key>
+		<dict>
+			<key>comment</key>
+			<string>MATLAB variables</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(nargin|nargout|varargin|varargout)\b</string>
+			<key>name</key>
+			<string>variable.other.function.matlab</string>
+		</dict>
+		<key>end_in_parens</key>
+		<dict>
+			<key>comment</key>
+			<string>end as operator symbol</string>
+			<key>match</key>
+			<string>\bend\b</string>
+			<key>name</key>
+			<string>keyword.operator.symbols.matlab</string>
+		</dict>
+		<key>numbers</key>
+		<dict>
+			<key>comment</key>
+			<string>Valid numbers: 1, .1, 1.1, .1e1, 1.1e1, 1e1, 1i, 1j, 1e2j</string>
+			<key>match</key>
+			<string>(?&lt;=[\s\-\+\*\/\\=:\[\(\{,]|^)\d*\.?\d+([eE][+-]?\d)?([0-9&amp;&amp;[^\.]])*(i|j)?\b</string>
+			<key>name</key>
+			<string>constant.numeric.matlab</string>
+		</dict>
+		<key>operators</key>
+		<dict>
+			<key>comment</key>
+			<string>Operator symbols</string>
+			<key>match</key>
+			<string>(?&lt;=\s)(==|~=|&gt;|&gt;=|&lt;|&lt;=|&amp;|&amp;&amp;|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)(?=\s)</string>
+			<key>name</key>
+			<string>keyword.operator.symbols.matlab</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
