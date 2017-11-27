@@ -62,15 +62,15 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>end_in_parens</string>
+			<string>#end_in_parens</string>
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>numbers</string>
+			<string>#numbers</string>
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>operators</string>
+			<string>#operators</string>
 		</dict>
 	</array>
 	<key>repository</key>
