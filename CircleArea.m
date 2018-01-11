@@ -19,7 +19,7 @@ classdef CircleArea
       end
       function obj = set.Radius(obj,val)
          if val < 0
-            error('Radius must be positive')
+            error("Radius must be positive")
          end
          obj.Radius = val;
       end
@@ -33,6 +33,8 @@ classdef CircleArea
          line([0,r],[r,r])
          text(r/2,r+.5,['r = ',num2str(r)])
          title(['Area = ',num2str(obj.Area)])
+         
+         % This is an example of a command dual
          axis equal
       end
       function disp(obj)
@@ -42,7 +44,7 @@ classdef CircleArea
    end
    methods (Static)
       function obj = createObj
-         prompt = {'Enter the Radius'};
+         prompt = {"Enter the Radius"};
          dlgTitle = 'Radius';
          rad = inputdlg(prompt,dlgTitle);
          r = str2double(rad{:});
