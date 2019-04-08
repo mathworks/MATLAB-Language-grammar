@@ -1,4 +1,5 @@
 function y = controlFlow(varargin)
+%% Logic based on nargin
 switch nargin
   case 0
     return
