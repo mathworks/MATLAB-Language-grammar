@@ -751,6 +751,40 @@
 							<key>patterns</key>
 							<array>
 								<dict>
+									<key>comment</key>
+									<string>     1 property name           2 size          3 type                       4 validator function</string>
+									<key>match</key>
+									<string>^\s*([a-zA-Z][a-zA-Z0-9_]*)\s*(\([^\)]*\))?\s*([a-zA-Z][a-zA-Z0-9_\.]*)?\s*({[^}]*})?\s*(.*)$</string>
+									<key>captures</key>
+									<dict>
+										<key>2</key>
+										<dict>
+											<key>name</key>
+											<string>storage.type.matlab</string>
+										</dict>
+										<key>3</key>
+										<dict>
+											<key>name</key>
+											<string>storage.type.matlab</string>
+										</dict>
+										<key>4</key>
+										<dict>
+											<key>name</key>
+											<string>storage.type.matlab</string>
+										</dict>
+										<key>5</key>
+										<dict>
+											<key>patterns</key>
+											<array>
+												<dict>
+													<key>include</key>
+													<string>$self</string>
+												</dict>
+											</array>
+										</dict>
+									</dict>
+								</dict>
+								<dict>
 									<key>include</key>
 									<string>$self</string>
 								</dict>
