@@ -954,6 +954,13 @@
 							</dict>
 							<key>name</key>
 							<string>meta.enumeration.matlab</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>$self</string>
+								</dict>
+							</array>
 						</dict>
 						<dict>
 							<key>include</key>
