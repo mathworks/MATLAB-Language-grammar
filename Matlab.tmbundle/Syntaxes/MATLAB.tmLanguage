@@ -751,38 +751,8 @@
 							<key>patterns</key>
 							<array>
 								<dict>
-									<key>comment</key>
-									<string>     1 property name           2 size          3 type                       4 validator function</string>
-									<key>match</key>
-									<string>^\s*([a-zA-Z][a-zA-Z0-9_]*)\s*(\([^\)]*\))?\s*([a-zA-Z][a-zA-Z0-9_\.]*)?\s*({[^}]*})?\s*(.*)$</string>
-									<key>captures</key>
-									<dict>
-										<key>2</key>
-										<dict>
-											<key>name</key>
-											<string>storage.type.matlab</string>
-										</dict>
-										<key>3</key>
-										<dict>
-											<key>name</key>
-											<string>storage.type.matlab</string>
-										</dict>
-										<key>4</key>
-										<dict>
-											<key>name</key>
-											<string>storage.type.matlab</string>
-										</dict>
-										<key>5</key>
-										<dict>
-											<key>patterns</key>
-											<array>
-												<dict>
-													<key>include</key>
-													<string>$self</string>
-												</dict>
-											</array>
-										</dict>
-									</dict>
+									<key>include</key>
+									<string>#validators</string>
 								</dict>
 								<dict>
 									<key>include</key>
@@ -1217,6 +1187,61 @@
 							</array>
 						</dict>
 						<dict>
+							<key>begin</key>
+							<string>(?x)
+									(^\s*)								# Leading whitespace
+									(arguments)\b(.*)$
+									\s*
+									(									# Optional attributes
+										\( [^)]* \)
+									)?
+									\s*($|(?=%))
+								</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>2</key>
+								<dict>
+									<key>name</key>
+									<string>keyword.control.arguments.matlab</string>
+								</dict>
+								<key>3</key>
+								<dict>
+									<key>patterns</key>
+									<array>
+										<dict>
+											<key>match</key>
+											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
+											<key>name</key>
+											<string>variable.parameter.arguments.matlab</string>
+										</dict>
+									</array>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>^\s*(end)\b</string>
+							<key>endCaptures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>name</key>
+									<string>keyword.control.end.arguments.matlab</string>
+								</dict>
+							</dict>
+							<key>name</key>
+							<string>meta.arguments.matlab</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>#validators</string>
+								</dict>
+								<dict>
+									<key>include</key>
+									<string>$self</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
 							<key>include</key>
 							<string>$self</string>
 						</dict>
@@ -1427,6 +1452,229 @@
 			<string>(?&lt;=\s)(==|~=|&gt;|&gt;=|&lt;|&lt;=|&amp;|&amp;&amp;|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)(?=\s)</string>
 			<key>name</key>
 			<string>keyword.operator.symbols.matlab</string>
+		</dict>
+		<key>validators</key>
+		<dict>
+			<key>comment</key>
+			<string>Property and argument validation. Match an identifier allowing . and ?.</string>
+			<key>begin</key>
+			<string>\s*[,;]?\s*([a-zA-Z][a-zA-Z0-9_\.\?]*)</string>
+			<key>end</key>
+			<string>([,;\n%=].*)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>comment</key>
+							<string>Match comments</string>
+							<key>match</key>
+							<string>([%].*)</string>
+							<key>captures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>patterns</key>
+									<array>
+										<dict>
+											<key>include</key>
+											<string>$self</string>
+										</dict>
+									</array>
+								</dict>
+							</dict>
+						</dict>
+						<dict>
+							<key>comment</key>
+							<string>Handle things like arg = val; nextArg</string>
+							<key>match</key>
+							<string>(=[^;,]*)</string>
+							<key>captures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>patterns</key>
+									<array>
+										<dict>
+											<key>include</key>
+											<string>$self</string>
+										</dict>
+									</array>
+								</dict>
+							</dict>
+						</dict>
+						<dict>
+							<key>comment</key>
+							<string>End of property/argument patterns which start a new property/argument</string>
+							<key>match</key>
+							<string>([\n,;].*)</string>
+							<key>captures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>patterns</key>
+									<array>
+										<dict>
+											<key>include</key>
+											<string>#validators</string>
+										</dict>
+									</array>
+								</dict>
+							</dict>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#line_continuation</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Size declaration</string>
+					<key>match</key>
+					<string>\s*(\([^\)]*\))</string>
+					<key>name</key>
+					<string>storage.type.matlab</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Type declaration</string>
+					<key>match</key>
+					<string>([a-zA-Z][a-zA-Z0-9_\.]*)</string>
+					<key>name</key>
+					<string>storage.type.matlab</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#braced_validator_list</string>
+				</dict>
+			</array>
+		</dict>
+		<key>braced_validator_list</key>
+		<dict>
+			<key>comment</key>
+			<string>Validator functions. Treated as a recursive group to permit nested brackets, quotes, etc.</string>
+			<key>begin</key>
+			<string>\s*({)\s*</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.matlab</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(})</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.matlab</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#braced_validator_list</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#validator_strings</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#line_continuation</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>([^{}}'"\.]+)</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.matlab</string>
+						</dict>
+					</dict>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\.</string>
+					<key>name</key>
+					<string>storage.type.matlab</string>
+				</dict>
+			</array>
+		</dict>
+		<key>validator_strings</key>
+		<dict>
+			<key>comment</key>
+			<string>Simplified string patterns nested inside validator functions which don't change scopes of matches.</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>begin</key>
+							<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,|~|&lt;|&gt;|&amp;|\||-|\+|\*|/|\\|\.|\^))|^)'</string>
+							<key>comment</key>
+							<string>Character vector literal (single-quoted)</string>
+							<key>end</key>
+							<string>'(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|/|\\|\.|\^|\s|;|:|,))</string>
+							<key>name</key>
+							<string>storage.type.matlab</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>match</key>
+									<string>''</string>
+								</dict>
+								<dict>
+									<key>match</key>
+									<string>'(?=.)</string>
+								</dict>
+								<dict>
+									<key>match</key>
+									<string>([^']+)</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>begin</key>
+							<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,|~|&lt;|&gt;|&amp;|\||-|\+|\*|/|\\|\.|\^))|^)"</string>
+							<key>comment</key>
+							<string>String literal (double-quoted)</string>
+							<key>end</key>
+							<string>"(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|/|\\|\.|\^|\||\s|;|:|,))</string>
+							<key>name</key>
+							<string>storage.type.matlab</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>match</key>
+									<string>""</string>
+								</dict>
+								<dict>
+									<key>match</key>
+									<string>"(?=.)</string>
+								</dict>
+								<dict>
+									<key>match</key>
+									<string>[^"]+</string>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
 		</dict>
 	</dict>
 	<key>scopeName</key>
