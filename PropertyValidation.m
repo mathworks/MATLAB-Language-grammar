@@ -4,7 +4,7 @@ classdef PropertyValidation
         Prop % comment
         PropType some.type
         PropSize (1,2) % comment
-        PropSizeType (:, 3) int64
+        PropSizeType (:, 3) int64; % another comment
         PropSizeTypeFcn  (:, 3) foo.bar.baz {mustBeReal}
         PropInit = "string"
         PropTypeInit some.type = some.type(1)
