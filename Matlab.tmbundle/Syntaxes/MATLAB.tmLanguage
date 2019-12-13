@@ -81,22 +81,17 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(^\s*)(for)\b</string>
+					<string>\s*(?:^|[\s,;])(for)\b</string>
 					<key>beginCaptures</key>
 					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>meta.for-quantity.matlab</string>
-						</dict>
-						<key>2</key>
+						<key>1</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.control.for.matlab</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end)\b</string>
+					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -110,21 +105,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>\G(?!$)</string>
-							<key>end</key>
-							<string>$\n?</string>
-							<key>name</key>
-							<string>meta.for-quantity.matlab</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>$self</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>$self</string>
 						</dict>
@@ -132,22 +112,17 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(^\s*)(if)\b</string>
+					<string>\s*(?:^|[\s,;])(if)\b</string>
 					<key>beginCaptures</key>
 					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>meta.if-condition.matlab</string>
-						</dict>
-						<key>2</key>
+						<key>1</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.control.if.matlab</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end)\b</string>
+					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -155,18 +130,8 @@
 							<key>name</key>
 							<string>keyword.control.end.if.matlab</string>
 						</dict>
-					</dict>
-					<key>name</key>
-					<string>meta.if.matlab</string>
-					<key>patterns</key>
-					<array>
+						<key>2</key>
 						<dict>
-							<key>begin</key>
-							<string>\G(?!$)</string>
-							<key>end</key>
-							<string>$\n?</string>
-							<key>name</key>
-							<string>meta.if-condition.matlab</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -175,14 +140,14 @@
 								</dict>
 							</array>
 						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.if.matlab</string>
+					<key>patterns</key>
+					<array>
 						<dict>
 							<key>captures</key>
 							<dict>
-								<key>0</key>
-								<dict>
-									<key>name</key>
-									<string>meta.elseif-condition.matlab</string>
-								</dict>
 								<key>2</key>
 								<dict>
 									<key>name</key>
@@ -202,18 +167,13 @@
 							<key>end</key>
 							<string>^</string>
 							<key>match</key>
-							<string>(^\s*)(elseif)\b(.*)$\n?</string>
+							<string>(\s*)(?:^|[\s,;])(elseif)\b(.*)$\n?</string>
 							<key>name</key>
 							<string>meta.elseif.matlab</string>
 						</dict>
 						<dict>
 							<key>captures</key>
 							<dict>
-								<key>0</key>
-								<dict>
-									<key>name</key>
-									<string>meta.else-condition.matlab</string>
-								</dict>
 								<key>2</key>
 								<dict>
 									<key>name</key>
@@ -233,7 +193,7 @@
 							<key>end</key>
 							<string>^</string>
 							<key>match</key>
-							<string>(^\s*)(else)\b(.*)?$\n?</string>
+							<string>(\s*)(?:^|[\s,;])(else)\b(.*)?$\n?</string>
 							<key>name</key>
 							<string>meta.else.matlab</string>
 						</dict>
@@ -245,22 +205,17 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(^\s*)(parfor)\b</string>
+					<string>\s*(?:^|[\s,;])(parfor)\b</string>
 					<key>beginCaptures</key>
 					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>meta.parfor-quantity.matlab</string>
-						</dict>
-						<key>2</key>
+						<key>1</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.control.for.matlab</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end)\b</string>
+					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -296,22 +251,17 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(^\s*)(spmd)\b</string>
+					<string>\s*(?:^|[\s,;])(spmd)\b</string>
 					<key>beginCaptures</key>
 					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>meta.spmd-statement.matlab</string>
-						</dict>
-						<key>2</key>
+						<key>1</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.control.spmd.matlab</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end)\b</string>
+					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -347,22 +297,17 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(^\s*)(switch)\b</string>
+					<string>\s*(?:^|[\s,;])(switch)\b</string>
 					<key>beginCaptures</key>
 					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>meta.switch-expression.matlab</string>
-						</dict>
-						<key>2</key>
+						<key>1</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.control.switch.matlab</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end)\b</string>
+					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -376,28 +321,8 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>\G(?!$)</string>
-							<key>end</key>
-							<string>$\n?</string>
-							<key>name</key>
-							<string>meta.switch-expression.matlab</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>$self</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>captures</key>
 							<dict>
-								<key>0</key>
-								<dict>
-									<key>name</key>
-									<string>meta.case-expression.matlab</string>
-								</dict>
 								<key>2</key>
 								<dict>
 									<key>name</key>
@@ -417,18 +342,13 @@
 							<key>end</key>
 							<string>^</string>
 							<key>match</key>
-							<string>(^\s*)(case)\b(.*)$\n?</string>
+							<string>(\s*)(?:^|[\s,;])(case)\b(.*)$\n?</string>
 							<key>name</key>
 							<string>meta.case.matlab</string>
 						</dict>
 						<dict>
 							<key>captures</key>
 							<dict>
-								<key>0</key>
-								<dict>
-									<key>name</key>
-									<string>meta.otherwise-expression.matlab</string>
-								</dict>
 								<key>2</key>
 								<dict>
 									<key>name</key>
@@ -448,7 +368,7 @@
 							<key>end</key>
 							<string>^</string>
 							<key>match</key>
-							<string>(^\s*)(otherwise)\b(.*)?$\n?</string>
+							<string>(\s*)(?:^|[\s,;])(otherwise)\b(.*)?$\n?</string>
 							<key>name</key>
 							<string>meta.otherwise.matlab</string>
 						</dict>
@@ -460,17 +380,17 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(^\s*)(try)\b</string>
+					<string>\s*(?:^|[\s,;])(try)\b</string>
 					<key>beginCaptures</key>
 					<dict>
-						<key>2</key>
+						<key>1</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.control.try.matlab</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end)\b</string>
+					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -486,11 +406,6 @@
 						<dict>
 							<key>captures</key>
 							<dict>
-								<key>0</key>
-								<dict>
-									<key>name</key>
-									<string>meta.catch-exception.matlab</string>
-								</dict>
 								<key>2</key>
 								<dict>
 									<key>name</key>
@@ -510,7 +425,7 @@
 							<key>end</key>
 							<string>^</string>
 							<key>match</key>
-							<string>(^\s*)(catch)\b(.*)?$\n?</string>
+							<string>(\s*)(?:^|[\s,;])(catch)\b(.*)?$\n?</string>
 							<key>name</key>
 							<string>meta.catch.matlab</string>
 						</dict>
@@ -522,22 +437,17 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(^\s*)(while)\b</string>
+					<string>\s*(?:^|[\s,;])(while)\b</string>
 					<key>beginCaptures</key>
 					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>meta.while-condition.matlab</string>
-						</dict>
-						<key>2</key>
+						<key>1</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.control.while.matlab</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end)\b</string>
+					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -550,21 +460,6 @@
 					<string>meta.while.matlab</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>\G(?!$)</string>
-							<key>end</key>
-							<string>$\n?</string>
-							<key>name</key>
-							<string>meta.while-condition.matlab</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>$self</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>$self</string>
@@ -686,7 +581,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end)\b</string>
+					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -752,7 +647,7 @@
 								</dict>
 							</dict>
 							<key>end</key>
-							<string>^\s*(end)\b</string>
+							<string>\s*(?:^|[\s,;])(end)\b</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>1</key>
@@ -828,7 +723,7 @@
 								</dict>
 							</dict>
 							<key>end</key>
-							<string>^\s*(end)\b</string>
+							<string>\s*(?:^|[\s,;])(end)\b</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>1</key>
@@ -900,7 +795,7 @@
 								</dict>
 							</dict>
 							<key>end</key>
-							<string>^\s*(end)\b</string>
+							<string>\s*(?:^|[\s,;])(end)\b</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>1</key>
@@ -928,7 +823,7 @@
 								</dict>
 							</dict>
 							<key>end</key>
-							<string>^\s*(end)\b</string>
+							<string>\s*(?:^|[\s,;])(end)\b</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>1</key>
@@ -1106,7 +1001,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^\s*(break|continue|return)\b</string>
+			<string>\s*(?:^|[\s,;])(break|continue|return)\b</string>
 			<key>name</key>
 			<string>meta.control.matlab</string>
 		</dict>
@@ -1171,7 +1066,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end)\b(\s*\n)?</string>
+					<string>\s*(?:^|[\s,;])(end)\b(\s*\n)?</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -1233,7 +1128,7 @@
 								</dict>
 							</dict>
 							<key>end</key>
-							<string>^\s*(end)\b</string>
+							<string>\s*(?:^|[\s,;])(end)\b</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>1</key>
