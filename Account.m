@@ -1,7 +1,7 @@
 classdef Account < handle & BaseAccount % Models a bank account
    % Some properties
    properties
-   	Value 
+   	Value
    end
    % Some methods
    methods
@@ -9,12 +9,12 @@ classdef Account < handle & BaseAccount % Models a bank account
        function obj = Account(value)
            obj.Value = value;
        end
-       
+
       function obj = BasicClass(val)
          if nargin == 1
             if isnumeric(val)
                obj.Value = val;
-	    else 
+	    else
                error('Value must be numeric')
             end
          end
@@ -42,11 +42,11 @@ classdef Account < handle & BaseAccount % Models a bank account
       end
    end
 	% Some events
-    events (ListenAccess = protected)
+    events (ListenAccess = protected) % A comment
        StateChanged
     end
    % Some enumeration
-    enumeration
+    enumeration % A comment
        No  (0)
        Yes (1)
     end
