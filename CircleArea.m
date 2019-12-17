@@ -1,11 +1,11 @@
-classdef CircleArea
-   properties
+classdef CircleArea % A comment
+   properties  % A comment
       Radius
    end
    properties (Constant)
       P = pi
    end
-   properties (Dependent)
+   properties (Dependent) % A comment
       Area
    end
    methods
@@ -33,7 +33,7 @@ classdef CircleArea
          line([0,r],[r,r])
          text(r/2,r+.5,['r = ',num2str(r)])
          title(['Area = ',num2str(obj.Area)])
-         
+
          % This is an example of a command dual
          axis equal
       end
@@ -42,7 +42,7 @@ classdef CircleArea
          disp(['Circle with radius: ',num2str(rad)])
       end
    end
-   methods (Static)
+   methods (Static) % A comment
       function obj = createObj
          prompt = {"Enter the Radius"};
          dlgTitle = 'Radius';

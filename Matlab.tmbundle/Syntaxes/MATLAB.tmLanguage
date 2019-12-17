@@ -598,7 +598,7 @@
 							<key>begin</key>
 							<string>(?x)
 									(^\s*)								# Leading whitespace
-									(properties)\b(.*)$
+									(properties)\b([^%]*)
 									\s*
 									(									# Optional attributes
 										\( [^)]* \)
@@ -674,7 +674,7 @@
 							<key>begin</key>
 							<string>(?x)
 									(^\s*)								# Leading whitespace
-									(methods)\b(.*)$
+									(methods)\b([^%]*)
 									\s*
 									(									# Optional attributes
 										\( [^)]* \)
@@ -746,7 +746,7 @@
 							<key>begin</key>
 							<string>(?x)
 									(^\s*)								# Leading whitespace
-									(events)\b(.*)$
+									(events)\b([^%]*)
 									\s*
 									(									# Optional attributes
 										\( [^)]* \)
@@ -818,7 +818,7 @@
 							<key>begin</key>
 							<string>(?x)
 									(^\s*)								# Leading whitespace
-									(enumeration)\b(.*)$
+									(enumeration)\b([^%]*)
 									\s*($|(?=%))
 								</string>
 							<key>beginCaptures</key>
