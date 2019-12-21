@@ -28,36 +28,26 @@ classdef Account < handle & BaseAccount % Models a bank account
             end
         end
         function r = multiplyBy(obj,n)
-            r = [obj.Value] * n;
+            r = [obj.Value( end ) ]* n;
             n = 1;
             nFactorial = 1;
             while nFactorial < 1e100
                 n = n + 1;
                 nFactorial = nFactorial * n;
             end
-         end
-      end
-      function r = multiplyBy(obj,n)
-         r = [obj.Value] * n;
-         n = 1;
-         nFactorial = 1;
-         while nFactorial < 1e100
-            n = n + 1;
-            nFactorial = nFactorial * n;
-         end
-      end
-      function r = plus(o1,o2)
-         r = o1.Value + o2.Value;
-      end
-   end
-	% Some events
-    events (ListenAccess = protected) % A comment
-       % Event comment
-       StateChanged
+        end
+        function r = plus(o1,o2)
+            r = o1.Value + o2.Value;
+        end
     end
-   % Some enumeration
+    % Some events
+    events (ListenAccess = protected) % A comment
+        % Event comment
+        StateChanged
+    end
+    % Some enumeration
     enumeration % A comment
-       No  (0)
-       Yes (1)
+        No  (0)
+        Yes (1)
     end
 end

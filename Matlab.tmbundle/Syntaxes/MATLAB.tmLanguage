@@ -13,24 +13,10 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>comment</key>
+			<string>This and #all_after_command_dual are split out so #command_dual can be excluded in things like (), {}, []</string>
 			<key>include</key>
-			<string>#classdef</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#function</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#blocks</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#control_statements</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#global_persistent</string>
+			<string>#all_before_command_dual</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -38,43 +24,91 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#string</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#line_continuation</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#comments</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#transpose</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#constants</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#variables</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#end_in_parens</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#numbers</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#operators</string>
+			<string>#all_after_command_dual</string>
 		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
+		<key>all_before_command_dual</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#classdef</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#function</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#blocks</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#control_statements</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#global_persistent</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#parens</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#square_brackets</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#indexing_curly_brackets</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#curly_brackets</string>
+				</dict>
+			</array>
+		</dict>
+		<key>all_after_command_dual</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#string</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#line_continuation</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#comments</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#transpose</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#constants</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#variables</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#numbers</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#operators</string>
+				</dict>
+			</array>
+		</dict>
 		<key>blocks</key>
 		<dict>
 			<key>patterns</key>
@@ -1180,6 +1214,145 @@
 			<string>^\s*(global|persistent)\b</string>
 			<key>name</key>
 			<string>meta.globalpersistent.matlab</string>
+		</dict>
+		<key>parens</key>
+		<dict>
+			<key>begin</key>
+			<string>\(</string>
+			<key>end</key>
+			<string>(\)|(?<!\.\.\.).\n)</string>
+			<key>comment</key>
+			<string>We don't include $self here to avoid matching command syntax inside (), [], {}</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#end_in_parens</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#all_before_command_dual</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#all_after_command_dual</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>These block keywords pick up any such missed keywords when the block matching for things like (), if-end, etc. don't work. Useful for when someone has partially written</string>
+					<key>include</key>
+					<string>#block_keywords</string>
+				</dict>
+			</array>
+		</dict>
+		<key>square_brackets</key>
+		<dict>
+			<key>begin</key>
+			<string>\[</string>
+			<key>end</key>
+			<string>\]</string>
+			<key>comment</key>
+			<string>We don't include $self here to avoid matching command syntax inside (), [], {}</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#all_before_command_dual</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#all_after_command_dual</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>These block keywords pick up any such missed keywords when the block matching for things like (), if-end, etc. don't work. Useful for when someone has partially written</string>
+					<key>include</key>
+					<string>#block_keywords</string>
+				</dict>
+			</array>
+		</dict>
+		<key>curly_brackets</key>
+		<dict>
+			<key>begin</key>
+			<string>\{</string>
+			<key>end</key>
+			<string>\}</string>
+			<key>comment</key>
+			<string>We don't include $self here to avoid matching command syntax inside (), [], {}</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#end_in_parens</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#all_before_command_dual</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#all_after_command_dual</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#end_in_parens</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>These block keywords pick up any such missed keywords when the block matching for things like (), if-end, etc. don't work. Useful for when someone has partially written</string>
+					<key>include</key>
+					<string>#block_keywords</string>
+				</dict>
+			</array>
+		</dict>
+		<key>indexing_curly_brackets</key>
+		<dict>
+			<key>Comment</key>
+			<string>Match identifier{idx, idx, } and stop at newline without ... This helps with partially written code like x{idx </string>
+			<key>begin</key>
+			<string>([a-zA-Z][a-zA-Z0-9_\.]*\s*)\{</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\}|(?<!\.\.\.).\n)</string>
+			<key>comment</key>
+			<string>We don't include $self here to avoid matching command syntax inside (), [], {}</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#end_in_parens</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#all_before_command_dual</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#all_after_command_dual</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#end_in_parens</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>These block keywords pick up any such missed keywords when the block matching for things like (), if-end, etc. don't work. Useful for when someone has partially written</string>
+					<key>include</key>
+					<string>#block_keywords</string>
+				</dict>
+			</array>
 		</dict>
 		<key>line_continuation</key>
 		<dict>
