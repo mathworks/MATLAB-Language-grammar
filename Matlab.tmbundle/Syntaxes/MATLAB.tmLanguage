@@ -541,7 +541,7 @@
 												([^%]*)
 											)?
 										)
-										\s*($|(?=(%|...)))
+										\s*($|(?=(%|...)).*)
 									</string>
 									<key>captures</key>
 									<dict>
@@ -606,6 +606,16 @@
 													<string>&amp;</string>
 													<key>name</key>
 													<string>keyword.operator.other.matlab</string>
+												</dict>
+											</array>
+										</dict>
+										<key>6</key>
+										<dict>
+											<key>patterns</key>
+											<array>
+												<dict>
+													<key>include</key>
+													<string>$self</string>
 												</dict>
 											</array>
 										</dict>
