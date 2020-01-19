@@ -12,7 +12,7 @@ switch nargin
   otherwise
 end
 try
-    if y < 10
+    if y( end ) < 10
         disp('y < 10');
     elseif y < 20
         disp('y < 20');
