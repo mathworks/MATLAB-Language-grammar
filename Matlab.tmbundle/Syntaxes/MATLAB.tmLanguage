@@ -1230,7 +1230,7 @@
 			<key>begin</key>
 			<string>\(</string>
 			<key>end</key>
-			<string>(\)|(?<!\.\.\.).\n)</string>
+			<string>(\)|(?&lt;!\.\.\.).\n)</string>
 			<key>comment</key>
 			<string>We don't include $self here to avoid matching command syntax inside (), [], {}</string>
 			<key>patterns</key>
@@ -1335,7 +1335,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(\}|(?<!\.\.\.).\n)</string>
+			<string>(\}|(?&lt;!\.\.\.).\n)</string>
 			<key>comment</key>
 			<string>We don't include $self here to avoid matching command syntax inside (), [], {}</string>
 			<key>patterns</key>
