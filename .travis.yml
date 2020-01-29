@@ -1,0 +1,10 @@
+language: minimal
+
+before_install:
+  - sudo apt-get -y install libxml2-utils
+
+jobs:
+  include:
+    - stage: test
+      script:
+        - xmllint --noout Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage
