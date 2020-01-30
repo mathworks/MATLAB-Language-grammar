@@ -1,0 +1,46 @@
+>classdef AnEnum
+#^^^^^^^^ source.matlab meta.class.matlab storage.type.class.matlab
+#        ^ source.matlab meta.class.matlab
+#         ^^^^^^ source.matlab meta.class.matlab meta.class-declaration.matlab entity.name.section.class.matlab
+>% A test enumeration
+#^ source.matlab meta.class.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+# ^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab comment.line.percentage.matlab
+>    enumeration
+#^^^^ source.matlab meta.class.matlab meta.enumeration.matlab
+#    ^^^^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab keyword.control.enumeration.matlab
+>        % Comments
+#^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab punctuation.whitespace.comment.leading.matlab
+#        ^ source.matlab meta.class.matlab meta.enumeration.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#         ^^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab comment.line.percentage.matlab
+>        One (1); % Line comments
+#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab
+#            ^ source.matlab meta.class.matlab meta.enumeration.matlab
+#             ^ source.matlab meta.class.matlab meta.enumeration.matlab constant.numeric.matlab
+#              ^ source.matlab meta.class.matlab meta.enumeration.matlab
+#               ^^ source.matlab meta.class.matlab meta.enumeration.matlab
+#                 ^ source.matlab meta.class.matlab meta.enumeration.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#                  ^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab comment.line.percentage.matlab
+>        Two (2)
+#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab
+#            ^ source.matlab meta.class.matlab meta.enumeration.matlab
+#             ^ source.matlab meta.class.matlab meta.enumeration.matlab constant.numeric.matlab
+#              ^ source.matlab meta.class.matlab meta.enumeration.matlab
+>        Ten (10)
+#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab
+#            ^ source.matlab meta.class.matlab meta.enumeration.matlab
+#             ^^ source.matlab meta.class.matlab meta.enumeration.matlab constant.numeric.matlab
+#               ^ source.matlab meta.class.matlab meta.enumeration.matlab
+>        % Trailing comment which
+#^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab punctuation.whitespace.comment.leading.matlab
+#        ^ source.matlab meta.class.matlab meta.enumeration.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#         ^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab comment.line.percentage.matlab
+>        % is multiple lines
+#^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab punctuation.whitespace.comment.leading.matlab
+#        ^ source.matlab meta.class.matlab meta.enumeration.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#         ^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab comment.line.percentage.matlab
+>    end
+#^^^^ source.matlab meta.class.matlab meta.enumeration.matlab
+#    ^^^ source.matlab meta.class.matlab meta.enumeration.matlab keyword.control.end.enumeration.matlab
+>end
+#^^^ source.matlab meta.class.matlab keyword.control.end.class.matlab
+>

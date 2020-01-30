@@ -1,0 +1,144 @@
+>function argumentValidation(x,~,v,method,flag, opts)
+#^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
+#        ^ source.matlab meta.function.matlab
+#         ^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab entity.name.function.matlab
+#                           ^ source.matlab meta.function.matlab meta.arguments.function.matlab
+#                            ^ source.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
+#                             ^^^ source.matlab meta.function.matlab meta.arguments.function.matlab
+#                                ^ source.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
+#                                 ^ source.matlab meta.function.matlab meta.arguments.function.matlab
+#                                  ^^^^^^ source.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
+#                                        ^ source.matlab meta.function.matlab meta.arguments.function.matlab
+#                                         ^^^^ source.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
+#                                             ^^ source.matlab meta.function.matlab meta.arguments.function.matlab
+#                                               ^^^^ source.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
+#                                                   ^ source.matlab meta.function.matlab meta.arguments.function.matlab
+>    % Comment before arguments blocks
+#^^^^ source.matlab meta.function.matlab punctuation.whitespace.comment.leading.matlab
+#    ^ source.matlab meta.function.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab comment.line.percentage.matlab
+>    arguments
+#^^^^ source.matlab meta.function.matlab meta.arguments.matlab
+#    ^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab keyword.control.arguments.matlab
+>        % Block comment
+#^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab punctuation.whitespace.comment.leading.matlab
+#        ^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#         ^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab
+>        x (1,:) {mustBeNumeric,mustBeReal} % trailing coment
+#^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab
+#         ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#               ^ source.matlab meta.function.matlab meta.arguments.matlab
+#                ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                 ^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                         ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                          ^ source.matlab meta.function.matlab meta.arguments.matlab
+#                                           ^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#                                            ^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab
+>        ~
+#^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab
+>        % Line comment
+#^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab punctuation.whitespace.comment.leading.matlab
+#        ^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#         ^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab
+>        v (1,:) {mustBeNumeric,mustBeReal, mustBeEqualSize(v,x)}
+#^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab
+#         ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#               ^ source.matlab meta.function.matlab meta.arguments.matlab
+#                ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                               ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+>        method (1,:) char {mustBeMember(method,{'linear','cubic','spline'})} = 'linear' % End of line comment
+#^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab
+#              ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                    ^ source.matlab meta.function.matlab meta.arguments.matlab
+#                     ^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                         ^ source.matlab meta.function.matlab meta.arguments.matlab
+#                          ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                           ^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                               ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                 ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                       ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                        ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                         ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                          ^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                               ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                                ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                                 ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                                  ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                                        ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                                         ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                                          ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                                           ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                                            ^ source.matlab meta.function.matlab meta.arguments.matlab
+#                                                                             ^^ source.matlab meta.function.matlab meta.arguments.matlab
+#                                                                               ^ source.matlab meta.function.matlab meta.arguments.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#                                                                                ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab string.quoted.single.matlab
+#                                                                                      ^ source.matlab meta.function.matlab meta.arguments.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                                                                                       ^ source.matlab meta.function.matlab meta.arguments.matlab
+#                                                                                        ^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#                                                                                         ^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab
+>        % End block comment
+#^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab punctuation.whitespace.comment.leading.matlab
+#        ^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#         ^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab
+>    end
+#^^^^ source.matlab meta.function.matlab meta.arguments.matlab
+#    ^^^ source.matlab meta.function.matlab meta.arguments.matlab keyword.control.end.arguments.matlab
+>    arguments (Repeating)
+#^^^^ source.matlab meta.function.matlab meta.arguments.matlab
+#    ^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab keyword.control.arguments.matlab
+#             ^^ source.matlab meta.function.matlab meta.arguments.matlab
+#               ^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab variable.parameter.arguments.matlab
+#                        ^^ source.matlab meta.function.matlab meta.arguments.matlab
+>        % Trailing flags
+#^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab punctuation.whitespace.comment.leading.matlab
+#        ^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#         ^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab
+>        flag (1,:) string {mustBeMember(flag,["first","second","third"])}
+#^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab
+#            ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                  ^ source.matlab meta.function.matlab meta.arguments.matlab
+#                   ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                         ^ source.matlab meta.function.matlab meta.arguments.matlab
+#                          ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                           ^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                              ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                               ^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                    ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                     ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                      ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                       ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                             ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                              ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                               ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                                ^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                                     ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                                      ^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                                        ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+>    end
+#^^^^ source.matlab meta.function.matlab meta.arguments.matlab
+#    ^^^ source.matlab meta.function.matlab meta.arguments.matlab keyword.control.end.arguments.matlab
+>    arguments
+#^^^^ source.matlab meta.function.matlab meta.arguments.matlab
+#    ^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab keyword.control.arguments.matlab
+>        opts.Named (1,:) string {mustBeNumeric(opts.Named), ... Dotdotdot comment
+#^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab
+#                  ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                        ^ source.matlab meta.function.matlab meta.arguments.matlab
+#                         ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                               ^ source.matlab meta.function.matlab meta.arguments.matlab
+#                                ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                 ^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                   ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                    ^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                                            ^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+#                                                               ^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+>                                 mustBeReal}
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+#                                           ^ source.matlab meta.function.matlab meta.arguments.matlab storage.type.matlab
+>    end
+#^^^^ source.matlab meta.function.matlab meta.arguments.matlab
+#    ^^^ source.matlab meta.function.matlab meta.arguments.matlab keyword.control.end.arguments.matlab
+>end
+#^^^ source.matlab meta.function.matlab keyword.control.end.function.matlab

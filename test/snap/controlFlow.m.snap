@@ -1,0 +1,161 @@
+>function y = controlFlow(varargin)
+#^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
+#        ^ source.matlab meta.function.matlab
+#         ^ source.matlab meta.function.matlab variable.parameter.output.function.matlab
+#          ^^^ source.matlab meta.function.matlab
+#             ^^^^^^^^^^^ source.matlab meta.function.matlab entity.name.function.matlab
+#                        ^ source.matlab meta.function.matlab meta.arguments.function.matlab
+#                         ^^^^^^^^ source.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
+#                                 ^ source.matlab meta.function.matlab meta.arguments.function.matlab
+>%% Logic based on nargin
+#^^ source.matlab meta.function.matlab comment.line.double-percentage.matlab punctuation.definition.comment.matlab
+#  ^ source.matlab meta.function.matlab comment.line.double-percentage.matlab
+#   ^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab comment.line.double-percentage.matlab meta.cell.matlab
+>switch nargin
+#^^^^^^ source.matlab meta.function.matlab meta.switch.matlab keyword.control.switch.matlab
+#      ^ source.matlab meta.function.matlab meta.switch.matlab
+#       ^^^^^^ source.matlab meta.function.matlab meta.switch.matlab variable.other.function.matlab
+>  case 0
+#^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#  ^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab keyword.control.case.matlab
+#      ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#       ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab constant.numeric.matlab
+>    return
+#^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.control.matlab
+#    ^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.control.matlab keyword.control.matlab
+>  case 1
+#^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#  ^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab keyword.control.case.matlab
+#      ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#       ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab constant.numeric.matlab
+>    y = varargin{1};
+#^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab
+#        ^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab variable.other.function.matlab
+#                ^ source.matlab meta.function.matlab meta.switch.matlab
+#                 ^ source.matlab meta.function.matlab meta.switch.matlab constant.numeric.matlab
+#                  ^ source.matlab meta.function.matlab meta.switch.matlab
+#                   ^^ source.matlab meta.function.matlab meta.switch.matlab
+>    % Check single-line if inside switch for https://github.com/mathworks/MATLAB-Language-grammar/issues/19
+#^^^^ source.matlab meta.function.matlab meta.switch.matlab punctuation.whitespace.comment.leading.matlab
+#    ^ source.matlab meta.function.matlab meta.switch.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab comment.line.percentage.matlab
+>    if varargin{1} < 0, return; end
+#^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab
+#    ^^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab keyword.control.if.matlab
+#      ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab
+#       ^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab variable.other.function.matlab
+#               ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab
+#                ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab constant.numeric.matlab
+#                 ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab
+#                  ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab
+#                   ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab keyword.operator.symbols.matlab
+#                    ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab
+#                     ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab constant.numeric.matlab
+#                      ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab
+#                       ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.control.matlab
+#                        ^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.control.matlab keyword.control.matlab
+#                              ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab
+#                               ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab
+#                                ^^^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab keyword.control.end.if.matlab
+>  case 2
+#^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#  ^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab keyword.control.case.matlab
+#      ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#       ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab constant.numeric.matlab
+>    y = varargin{1} + varargin{2};
+#^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab
+#        ^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab variable.other.function.matlab
+#                ^ source.matlab meta.function.matlab meta.switch.matlab
+#                 ^ source.matlab meta.function.matlab meta.switch.matlab constant.numeric.matlab
+#                  ^ source.matlab meta.function.matlab meta.switch.matlab
+#                   ^ source.matlab meta.function.matlab meta.switch.matlab
+#                    ^ source.matlab meta.function.matlab meta.switch.matlab keyword.operator.symbols.matlab
+#                     ^ source.matlab meta.function.matlab meta.switch.matlab
+#                      ^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab variable.other.function.matlab
+#                              ^ source.matlab meta.function.matlab meta.switch.matlab
+#                               ^ source.matlab meta.function.matlab meta.switch.matlab constant.numeric.matlab
+#                                ^ source.matlab meta.function.matlab meta.switch.matlab
+#                                 ^^ source.matlab meta.function.matlab meta.switch.matlab
+>  otherwise
+#^^ source.matlab meta.function.matlab meta.switch.matlab meta.otherwise.matlab
+#  ^^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.otherwise.matlab keyword.control.otherwise.matlab
+>end
+#^^^ source.matlab meta.function.matlab meta.switch.matlab keyword.control.end.switch.matlab
+>try
+#^^^ source.matlab meta.function.matlab meta.try.matlab keyword.control.try.matlab
+>    if y( end ) < 10
+#^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#    ^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab keyword.control.if.matlab
+#      ^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#        ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#         ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#          ^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab keyword.operator.symbols.matlab
+#             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#              ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#               ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#                ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab keyword.operator.symbols.matlab
+#                 ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#                  ^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab constant.numeric.matlab
+>        disp('y < 10');
+#^^^^^^^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#            ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#              ^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab string.quoted.single.matlab
+#                    ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                     ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#                      ^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+>    elseif y < 20
+#^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab
+#    ^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab keyword.control.elseif.matlab
+#          ^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab
+#             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab keyword.operator.symbols.matlab
+#              ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab
+#               ^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab constant.numeric.matlab
+>        disp('y < 20');
+#^^^^^^^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#            ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#              ^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab string.quoted.single.matlab
+#                    ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                     ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#                      ^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+>    else
+#^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab
+#    ^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab keyword.control.else.matlab
+>        disp("y >= 20");
+#^^^^^^^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#            ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab string.quoted.double.matlab punctuation.definition.string.begin.matlab
+#              ^^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab string.quoted.double.matlab
+#                     ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab string.quoted.double.matlab punctuation.definition.string.end.matlab
+#                      ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#                       ^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+>    end
+#^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#    ^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab keyword.control.end.if.matlab
+>catch ME
+#^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.catch.matlab keyword.control.catch.matlab
+#     ^^^ source.matlab meta.function.matlab meta.try.matlab meta.catch.matlab
+>    rethrow(ME);
+#^^^^^^^^^^^ source.matlab meta.function.matlab meta.try.matlab
+#           ^ source.matlab meta.function.matlab meta.try.matlab
+#            ^^ source.matlab meta.function.matlab meta.try.matlab
+#              ^ source.matlab meta.function.matlab meta.try.matlab
+#               ^^ source.matlab meta.function.matlab meta.try.matlab
+>end
+#^^^ source.matlab meta.function.matlab meta.try.matlab keyword.control.end.try.matlab
+>while c1
+#^^^^^ source.matlab meta.function.matlab meta.while.matlab keyword.control.while.matlab
+#     ^^^^ source.matlab meta.function.matlab meta.while.matlab
+>  if c2, break; end
+#^^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab
+#  ^^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab keyword.control.if.matlab
+#    ^^^^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab
+#        ^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab meta.control.matlab
+#         ^^^^^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab meta.control.matlab keyword.control.matlab
+#              ^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab
+#               ^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab
+#                ^^^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab keyword.control.end.if.matlab
+>end
+#^^^ source.matlab meta.function.matlab meta.while.matlab keyword.control.end.while.matlab
+>

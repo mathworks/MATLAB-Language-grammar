@@ -1,0 +1,74 @@
+>vector = [ ... comment
+#^^^^^^^^^ source.matlab
+#         ^ source.matlab
+#          ^ source.matlab
+#           ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+#              ^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+>    1 ... commentary
+#^^^^ source.matlab
+#    ^ source.matlab constant.numeric.matlab
+#     ^ source.matlab
+#      ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+#         ^^^^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+>    2 ...
+#^^^^ source.matlab
+#    ^ source.matlab constant.numeric.matlab
+#     ^ source.matlab
+#      ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+>    3 ... some comments
+#^^^^ source.matlab
+#    ^ source.matlab constant.numeric.matlab
+#     ^ source.matlab
+#      ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+#         ^^^^^^^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+>    ];
+#^^^^ source.matlab
+#    ^ source.matlab
+#     ^^ source.matlab
+>
+>cellvector = { ... comment
+#^^^^^^^^^^^^^ source.matlab
+#             ^ source.matlab
+#              ^ source.matlab
+#               ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+#                  ^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+>    1 ... comment
+#^^^^ source.matlab
+#    ^ source.matlab constant.numeric.matlab
+#     ^ source.matlab
+#      ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+#         ^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+>    2 ...
+#^^^^ source.matlab
+#    ^ source.matlab constant.numeric.matlab
+#     ^ source.matlab
+#      ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+>    3 ... comment
+#^^^^ source.matlab
+#    ^ source.matlab constant.numeric.matlab
+#     ^ source.matlab
+#      ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+#         ^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+>    };
+#^^^^ source.matlab
+#    ^ source.matlab
+#     ^^ source.matlab
+>
+>output = foo( ...
+#^^^^^^^^^^^^ source.matlab
+#            ^ source.matlab
+#             ^ source.matlab
+#              ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+>    arg1, ...comment
+#^^^^^^^^^^ source.matlab
+#          ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+#             ^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+>    arg2 ... comment
+#^^^^^^^^^ source.matlab
+#         ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+#            ^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+>    );
+#^^^^ source.matlab
+#    ^ source.matlab
+#     ^^ source.matlab
+>

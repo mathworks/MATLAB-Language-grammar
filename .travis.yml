@@ -1,4 +1,7 @@
-language: minimal
+language: node_js
+
+node_js:
+  - 8
 
 before_install:
   - sudo apt-get -y install libxml2-utils
@@ -7,4 +10,4 @@ jobs:
   include:
     - stage: test
       script:
-        - xmllint --noout Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage
+        - npm run test --silent

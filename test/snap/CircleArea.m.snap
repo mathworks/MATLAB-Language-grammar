@@ -1,0 +1,324 @@
+>classdef CircleArea % A comment
+#^^^^^^^^ source.matlab meta.class.matlab storage.type.class.matlab
+#        ^ source.matlab meta.class.matlab
+#         ^^^^^^^^^^ source.matlab meta.class.matlab meta.class-declaration.matlab entity.name.section.class.matlab
+#                   ^ source.matlab meta.class.matlab
+#                    ^ source.matlab meta.class.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#                     ^^^^^^^^^^ source.matlab meta.class.matlab comment.line.percentage.matlab
+>   properties  % A comment
+#^^^ source.matlab meta.class.matlab meta.properties.matlab
+#   ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.properties.matlab
+#             ^^ source.matlab meta.class.matlab meta.properties.matlab
+#               ^ source.matlab meta.class.matlab meta.properties.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#                ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab comment.line.percentage.matlab
+>      Radius
+#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab
+>   end
+#^^^ source.matlab meta.class.matlab meta.properties.matlab
+#   ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.end.properties.matlab
+>   properties (Constant)
+#^^^ source.matlab meta.class.matlab meta.properties.matlab
+#   ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.properties.matlab
+#             ^^ source.matlab meta.class.matlab meta.properties.matlab
+#               ^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab variable.parameter.properties.matlab
+#                       ^^ source.matlab meta.class.matlab meta.properties.matlab
+>      P = pi
+#^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab
+#       ^ source.matlab meta.class.matlab meta.properties.matlab
+#        ^^ source.matlab meta.class.matlab meta.properties.matlab
+#          ^^ source.matlab meta.class.matlab meta.properties.matlab constant.language.matlab
+>   end
+#^^^ source.matlab meta.class.matlab meta.properties.matlab
+#   ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.end.properties.matlab
+>   properties (Dependent) % A comment
+#^^^ source.matlab meta.class.matlab meta.properties.matlab
+#   ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.properties.matlab
+#             ^^ source.matlab meta.class.matlab meta.properties.matlab
+#               ^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab variable.parameter.properties.matlab
+#                        ^^ source.matlab meta.class.matlab meta.properties.matlab
+#                          ^ source.matlab meta.class.matlab meta.properties.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#                           ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab comment.line.percentage.matlab
+>      Area
+#^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab
+>   end
+#^^^ source.matlab meta.class.matlab meta.properties.matlab
+#   ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.end.properties.matlab
+>   methods
+#^^^ source.matlab meta.class.matlab meta.methods.matlab
+#   ^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.methods.matlab
+>      function obj = CircleArea(r)
+#^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#      ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.matlab
+#              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#               ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.parameter.output.function.matlab
+#                  ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                     ^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab entity.name.function.matlab
+#                               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+#                                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
+#                                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+>         if nargin > 0
+#^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+#         ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab keyword.control.if.matlab
+#           ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+#            ^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab variable.other.function.matlab
+#                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+#                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab keyword.operator.symbols.matlab
+#                    ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+#                     ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab constant.numeric.matlab
+>            obj.Radius = r;
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+>         end
+#^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+#         ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab keyword.control.end.if.matlab
+>      end
+#^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#      ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.control.end.function.matlab
+>      function val = get.Area(obj)
+#^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#      ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.matlab
+#              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#               ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.parameter.output.function.matlab
+#                  ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                     ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab entity.name.function.matlab
+#                             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+#                              ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
+#                                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+>         val = obj.P*obj.Radius^2;
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>      end
+#^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#      ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.control.end.function.matlab
+>      function obj = set.Radius(obj,val)
+#^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#      ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.matlab
+#              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#               ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.parameter.output.function.matlab
+#                  ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                     ^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab entity.name.function.matlab
+#                               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+#                                ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
+#                                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+#                                    ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
+#                                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+>         if val < 0
+#^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+#         ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab keyword.control.if.matlab
+#           ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+#                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab keyword.operator.symbols.matlab
+#                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+#                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab constant.numeric.matlab
+>            error("Radius must be positive")
+#^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+#                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+#                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab string.quoted.double.matlab punctuation.definition.string.begin.matlab
+#                   ^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab string.quoted.double.matlab
+#                                          ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab string.quoted.double.matlab punctuation.definition.string.end.matlab
+#                                           ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+>         end
+#^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
+#         ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab keyword.control.end.if.matlab
+>         obj.Radius = val;
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>      end
+#^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#      ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.control.end.function.matlab
+>      function plot(obj)
+#^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#      ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.matlab
+#              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#               ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab entity.name.function.matlab
+#                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+#                    ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
+#                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+>         r = obj.Radius;
+#^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>         d = r*2;
+#^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
+#                ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>         pos = [0 0 d d];
+#^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
+#                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
+#                   ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                        ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>         curv = [1 1];
+#^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
+#                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
+#                    ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                     ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>         rectangle('Position',pos,'Curvature',curv,...
+#^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#                    ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab
+#                            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                             ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#                                   ^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab
+#                                            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                                             ^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                                   ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+>            'FaceColor',[.9 .9 .9])
+#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#             ^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab
+#                      ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                        ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                         ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
+#                           ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                            ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
+#                              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                               ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
+#                                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>         line([0,r],[r,r])
+#^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
+#                ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                    ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                     ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                        ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>         text(r/2,r+.5,['r = ',num2str(r)])
+#^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#              ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
+#                 ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                    ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
+#                      ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                        ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#                         ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab
+#                             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                              ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                      ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                        ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                          ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>         title(['Area = ',num2str(obj.Area)])
+#^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#                 ^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab
+#                        ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                         ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                  ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                          ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                           ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>
+>         % This is an example of a command dual
+#^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab punctuation.whitespace.comment.leading.matlab
+#         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab comment.line.percentage.matlab
+>         axis equal
+#^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#         ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.interpolated.matlab variable.other.command.matlab
+#             ^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.interpolated.matlab
+>      end
+#^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#      ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.control.end.function.matlab
+>      function disp(obj)
+#^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#      ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.matlab
+#              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#               ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab entity.name.function.matlab
+#                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+#                    ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
+#                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+>         rad = obj.Radius;
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>         disp(['Circle with radius: ',num2str(rad)])
+#^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#                ^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab
+#                                    ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                                     ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                              ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>      end
+#^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#      ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.control.end.function.matlab
+>   end
+#^^^ source.matlab meta.class.matlab meta.methods.matlab
+#   ^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.end.methods.matlab
+>   methods (Static) % A comment
+#^^^ source.matlab meta.class.matlab meta.methods.matlab
+#   ^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.methods.matlab
+#          ^^ source.matlab meta.class.matlab meta.methods.matlab
+#            ^^^^^^ source.matlab meta.class.matlab meta.methods.matlab variable.parameter.methods.matlab
+#                  ^^ source.matlab meta.class.matlab meta.methods.matlab
+#                    ^ source.matlab meta.class.matlab meta.methods.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#                     ^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab comment.line.percentage.matlab
+>      function obj = createObj
+#^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#      ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.matlab
+#              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#               ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.parameter.output.function.matlab
+#                  ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                     ^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab entity.name.function.matlab
+>         prompt = {"Enter the Radius"};
+#^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.double.matlab punctuation.definition.string.begin.matlab
+#                    ^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.double.matlab
+#                                    ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.double.matlab punctuation.definition.string.end.matlab
+#                                     ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                      ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>         dlgTitle = 'Radius';
+#^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                    ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#                     ^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab
+#                           ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                            ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>         rad = inputdlg(prompt,dlgTitle);
+#^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                        ^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                                        ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>         r = str2double(rad{:});
+#^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                        ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                           ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                               ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>         obj = CircleArea(r);
+#^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                          ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                           ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#                            ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+>      end
+#^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#      ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.control.end.function.matlab
+>   end
+#^^^ source.matlab meta.class.matlab meta.methods.matlab
+#   ^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.end.methods.matlab
+>end
+#^^^ source.matlab meta.class.matlab keyword.control.end.class.matlab
+>

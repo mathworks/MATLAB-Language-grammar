@@ -1140,6 +1140,10 @@
 							<key>patterns</key>
 							<array>
 								<dict>
+									<key>include</key>
+									<string>#line_continuation</string>
+								</dict>
+								<dict>
 									<key>match</key>
 									<string>\w+</string>
 									<key>name</key>
@@ -1151,7 +1155,7 @@
 							<key>begin</key>
 							<string>(?x)
 									(^\s*)								# Leading whitespace
-									(arguments)\b(.*)$
+									(arguments)\b([^%]*)
 									\s*
 									(									# Optional attributes
 										\( [^)]* \)
