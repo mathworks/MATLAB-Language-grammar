@@ -89,6 +89,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#conjugate_transpose</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#transpose</string>
 				</dict>
 				<dict>
@@ -1505,10 +1509,17 @@
 				</dict>
 			</array>
 		</dict>
+		<key>conjugate_transpose</key>
+		<dict>
+			<key>match</key>
+			<string>((?&lt;=[^\s])|(?&lt;=\])|(?&lt;=\))|(?&lt;=\}))'</string>
+			<key>name</key>
+			<string>keyword.operator.transpose.matlab</string>
+		</dict>
 		<key>transpose</key>
 		<dict>
 			<key>match</key>
-			<string>((\w+)|(?&lt;=\])|(?&lt;=\)))\.?'</string>
+			<string>\.'</string>
 			<key>name</key>
 			<string>keyword.operator.transpose.matlab</string>
 		</dict>
