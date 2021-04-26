@@ -912,23 +912,23 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>string.interpolated.matlab</string>
+					<string>meta.function-call.matlab</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>variable.other.command.matlab</string>
+					<string>entity.name.function.matlab</string>
 				</dict>
-				<key>28</key>
+				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>comment.line.percentage.matlab</string>
+					<string>string.interpolated.matlab</string>
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>  1        2                                  3                                                    4                                                  5                                                    6                                                         7                                                                             8                 9                            10                   11                      12                         13                   14                                                               1516       17                                                             18                                                                                                                               19                      20                                     21                                    22                                      23                                         24                                         25                                                                         26            27                 28</string>
+			<string>1                                      2                                                                            3          </string>
 			<key>match</key>
-			<string>^\s*((?# A&gt; )([b-df-hk-moq-zA-HJ-MO-Z]\w*|a|an|a([A-Za-mo-z0-9_]\w*|n[A-Za-rt-z0-9_]\w*|ns\w+)|e|ep|e([A-Za-oq-z0-9_]\w*|p[A-Za-rt-z0-9_]\w*|ps\w+)|in|i([A-Za-mo-z0-9_]\w*|n[A-Za-eg-z0-9_]\w*|nf\w+)|I|In|I([A-Za-mo-z0-9_]\w*|n[A-Za-eg-z0-9_]\w*|nf\w+)|j\w+|N|Na|N([A-Zb-z0-9_]\w*|a[A-MO-Za-z0-9_]\w*|aN\w+)|n|na|nar|narg|nargi|nargo|nargou|n([A-Zb-z0-9_]\w*|a([A-Za-mo-qs-z0-9_]\w*|n\w+|r([A-Za-fh-z0-9_]\w*|g([A-Za-hj-nq-z0-9_]\w*|i([A-Za-mo-z0-9_]\w*|n\w+)|o([A-Za-tv-z0-9_]\w*|u([A-Za-su-z]\w*|t\w+))))))|p|p[A-Za-hj-z0-9_]\w*|pi\w+)(?# &lt;A )\s+(((?# B&gt; )([^\s;,%()=.{&amp;|~&lt;&gt;:+\-*/\\@^'"]|(?=')|(?="))(?# &lt;B )|(?# C&gt; )(\.\^|\.\*|\./|\.\\|\.'|\.\(|&amp;&amp;|==|\|\||&amp;(?=[^&amp;])|\|(?=[^\|])|~=|&lt;=|&gt;=|~(?!=)|&lt;(?!=)|&gt;(?!=)|:|\+|-|\*|/|\\|@|\^)(?# &lt;C )(?# D&gt; )([^\s]|\s*(?=%)|\s+$|\s+(,|;|\)|}|\]|&amp;|\||&lt;|&gt;|=|:|\*|/|\\|\^|@|(\.[^\d.]|\.\.[^.])))(?# &lt;D )|(?# E&gt; )(\.[^^*/\\'(\sA-Za-z])(?# &lt;E ))(?# F&gt; )([^%]|'[^']*'|"[^"]*")*(?# &lt;F )|(?# X&gt; )(\.(?=\s)|\.[A-Za-z]|(?={))(?# &lt;X )(?# Y&gt; )([^(=\'"%]|==|'[^']*'|"[^"]*"|\(|\([^)%]*\)|\[|\[[^\]%]*\]|{|{[^}%]*})*(\.\.\.[^%]*)?((?=%)|$)(?# &lt;Y )))(%.*)?$</string>
+			<string>((?#statement)(?:^|;)(?: *)(?#callee)(\w+\b)(?: +)(?#not assignment, index or operator)(?![=({]+|[[:punct:]]{1,2}\s)(?#char inputs)([^\n;%]+))</string>
 		</dict>
 		<key>comment_block</key>
 		<dict>
