@@ -911,24 +911,30 @@
 			<dict>
 				<key>1</key>
 				<dict>
+					<key>comment</key>
+					<string>Embed MATLAB rules to allow dot indexing and grammar injection.</string>
 					<key>name</key>
-					<string>meta.function-call.matlab</string>
+					<string>source.matlab.embedded.matlab</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.matlab</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>string.interpolated.matlab</string>
+					<string>string.unquoted.matlab</string>
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>1                                      2                                                                            3          </string>
+			<string>				  1 					 2  																														   </string>
 			<key>match</key>
-			<string>((?#statement)(?:^|;)(?: *)(?#callee)(\w+\b)(?: +)(?#not assignment, index or operator)(?![=({]+|[[:punct:]]{1,2}\s)(?#char inputs)([^\n;%]+))</string>
+			<string>(?&lt;=^|[^.]\n|;)([^\S\n]*\w+\b[^\S\n]+)((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=)[^\S\n])[^\n({=;%][^\n;%]+)</string>
+			<key>name</key>
+			<string>meta.function-call.command.matlab</string>
 		</dict>
 		<key>comment_block</key>
 		<dict>
