@@ -229,8 +229,9 @@
 #          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab comment.line.percentage.matlab
 >         axis equal
 #^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#         ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.interpolated.matlab variable.other.command.matlab
-#             ^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab string.interpolated.matlab
+#         ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.command.matlab variable.function.command
+#             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.command.matlab
+#              ^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.command.matlab string.unquoted.matlab
 >      end
 #^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
 #      ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.control.end.function.matlab

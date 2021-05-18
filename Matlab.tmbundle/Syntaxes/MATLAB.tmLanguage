@@ -14,9 +14,9 @@
 	<array>
 		<dict>
 			<key>comment</key>
-			<string>This and #all_after_command_dual are split out so #command_dual can be excluded in things like (), {}, []</string>
+			<string>Rules are split into groups so #command_dual can be excluded in things like (), {}, []</string>
 			<key>include</key>
-			<string>#all_before_command_dual</string>
+			<string>#rules_before_command_dual</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -24,12 +24,12 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#all_after_command_dual</string>
+			<string>#rules_after_command_dual</string>
 		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
-		<key>all_before_command_dual</key>
+		<key>rules_before_command_dual</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -71,7 +71,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>all_after_command_dual</key>
+		<key>rules_after_command_dual</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -930,9 +930,9 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>				  1 					 2  																														   </string>
+			<string>					1   				   2																															 </string>
 			<key>match</key>
-			<string>(?&lt;=^|[^.]\n|;)([^\S\n]*\w+\b[^\S\n]+)((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=)[^\S\n])[^\n({=;%][^\n;%]+)</string>
+			<string>(?&lt;=^|[^.]\n|;|,)([^\S\n]*\w+\b)[^\S\n]+((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=)[^\S\n])[^\n({=;%][^\n;%]+)</string>
 			<key>name</key>
 			<string>meta.function-call.command.matlab</string>
 		</dict>
@@ -1255,17 +1255,11 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#all_before_command_dual</string>
+					<string>#rules_before_command_dual</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#all_after_command_dual</string>
-				</dict>
-				<dict>
-					<key>comment</key>
-					<string>These block keywords pick up any such missed keywords when the block matching for things like (), if-end, etc. don't work. Useful for when someone has partially written</string>
-					<key>include</key>
-					<string>#block_keywords</string>
+					<string>#rules_after_command_dual</string>
 				</dict>
 			</array>
 		</dict>
@@ -1281,17 +1275,11 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#all_before_command_dual</string>
+					<string>#rules_before_command_dual</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#all_after_command_dual</string>
-				</dict>
-				<dict>
-					<key>comment</key>
-					<string>These block keywords pick up any such missed keywords when the block matching for things like (), if-end, etc. don't work. Useful for when someone has partially written</string>
-					<key>include</key>
-					<string>#block_keywords</string>
+					<string>#rules_after_command_dual</string>
 				</dict>
 			</array>
 		</dict>
@@ -1311,21 +1299,11 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#all_before_command_dual</string>
+					<string>#rules_before_command_dual</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#all_after_command_dual</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#end_in_parens</string>
-				</dict>
-				<dict>
-					<key>comment</key>
-					<string>These block keywords pick up any such missed keywords when the block matching for things like (), if-end, etc. don't work. Useful for when someone has partially written</string>
-					<key>include</key>
-					<string>#block_keywords</string>
+					<string>#rules_after_command_dual</string>
 				</dict>
 			</array>
 		</dict>
@@ -1360,21 +1338,11 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#all_before_command_dual</string>
+					<string>#rules_before_command_dual</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#all_after_command_dual</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#end_in_parens</string>
-				</dict>
-				<dict>
-					<key>comment</key>
-					<string>These block keywords pick up any such missed keywords when the block matching for things like (), if-end, etc. don't work. Useful for when someone has partially written</string>
-					<key>include</key>
-					<string>#block_keywords</string>
+					<string>#rules_after_command_dual</string>
 				</dict>
 			</array>
 		</dict>
