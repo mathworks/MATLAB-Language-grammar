@@ -909,7 +909,7 @@
 		<dict>
 			<key>captures</key>
 			<dict>
-				<key>1</key>
+				<key>2</key>
 				<dict>
 					<key>name</key>
 					<string>variable.function.command.matlab</string>
@@ -923,16 +923,16 @@
 						</dict>
 					</array>
 				</dict>
-				<key>2</key>
+				<key>4</key>
 				<dict>
 					<key>name</key>
 					<string>string.unquoted.matlab</string>
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>					1   				   2																															 </string>
+			<string>					1   				 2		  3 				   4																														   </string>
 			<key>match</key>
-			<string>(?&lt;=^|[^.]\n|;|,)([^\S\n]*\w+\b)[^\S\n]+((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=)[^\S\n])[^\n({=;%][^\n;%]+)</string>
+			<string>(?&lt;=^|[^.]\n|;|,)([^\S\n]*)(?# 1&gt; )(\b\w+\b)([^\S\n]+)(?# 2&gt; )((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=)[^\S\n])[^\s({=;%][^\n;%]+)</string>
 			<key>name</key>
 			<string>meta.function-call.command.matlab</string>
 		</dict>
