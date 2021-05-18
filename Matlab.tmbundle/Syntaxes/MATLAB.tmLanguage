@@ -911,13 +911,13 @@
 			<dict>
 				<key>1</key>
 				<dict>
-					<key>comment</key>
-					<string>Embed MATLAB rules to allow dot indexing and grammar injection.</string>
 					<key>name</key>
-					<string>source.matlab.embedded.matlab</string>
+					<string>variable.function.command.matlab</string>
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>comment</key>
+							<string>Embed MATLAB into command syntax to allow keyword grammar injection.</string>
 							<key>include</key>
 							<string>$self</string>
 						</dict>
