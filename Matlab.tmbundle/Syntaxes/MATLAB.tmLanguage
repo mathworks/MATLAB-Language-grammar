@@ -930,9 +930,9 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>					1   				 2		  3 				   4																														   </string>
+			<string>					1   				 2		  3 				   4																															 </string>
 			<key>match</key>
-			<string>(?&lt;=^|[^.]\n|;|,)([^\S\n]*)(?# 1&gt; )(\b\w+\b)([^\S\n]+)(?# 2&gt; )((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=)[^\S\n])[^\s({=;%][^\n;%]+)</string>
+			<string>(?&lt;=^|[^.]\n|;|,)([^\S\n]*)(?# A&gt; )(\b\w+\b)([^\S\n]+)(?# B&gt; )((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=)[^\S\n])[^\s({=;%][^\n;%]+)</string>
 			<key>name</key>
 			<string>meta.function-call.command.matlab</string>
 		</dict>
@@ -1378,18 +1378,30 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>string.interpolated.matlab</string>
+							<string>meta.interpolation</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.string.begin.matlab</string>
+							<string>punctuation.section.interpolation.begin.matlab</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>source.shell.embedded.matlab</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>source.shell</string>
+								</dict>
+							</array>
 						</dict>
 					</dict>
 					<key>comment</key>
 					<string>Shell command</string>
 					<key>match</key>
-					<string>^\s*((!).*$\n?)</string>
+					<string>^\s*((!)(.*)$\n?)</string>
 				</dict>
 				<dict>
 					<key>begin</key>
