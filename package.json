@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "MATLAB TextMate grammar",
   "scripts": {
-    "test": "npm run xmllint && npm run grammartest && npm run grammarSnapTest",
-    "grammartest": "vscode-tmgrammar-test -s source.matlab -g Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage -t \"test/*.m\"",
-    "grammarSnapTest": "vscode-tmgrammar-snap --scope source.matlab --grammar Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage --testcases 'test/snap/*.m'",
-    "xmllint": "xmllint --noout Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage && echo \"xmllint passed on MATLAB.tmLanguage\""
+    "testGrammar": "vscode-tmgrammar-test -s source.matlab -g Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage -t \"./test/*.m\"",
+    "testGrammarSnap": "vscode-tmgrammar-snap -s source.matlab -g Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage -t \"./test/snap/*.m\"",
+    "testLintXML": "xmllint --noout \"Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage\" && echo \"xmllint passed on MATLAB.tmLanguage\"",
+    "test": "npm run testLintXML && npm run testGrammar && npm run testGrammarSnap",
+    "updateGrammarSnap": "vscode-tmgrammar-snap -s source.matlab -g Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage -t \"./test/snap/*.m\""
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,6 @@
   },
   "homepage": "https://github.com/mathworks/MATLAB-Language-grammar#readme",
   "devDependencies": {
-    "vscode-tmgrammar-test": "0.0.8"
+    "vscode-tmgrammar-test": "0.0.10"
   }
 }
