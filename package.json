@@ -7,7 +7,7 @@
     "testGrammarSnap": "vscode-tmgrammar-snap -s source.matlab -g Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage -t \"./test/snap/*.m\"",
     "testLintXML": "xmllint --noout \"Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage\" && echo \"xmllint passed on MATLAB.tmLanguage\"",
     "test": "npm run testLintXML && npm run testGrammar && npm run testGrammarSnap",
-    "updateGrammarSnap": "vscode-tmgrammar-snap -s source.matlab -g Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage -t \"./test/snap/*.m\""
+    "updateGrammarSnap": "vscode-tmgrammar-snap -s source.matlab -g Matlab.tmbundle/Syntaxes/MATLAB.tmLanguage -t \"./test/snap/*.m\" -u"
   },
   "repository": {
     "type": "git",
