@@ -1080,6 +1080,8 @@
 		</dict>
 		<key>command_dual</key>
 		<dict>
+			<key>name</key>
+			<string>meta.function-call.command.matlab</string>
 			<key>captures</key>
 			<dict>
 				<key>2</key>
@@ -1100,14 +1102,19 @@
 				<dict>
 					<key>name</key>
 					<string>string.unquoted.matlab</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#string_quoted_single</string>
+						</dict>
+					</array>
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>					1   				 2		  3 				   4																															 </string>
+			<string>					  1 				   2		3 				   4																															   </string>
 			<key>match</key>
-			<string>(?&lt;=^|[^.]\n|;|,)([^\S\n]*)(?# A&gt; )(\b\w+\b)([^\S\n]+)(?# B&gt; )((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=)[^\S\n])[^\s({=;%][^\n;%]+)</string>
-			<key>name</key>
-			<string>meta.function-call.command.matlab</string>
+			<string>(?&lt;=^|[^.]\n|;|,|=)([^\S\n]*)(?# A&gt; )(\b\w+\b)([^\S\n]+)(?# B&gt; )((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=|\.\.\.)[^\S\n])[^\s({=;%][^\n;%]*)</string>
 		</dict>
 		<key>comment_block</key>
 		<dict>
