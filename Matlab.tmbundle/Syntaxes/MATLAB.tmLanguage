@@ -1263,18 +1263,18 @@
 		</dict>
 		<key>control_statements</key>
 		<dict>
+			<key>name</key>
+			<string>meta.control.matlab</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.matlab</string>
+					<string>keyword.control.flow.matlab</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>\s*(?:^|[\s,;])(break|continue|return)\b</string>
-			<key>name</key>
-			<string>meta.control.matlab</string>
 		</dict>
 		<key>function</key>
 		<dict>
