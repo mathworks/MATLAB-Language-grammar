@@ -63,11 +63,15 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#square_brackets</string>
+					<string>#anonymous_function</string>
 				</dict>
 				<dict>
 					<key>include</key>
 					<string>#indexing_curly_brackets</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#square_brackets</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -116,6 +120,96 @@
 					<string>#operators</string>
 				</dict>
 			</array>
+		</dict>
+		<key>anonymous_function</key>
+		<dict>
+			<key>name</key>
+			<string>meta.function.anonymous.matlab</string>
+			<key>begin</key>
+			<string>(@)[^\S\n]*(?=\()</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.function.anonymous.matlab</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>meta.parameters.matlab</string>
+					<key>begin</key>
+					<string>\G(\()</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.parameters.begin.matlab</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.parameters.end.matlab</string>
+						</dict>
+					</dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>variable.parameter.input.matlab</string>
+							<key>match</key>
+							<string>[a-zA-Z][a-zA-Z0-9_]*</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>punctuation.separator.parameter.comma.matlab</string>
+							<key>match</key>
+							<string>,</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>meta.parameters.matlab</string>
+					<key>begin</key>
+					<string>(?&lt;=\))[^\S\n]*(\()?</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.group.begin.matlab</string>
+						</dict>						
+					</dict>
+					<key>end</key>
+					<string>(\))?[^\S\n]*(?=;|(?&lt;=[^.])\n|%)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.group.end.matlab</string>
+						</dict>
+					</dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>end</key>
+			<string>(?=;|(?&lt;=[^.])\n|%)</string>
 		</dict>
 		<key>blocks</key>
 		<dict>
