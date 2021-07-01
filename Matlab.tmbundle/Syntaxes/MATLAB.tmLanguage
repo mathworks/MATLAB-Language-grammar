@@ -282,56 +282,36 @@
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>name</key>
+							<string>meta.elseif.matlab</string>
+							<key>match</key>
+							<string>(?:\s*)(?:^|[\s,;])(elseif)\b</string>
 							<key>captures</key>
 							<dict>
-								<key>2</key>
+								<key>1</key>
 								<dict>
 									<key>name</key>
 									<string>keyword.control.elseif.matlab</string>
 								</dict>
-								<key>3</key>
-								<dict>
-									<key>patterns</key>
-									<array>
-										<dict>
-											<key>include</key>
-											<string>$self</string>
-										</dict>
-									</array>
-								</dict>
 							</dict>
 							<key>end</key>
 							<string>^</string>
-							<key>match</key>
-							<string>(\s*)(?:^|[\s,;])(elseif)\b(.*)$\n?</string>
-							<key>name</key>
-							<string>meta.elseif.matlab</string>
 						</dict>
 						<dict>
+							<key>name</key>
+							<string>meta.else.matlab</string>
+							<key>match</key>
+							<string>(?:\s*)(?:^|[\s,;])(else)\b</string>
 							<key>captures</key>
 							<dict>
-								<key>2</key>
+								<key>1</key>
 								<dict>
 									<key>name</key>
 									<string>keyword.control.else.matlab</string>
 								</dict>
-								<key>3</key>
-								<dict>
-									<key>patterns</key>
-									<array>
-										<dict>
-											<key>include</key>
-											<string>$self</string>
-										</dict>
-									</array>
-								</dict>
 							</dict>
 							<key>end</key>
 							<string>^</string>
-							<key>match</key>
-							<string>(\s*)(?:^|[\s,;])(else)\b(.*)?$\n?</string>
-							<key>name</key>
-							<string>meta.else.matlab</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -361,7 +341,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.parfor.matlab</string>
+					<string>meta.for.parallel.matlab</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -370,7 +350,7 @@
 							<key>end</key>
 							<string>$\n?</string>
 							<key>name</key>
-							<string>meta.parfor-quantity.matlab</string>
+							<string>meta.for.parallel.declaration.matlab</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -393,7 +373,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.spmd.matlab</string>
+							<string>keyword.control.repeat.parallel.matlab</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -403,11 +383,11 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.end.spmd.matlab</string>
+							<string>keyword.control.end.repeat.parallel.matlab</string>
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.spmd.matlab</string>
+					<string>meta.repeat.parallel.matlab</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -416,7 +396,7 @@
 							<key>end</key>
 							<string>$\n?</string>
 							<key>name</key>
-							<string>meta.spmd-statement.matlab</string>
+							<string>meta.block.parallel.matlab</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -432,14 +412,21 @@
 					</array>
 				</dict>
 				<dict>
+					<key>name</key>
+					<string>meta.switch.matlab</string>
 					<key>begin</key>
-					<string>\s*(?:^|[\s,;])(switch)\b</string>
+					<string>\s*(?:^|[\s,;])(switch)\s+([a-zA-Z0-9][a-zA-Z0-9_]*)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.control.switch.matlab</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>variable.other.constant.matlab</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -452,11 +439,11 @@
 							<string>keyword.control.end.switch.matlab</string>
 						</dict>
 					</dict>
-					<key>name</key>
-					<string>meta.switch.matlab</string>
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>name</key>
+							<string>meta.case.matlab</string>
 							<key>captures</key>
 							<dict>
 								<key>2</key>
@@ -475,14 +462,12 @@
 									</array>
 								</dict>
 							</dict>
-							<key>end</key>
-							<string>^</string>
 							<key>match</key>
-							<string>(\s*)(?:^|[\s,;])(case)\b(.*)$\n?</string>
-							<key>name</key>
-							<string>meta.case.matlab</string>
+							<string>(\s*)(?:^|[\s,;])(case)\b</string>
 						</dict>
 						<dict>
+							<key>name</key>
+							<string>meta.otherwise.matlab</string>
 							<key>captures</key>
 							<dict>
 								<key>2</key>
@@ -501,12 +486,8 @@
 									</array>
 								</dict>
 							</dict>
-							<key>end</key>
-							<string>^</string>
 							<key>match</key>
-							<string>(\s*)(?:^|[\s,;])(otherwise)\b(.*)?$\n?</string>
-							<key>name</key>
-							<string>meta.otherwise.matlab</string>
+							<string>(\s*)(?:^|[\s,;])(otherwise)\b</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -540,6 +521,10 @@
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>name</key>
+							<string>meta.catch.matlab</string>
+							<key>match</key>
+							<string>(\s*)(?:^|[\s,;])(catch)\b\s*(\w+)?</string>
 							<key>captures</key>
 							<dict>
 								<key>2</key>
@@ -549,21 +534,10 @@
 								</dict>
 								<key>3</key>
 								<dict>
-									<key>patterns</key>
-									<array>
-										<dict>
-											<key>include</key>
-											<string>$self</string>
-										</dict>
-									</array>
+									<key>name</key>
+									<string>variable.other.constant.matlab</string>
 								</dict>
 							</dict>
-							<key>end</key>
-							<string>^</string>
-							<key>match</key>
-							<string>(\s*)(?:^|[\s,;])(catch)\b(.*)?$\n?</string>
-							<key>name</key>
-							<string>meta.catch.matlab</string>
 						</dict>
 						<dict>
 							<key>include</key>
