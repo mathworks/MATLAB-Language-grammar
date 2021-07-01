@@ -21,8 +21,81 @@ function y = t19SingleLineBlocks(x)
     %                                ^^^ keyword.control.end.if.matlab
             y = 0;
     end
-    switch x, case 1, disp(1), case 2, disp(2), otherwise, y = -1; end
-    if y > 2, exit_code = 0; else, exit_code = 1; end
-    print(['exited with code ' exit_code])
-    try error('test'); catch e; fprintf(['caught exception ' e]); end
+    switch x, case 1, disp(1), case 2, disp(2), otherwise, disp(0); end
+%   ^^^^^^ keyword.control.switch.matlab
+%          ^ variable.other.constant.matlab
+%           ^ punctuation.separator.comma.matlab
+%             ^^^^ keyword.control.case.matlab
+%                  ^ constant.numeric.decimal.matlab
+%                   ^ punctuation.separator.comma.matlab
+%                     ^^^^^^^ meta.function-call.parens.matlab
+%                     ^^^^ entity.name.function.matlab
+%                         ^ punctuation.section.parens.begin.matlab
+%                          ^ constant.numeric.decimal.matlab
+%                           ^ punctuation.section.parens.end.matlab
+%                            ^ punctuation.separator.comma.matlab
+%                              ^^^^ keyword.control.case.matlab
+%                                   ^ constant.numeric.decimal.matlab
+%                                    ^ punctuation.separator.comma.matlab○
+%                                      ^^^^^^^ meta.function-call.parens.matlab
+%                                      ^^^^ entity.name.function.matlab
+%                                          ^ punctuation.section.parens.begin.matlab
+%                                           ^ constant.numeric.decimal.matlab
+%                                            ^ punctuation.section.parens.end.matlab
+%                                             ^ punctuation.separator.comma.matlab
+%                                               ^^^^^^^^^ keyword.control.otherwise.matlab
+%                                                        ^ punctuation.separator.comma.matlab
+%                                                          ^^^^^^^ meta.function-call.parens.matlab
+%                                                          ^^^^ entity.name.function.matlab
+%                                                              ^ punctuation.section.parens.begin.matlab
+%                                                               ^ constant.numeric.decimal.matlab
+%                                                                ^ punctuation.section.parens.end.matlab
+%                                                                 ^ punctuation.terminator.semicolon.matlab
+%                                                                   ^^^ keyword.control.end.switch.matlab
+    if y > 2, exit_code = 1; else, exit_code = 0; end
+%   ^^ keyword.control.if.matlab
+%        ^ keyword.operator.relational.matlab
+%          ^ constant.numeric.decimal.matlab
+%           ^ punctuation.separator.comma.matlab
+%             ^^^^^^^^^ meta.assignment.matlab
+%                       ^ keyword.operator.assignment.matlab
+%                         ^ constant.numeric.decimal.matlab
+%                          ^ punctuation.terminator.semicolon.matlab
+%                            ^^^^ keyword.control.else.matlab
+%                                ^ punctuation.separator.comma.matlab
+%                                  ^^^^^^^^^ meta.assignment.matlab
+%                                            ^ keyword.operator.assignment.matlab
+%                                              ^ constant.numeric.decimal.matlab
+%                                               ^ punctuation.terminator.semicolon.matlab
+%                                                 ^^^ keyword.control.end.if.matlab
+    print(["exited with code " exit_code])
+%   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call.parens.matlab
+%   ^^^^^ entity.name.function.matlab
+%        ^ punctuation.section.parens.begin.matlab
+%         ^ punctuation.section.brackets.begin.matlab
+%          ^^^^^^^^^^^^^^^^^^^ string.quoted.double.matlab
+%          ^ punctuation.definition.string.begin.matlab
+%                            ^ punctuation.definition.string.end.matlab
+%                                       ^ punctuation.section.brackets.end.matlab
+%                                        ^ punctuation.section.parens.end.matlab
+    try if y > 2, error("input greater than 2"); end; catch e; fprintf(['caught exception "' e '"']); end
+%   ^^^ keyword.control.try.matlab
+%       ^^ keyword.control.if.matlab
+%            ^ keyword.operator.relational.matlab
+%              ^ constant.numeric.decimal.matlab
+%               ^ punctuation.separator.comma.matlab
+%                 ^^^^^ entity.name.function.matlab
+%                      ^ punctuation.section.parens.begin.matlab
+%                       ^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double.matlab
+%                                             ^ punctuation.section.parens.end.matlab
+%                                              ^ punctuation.terminator.semicolon.matlab
+%                                                ^^^ keyword.control.end.if.matlab
+%                                                   ^ punctuation.terminator.semicolon.matlab
+%                                                     ^^^^^ keyword.control.catch.matlab
+%                                                           ^ variable.other.constant.matlab
+%                                                              ^^^^^^^ entity.name.function.matlab
+%                                                                     ^ punctuation.section.parens.begin.matlab
+%                                                                                                  ^ punctuation.section.parens.end.matlab
+%                                                                                                   ^ punctuation.terminator.semicolon.matlab
+%                                                                                                     ^^^ keyword.control.end.try.matlab○
 end
