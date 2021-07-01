@@ -1281,59 +1281,22 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>comment</key>
+					<string>Function definition</string>
+					<key>name</key>
+					<string>meta.function.matlab</string>
 					<key>begin</key>
 					<string>(?x)
-							(^\s*)												# Leading whitespace
+							(^\s*)											# Leading whitespace
 							(function)
 							\s+
-							(?:													# Optional
-								(?:
-									(\[) ([^\]]*) (\])
-								  | ([a-zA-Z][a-zA-Z0-9_]*)
-								)
-								\s* = \s*
-							)?
-							([a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z][a-zA-Z0-9_]*)*)	# Function name
-							\s*													# Trailing space
-						</string>
+					</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
 							<string>storage.type.function.matlab</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.arguments.begin.matlab</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>match</key>
-									<string>\w+</string>
-									<key>name</key>
-									<string>variable.parameter.output.matlab</string>
-								</dict>
-							</array>
-						</dict>
-						<key>5</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.arguments.end.matlab</string>
-						</dict>
-						<key>6</key>
-						<dict>
-							<key>name</key>
-							<string>variable.parameter.output.function.matlab</string>
-						</dict>
-						<key>7</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.matlab</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -1343,35 +1306,164 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.end.function.matlab</string>
+							<string>storage.type.function.end.matlab</string>
 						</dict>
 					</dict>
-					<key>name</key>
-					<string>meta.function.matlab</string>
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>\G\(</string>
-							<key>end</key>
-							<string>\)</string>
 							<key>name</key>
-							<string>meta.arguments.function.matlab</string>
+							<string>meta.function.declaration.matlab</string>
+							<key>begin</key>
+							<string>\G</string>
+							<key>end</key>
+							<string>(?&lt;=\))</string>
 							<key>patterns</key>
 							<array>
 								<dict>
-									<key>include</key>
-									<string>#line_continuation</string>
+									<key>comment</key>
+									<string>Function output</string>
+									<key>contentName</key>
+									<string>meta.assignment.matlab</string>
+									<key>begin</key>
+									<string>\G(?=.*?=)</string>
+									<key>end</key>
+									<string>\s*(=)\s*</string>
+									<key>endCaptures</key>
+									<dict>
+										<key>1</key>
+										<dict>
+											<key>name</key>
+											<string>keyword.operator.assignment.matlab</string>
+										</dict>
+									</dict>
+									<key>patterns</key>
+									<array>
+										<dict>
+											<key>name</key>
+											<string>punctuation.section.assignment.group.begin.matlab</string>
+											<key>match</key>
+											<string>\G\[</string>
+										</dict>
+										<dict>
+											<key>match</key>
+											<string>(\])\s*\z</string>
+											<key>captures</key>
+											<dict>
+												<key>1</key>
+												<dict>
+													<key>name</key>
+													<string>punctuation.section.assignment.group.end.matlab</string>
+												</dict>
+											</dict>
+										</dict>
+										<dict>
+											<key>name</key>
+											<string>variable.parameter.output.matlab</string>
+											<key>match</key>
+											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
+										</dict>
+										<dict>
+											<key>name</key>
+											<string>punctuation.separator.parameter.comma.matlab</string>
+											<key>match</key>
+											<string>,</string>
+										</dict>
+										<dict>
+											<key>include</key>
+											<string>#comments</string>									
+										</dict>
+										<dict>
+											<key>include</key>
+											<string>#line_continuation</string>									
+										</dict>
+									</array>
 								</dict>
 								<dict>
-									<key>match</key>
-									<string>\w+</string>
+									<key>comment</key>
+									<string>Function name</string>
 									<key>name</key>
-									<string>variable.parameter.input.matlab</string>
+									<string>entity.name.function.matlab</string>
+									<key>match</key>
+									<string>[a-zA-Z][a-zA-Z0-9_.]*(?=\s*\()</string>
+									<key>patterns</key>
+									<array>
+										<dict>
+											<key>name</key>
+											<string>punctuation.accessor.dot.matlab</string>
+											<key>match</key>
+											<string>\.</string>
+										</dict>
+										<dict>
+											<key>include</key>
+											<string>#line_continuation</string>									
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>comment</key>
+									<string>Function arguments</string>
+									<key>name</key>
+									<string>meta.parameters.matlab</string>
+									<key>begin</key>
+									<string>(?&lt;=[a-zA-Z0-9_])\s*\(</string>
+									<key>beginCaptures</key>
+									<dict>
+										<key>0</key>
+										<dict>
+											<key>name</key>
+											<string>punctuation.definition.parameters.begin.matlab</string>
+										</dict>
+									</dict>
+									<key>end</key>
+									<string>\)</string>
+									<key>endCaptures</key>
+									<dict>
+										<key>0</key>
+										<dict>
+											<key>name</key>
+											<string>punctuation.definition.parameters.end.matlab</string>
+										</dict>
+									</dict>
+									<key>patterns</key>
+									<array>
+										<dict>
+											<key>name</key>
+											<string>variable.parameter.input.matlab</string>
+											<key>match</key>
+											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
+										</dict>
+										<dict>
+											<key>name</key>
+											<string>variable.language.anonymous.matlab</string>
+											<key>match</key>
+											<string>~</string>
+										</dict>
+										<dict>
+											<key>name</key>
+											<string>punctuation.separator.parameter.comma.matlab</string>
+											<key>match</key>
+											<string>,</string>
+										</dict>
+										<dict>
+											<key>include</key>
+											<string>#comments</string>									
+										</dict>
+										<dict>
+											<key>include</key>
+											<string>#line_continuation</string>									
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>include</key>
+									<string>#comments</string>									
 								</dict>
 							</array>
 						</dict>
 						<dict>
+							<key>name</key>
+							<string>meta.arguments.matlab</string>
 							<key>begin</key>
 							<string>(?x)
 									(^\s*)								# Leading whitespace
@@ -1394,10 +1486,22 @@
 									<key>patterns</key>
 									<array>
 										<dict>
+											<key>name</key>
+											<string>punctuation.section.parens.begin.matlab</string>
+											<key>match</key>
+											<string>\(</string>
+										</dict>
+										<dict>
+											<key>name</key>
+											<string>storage.modifier.arguments.matlab</string>
 											<key>match</key>
 											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
+										</dict>
+										<dict>
 											<key>name</key>
-											<string>variable.parameter.arguments.matlab</string>
+											<string>punctuation.section.parens.end.matlab</string>
+											<key>match</key>
+											<string>\)</string>
 										</dict>
 									</array>
 								</dict>
@@ -1412,10 +1516,16 @@
 									<string>keyword.control.end.arguments.matlab</string>
 								</dict>
 							</dict>
-							<key>name</key>
-							<string>meta.arguments.matlab</string>
 							<key>patterns</key>
 							<array>
+								<dict>
+									<key>comment</key>
+									<string>Class property name-value arguments</string>
+									<key>name</key>
+									<string>keyword.operator.other.matlab</string>
+									<key>match</key>
+									<string>(?&lt;=\w)\.\?(?=\w)</string>
+								</dict>
 								<dict>
 									<key>include</key>
 									<string>#validators</string>
@@ -1425,6 +1535,10 @@
 									<string>$self</string>
 								</dict>
 							</array>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#variables</string>
 						</dict>
 						<dict>
 							<key>include</key>
