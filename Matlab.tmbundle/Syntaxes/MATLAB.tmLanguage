@@ -135,6 +135,10 @@
 					<key>include</key>
 					<string>#operators</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#punctuation</string>
+				</dict>
 			</array>
 		</dict>
 		<key>anonymous_function</key>
@@ -2183,12 +2187,95 @@
 		</dict>
 		<key>operators</key>
 		<dict>
-			<key>comment</key>
-			<string>Operator symbols</string>
-			<key>match</key>
-			<string>(?&lt;=\s)(==|~=|&gt;|&gt;=|&lt;|&lt;=|&amp;|&amp;&amp;|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)(?=\s)</string>
-			<key>name</key>
-			<string>keyword.operator.symbols.matlab</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>comment</key>
+					<string>Function handle accessor</string>
+					<key>name</key>
+					<string>keyword.operator.storage.at.matlab</string>
+					<key>match</key>
+					<string>(?&lt;!\w)@(?=\s{,4}\w)</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Metadata query for class properties</string>
+					<key>name</key>
+					<string>keyword.operator.other.question.matlab</string>
+					<key>match</key>
+					<string>(?&lt;!\w)\?(?=\w)</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Arithmetic operator symbols</string>
+					<key>name</key>
+					<string>keyword.operator.arithmetic.matlab</string>
+					<key>match</key>
+					<string>(?&lt;=[a-zA-Z0-9\s])(\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)(?=[a-zA-Z0-9\s])</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Operator symbols</string>
+					<key>name</key>
+					<string>keyword.operator.logical.matlab</string>
+					<key>match</key>
+					<string>(?&lt;=[a-zA-Z0-9\s])(==|~=|&amp;|&amp;&amp;|\||\|\|)(?=[a-zA-Z0-9\s])</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Assignment operator</string>
+					<key>name</key>
+					<string>keyword.operator.assignment.matlab</string>
+					<key>match</key>
+					<string>(?&lt;=[a-zA-Z0-9\s])(=)(?!=)</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Colon operator for vector creation/indexing</string>
+					<key>name</key>
+					<string>keyword.operator.vector.colon.matlab</string>
+					<key>match</key>
+					<string>(?&lt;=[a-zA-Z0-9_\s(),]|^):(?=[a-zA-Z0-9_\s(),]|$)</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Comparative operators</string>
+					<key>name</key>
+					<string>keyword.operator.relational.matlab</string>
+					<key>match</key>
+					<string>(?&lt;=[a-zA-Z0-9\s])(&gt;|&gt;=|&lt;|&lt;=)(?=\s)</string>
+				</dict>
+			</array>
+		</dict>
+		<key>punctuation</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>comment</key>
+					<string>Dot index</string>
+					<key>name</key>
+					<string>punctuation.accessor.dot.matlab</string>
+					<key>match</key>
+					<string>(?&lt;=\w)\.</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Variable or statement separator</string>
+					<key>name</key>
+					<string>punctuation.separator.comma.matlab</string>
+					<key>match</key>
+					<string>,</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Output termination</string>
+					<key>name</key>
+					<string>punctuation.terminator.semicolon.matlab</string>
+					<key>match</key>
+					<string>;(?=\s|$)</string>
+				</dict>
+			</array>
 		</dict>
 		<key>validators</key>
 		<dict>
