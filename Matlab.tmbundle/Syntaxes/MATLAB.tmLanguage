@@ -2,14 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>name</key>
+	<string>MATLAB</string>
 	<key>fileTypes</key>
 	<array>
 		<string>m</string>
 	</array>
 	<key>keyEquivalent</key>
 	<string>^~M</string>
-	<key>name</key>
-	<string>MATLAB</string>
+	<key>scopeName</key>
+	<string>source.matlab</string>
+	<key>uuid</key>
+	<string>43CD9A4D-351E-4404-A76B-FABEF9B1A3AF</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -1309,8 +1313,11 @@
 		</dict>
 		<key>indexing_curly_brackets</key>
 		<dict>
-			<key>Comment</key>
-			<string>Match identifier{idx, idx, } and stop at newline without ... This helps with partially written code like x{idx </string>
+			<key>comment</key>
+			<string>
+				Cell index for indexing and/or assignment
+				Match identifier{idx, idx, } and stop at newline without ... This helps with partially written code like x{idx
+			</string>
 			<key>begin</key>
 			<string>([a-zA-Z][a-zA-Z0-9_\.]*\s*)\{</string>
 			<key>beginCaptures</key>
