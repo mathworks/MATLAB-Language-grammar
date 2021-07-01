@@ -67,6 +67,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#function_call</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#indexing_curly_brackets</string>
 				</dict>
 				<dict>
@@ -1545,6 +1549,56 @@
 							<string>$self</string>
 						</dict>
 					</array>
+				</dict>
+			</array>
+		</dict>
+		<key>function_call</key>
+		<dict>
+			<key>comment</key>
+			<string>
+				Function call; matrix or array index (subscript)
+				We don't include $self here to avoid matching command syntax inside (), [], {}
+			</string>
+			<key>name</key>
+			<string>meta.function-call.parens.matlab</string>
+			<key>begin</key>
+			<string>([a-zA-Z][a-zA-Z0-9_]*)\s*(\()</string>
+			<key>end</key>
+			<string>(\)|(?&lt;!\.\.\.)\n)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.matlab</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.parens.begin.matlab</string>
+				</dict>
+			</dict>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.parens.end.matlab</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#end_in_parentheses</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#rules_before_command_dual</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#rules_after_command_dual</string>
 				</dict>
 			</array>
 		</dict>
