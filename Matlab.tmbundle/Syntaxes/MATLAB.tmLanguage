@@ -1119,17 +1119,35 @@
 		<key>comment_block</key>
 		<dict>
 			<key>begin</key>
-			<string>(^[\s]*)%\{[^\n\S]*+\n</string>
+			<string>(^[\s]*)(%\{)[^\S\n]*+\n</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.comment.matlab</string>
+					<string>punctuation.whitespace.comment.leading.matlab</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.begin.matlab</string>
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>^[\s]*%\}[^\n\S]*+(?:\n|$)</string>
+			<string>(^[\s]*)(%\})[^\S\n]*+(?:\n|$)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.whitespace.comment.leading.matlab</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.end.matlab</string>
+				</dict>
+			</dict>
 			<key>name</key>
 			<string>comment.block.percentage.matlab</string>
 			<key>patterns</key>
