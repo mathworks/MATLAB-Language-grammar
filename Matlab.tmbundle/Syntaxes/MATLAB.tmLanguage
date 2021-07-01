@@ -59,7 +59,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#parens</string>
+					<string>#import</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -68,6 +68,10 @@
 				<dict>
 					<key>include</key>
 					<string>#function_call</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#parentheses</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -1614,8 +1618,42 @@
 			</dict>
 			<key>match</key>
 			<string>^\s*(global|persistent)\b</string>
+		</dict>
+		<key>import</key>
+		<dict>
+			<key>comment</key>
+			<string>Import statement</string>
 			<key>name</key>
-			<string>meta.globalpersistent.matlab</string>
+			<string>meta.import.matlab</string>
+			<key>contentName</key>
+			<string>entity.name.namespace.matlab</string>
+			<key>begin</key>
+			<string>\b(import)\b[^\S\n]+(?=\w)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.import.matlab</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?=;|\n|%)</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>punctuation.separator.matlab</string>
+					<key>match</key>
+					<string>\.</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>variable.language.wildcard.matlab</string>
+					<key>match</key>
+					<string>\*</string>
+				</dict>
+			</array>
 		</dict>
 		<key>parens</key>
 		<dict>
