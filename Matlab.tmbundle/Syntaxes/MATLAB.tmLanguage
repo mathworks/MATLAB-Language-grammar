@@ -2281,8 +2281,18 @@
 		<dict>
 			<key>comment</key>
 			<string>Property and argument validation. Match an identifier allowing . and ?.</string>
+			<key>name</key>
+			<string>meta.definition.property.assignment.matlab</string>
 			<key>begin</key>
 			<string>\s*[;]?\s*([a-zA-Z][a-zA-Z0-9_\.\?]*)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.object.property.matlab</string>
+				</dict>
+			</dict>
 			<key>end</key>
 			<string>([;\n%=].*)</string>
 			<key>endCaptures</key>
@@ -2365,17 +2375,48 @@
 					<key>comment</key>
 					<string>Size declaration</string>
 					<key>match</key>
-					<string>\s*(\([^\)]*\))</string>
-					<key>name</key>
-					<string>storage.type.matlab</string>
+					<string>\s*(\()([^\)]*)(\))</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.parens.begin.matlab</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>meta.parens.size.matlab</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>#numbers</string>
+								</dict>
+								<dict>
+									<key>include</key>
+									<string>#operators</string>
+								</dict>
+								<dict>
+									<key>include</key>
+									<string>#punctuation</string>
+								</dict>
+							</array>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.parens.end.matlab</string>
+						</dict>
+					</dict>
 				</dict>
 				<dict>
 					<key>comment</key>
 					<string>Type declaration</string>
-					<key>match</key>
-					<string>([a-zA-Z][a-zA-Z0-9_\.]*)</string>
 					<key>name</key>
 					<string>storage.type.matlab</string>
+					<key>match</key>
+					<string>[a-zA-Z][a-zA-Z0-9_\.]*</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -2387,6 +2428,8 @@
 		<dict>
 			<key>comment</key>
 			<string>Validator functions. Treated as a recursive group to permit nested brackets, quotes, etc.</string>
+			<key>contentName</key>
+			<string>meta.block.validation.matlab</string>
 			<key>begin</key>
 			<string>\s*({)\s*</string>
 			<key>beginCaptures</key>
@@ -2394,17 +2437,17 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>storage.type.matlab</string>
+					<string>punctuation.section.block.begin.matlab</string>
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(})</string>
+			<string>}</string>
 			<key>endCaptures</key>
 			<dict>
-				<key>1</key>
+				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>storage.type.matlab</string>
+					<string>punctuation.section.block.end.matlab</string>
 				</dict>
 			</dict>
 			<key>patterns</key>
@@ -2422,22 +2465,10 @@
 					<string>#line_continuation</string>
 				</dict>
 				<dict>
-					<key>match</key>
-					<string>([^{}}'"\.]+)</string>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>storage.type.matlab</string>
-						</dict>
-					</dict>
-				</dict>
-				<dict>
+					<key>name</key>
+					<string>punctuation.accessor.dot.matlab</string>
 					<key>match</key>
 					<string>\.</string>
-					<key>name</key>
-					<string>storage.type.matlab</string>
 				</dict>
 			</array>
 		</dict>
@@ -2451,14 +2482,30 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,|~|&lt;|&gt;|&amp;|\||-|\+|\*|/|\\|\.|\^))|^)'</string>
 							<key>comment</key>
 							<string>Character vector literal (single-quoted)</string>
-							<key>end</key>
-							<string>'(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|/|\\|\.|\^|\s|;|:|,))</string>
 							<key>name</key>
-							<string>storage.type.matlab</string>
+							<string>string.quoted.single.matlab</string>
+							<key>begin</key>
+							<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^))|^)'</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.definition.string.begin.matlab</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>'(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^|\s|;|:|,)|$)</string>
+							<key>endCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.definition.string.end.matlab</string>
+								</dict>
+							</dict>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -2476,14 +2523,30 @@
 							</array>
 						</dict>
 						<dict>
-							<key>begin</key>
-							<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,|~|&lt;|&gt;|&amp;|\||-|\+|\*|/|\\|\.|\^))|^)"</string>
 							<key>comment</key>
 							<string>String literal (double-quoted)</string>
-							<key>end</key>
-							<string>"(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|/|\\|\.|\^|\||\s|;|:|,))</string>
 							<key>name</key>
-							<string>storage.type.matlab</string>
+							<string>string.quoted.double.matlab</string>
+							<key>begin</key>
+							<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^))|^)"</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.definition.string.begin.matlab</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>"(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^|\||\s|;|:|,)|$|\z)</string>
+							<key>endCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.definition.string.end.matlab</string>
+								</dict>
+							</dict>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -2505,9 +2568,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>scopeName</key>
-	<string>source.matlab</string>
-	<key>uuid</key>
-	<string>48F8858B-72FF-11D9-BFEE-000D93589AF6</string>
 </dict>
 </plist>
