@@ -79,6 +79,14 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#multiple_assignment</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#single_assignment</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#square_brackets</string>
 				</dict>
 				<dict>
@@ -1655,20 +1663,84 @@
 				</dict>
 			</array>
 		</dict>
-		<key>parens</key>
+		<key>multiple_assignment</key>
 		<dict>
-			<key>begin</key>
-			<string>\(</string>
-			<key>end</key>
-			<string>(\)|(?&lt;!\.\.\.).\n)</string>
 			<key>comment</key>
-			<string>We don't include $self here to avoid matching command syntax inside (), [], {}</string>
+			<string>
+				Multiple assignment for output variables
+				We don't include $self here to avoid matching command syntax inside (), [], {}
+			</string>
+			<key>contentName</key>
+			<string>meta.assignment.group.matlab</string>
+			<key>begin</key>
+			<string>\[(?=[^\]]+\]\s{,4}=\b)</string>
+			<key>end</key>
+			<string>\]</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.assignment.group.begin.matlab</string>
+				</dict>
+			</dict>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.assignment.group.end.matlab</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>comment</key>
+					<string>Argument placeholder</string>
+					<key>name</key>
+					<string>variable.language.anonymous.matlab</string>
+					<key>match</key>
+					<string>(?&lt;=[\[,])\s{0,4}~\s{0,4}(?=[\],])</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#rules_before_command_dual</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#rules_after_command_dual</string>
+				</dict>
+			</array>
+		</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
 					<string>#end_in_parens</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#rules_before_command_dual</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#rules_after_command_dual</string>
+				</dict>
+			</array>
+		</dict>
+		<key>single_assignment</key>
+		<dict>
+			<key>comment</key>
+			<string>
+				Assignment for single output variable
+				We don't include $self here to avoid matching command syntax inside (), [], {}
+			</string>
+			<key>name</key>
+			<string>meta.assignment.matlab</string>
+			<key>match</key>
+			<string>[a-zA-Z][a-zA-Z0-9_,.(){}]*(?=\s*=)</string>
+			<key>patterns</key>
+			<array>
 				<dict>
 					<key>include</key>
 					<string>#rules_before_command_dual</string>
