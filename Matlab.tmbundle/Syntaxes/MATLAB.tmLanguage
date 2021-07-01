@@ -1712,11 +1712,40 @@
 				</dict>
 			</array>
 		</dict>
+		<key>parentheses</key>
+		<dict>
+			<key>comment</key>
+			<string>
+				Operator precedence in expressions
+				We don't include $self here to avoid matching command syntax inside (), [], {}
+			</string>
+			<key>contentName</key>
+			<string>meta.parens.matlab</string>
+			<key>begin</key>
+			<string>\(</string>
+			<key>end</key>
+			<string>(\)|(?&lt;!\.\.\.)\n)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.parens.begin.matlab</string>
+				</dict>
+			</dict>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.parens.end.matlab</string>
+				</dict>
+			</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#end_in_parens</string>
+					<string>#end_in_parentheses</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -1753,12 +1782,33 @@
 		</dict>
 		<key>square_brackets</key>
 		<dict>
+			<key>comment</key>
+			<string>
+				Matrix or array creation; matrix or array concatenation
+				We don't include $self here to avoid matching command syntax inside (), [], {}
+			</string>
+			<key>contentName</key>
+			<string>meta.brackets.matlab</string>
 			<key>begin</key>
-			<string>\[</string>
+			<string>\[(?![^\]]+\]\s{,4}=)</string>
 			<key>end</key>
 			<string>\]</string>
-			<key>comment</key>
-			<string>We don't include $self here to avoid matching command syntax inside (), [], {}</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.brackets.begin.matlab</string>
+				</dict>
+			</dict>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.brackets.end.matlab</string>
+				</dict>
+			</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1773,17 +1823,38 @@
 		</dict>
 		<key>curly_brackets</key>
 		<dict>
+			<key>comment</key>
+			<string>
+				Cell creation (cell literal)
+				We don't include $self here to avoid matching command syntax inside (), [], {}
+			</string>
+			<key>contentName</key>
+			<string>meta.cell.literal.matlab</string>
 			<key>begin</key>
 			<string>\{</string>
 			<key>end</key>
 			<string>\}</string>
-			<key>comment</key>
-			<string>We don't include $self here to avoid matching command syntax inside (), [], {}</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.braces.begin.matlab</string>
+				</dict>
+			</dict>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.braces.end.matlab</string>
+				</dict>
+			</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#end_in_parens</string>
+					<string>#end_in_parentheses</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -1811,6 +1882,14 @@
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>comment</key>
+							<string>Indexed cell reference</string>
+							<key>name</key>
+							<string>variable.other.readwrite.matlab</string>
+							<key>match</key>
+							<string>([a-zA-Z][a-zA-Z0-9_]*)(?=\s*\{)</string>
+						</dict>
+						<dict>
 							<key>include</key>
 							<string>$self</string>
 						</dict>
@@ -1818,14 +1897,14 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(\}|(?&lt;!\.\.\.).\n)</string>
+			<string>(\}|(?&lt;!\.\.\.)\n)</string>
 			<key>comment</key>
 			<string>We don't include $self here to avoid matching command syntax inside (), [], {}</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#end_in_parens</string>
+					<string>#end_in_parentheses</string>
 				</dict>
 				<dict>
 					<key>include</key>
