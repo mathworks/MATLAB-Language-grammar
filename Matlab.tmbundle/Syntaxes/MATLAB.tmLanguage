@@ -1167,6 +1167,8 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>comment</key>
+					<string>Section comment</string>
 					<key>begin</key>
 					<string>(^[ \t]+)?(?=%%\s)</string>
 					<key>beginCaptures</key>
@@ -1178,10 +1180,12 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?!\G)</string>
+					<string>\Z</string>
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>name</key>
+							<string>comment.line.double-percentage.matlab</string>
 							<key>begin</key>
 							<string>%%</string>
 							<key>beginCaptures</key>
@@ -1194,15 +1198,21 @@
 							</dict>
 							<key>end</key>
 							<string>\n</string>
-							<key>name</key>
-							<string>comment.line.double-percentage.matlab</string>
 							<key>patterns</key>
 							<array>
 								<dict>
 									<key>begin</key>
 									<string>\G[^\S\n]*(?![\n\s])</string>
+									<key>beginCaptures</key>
+									<dict>
+										<key>0</key>
+										<dict>
+											<key>name</key>
+											<string>punctuation.whitespace.comment.leading.matlab</string>
+										</dict>
+									</dict>
 									<key>contentName</key>
-									<string>meta.cell.matlab</string>
+									<string>entity.name.section.matlab</string>
 									<key>end</key>
 									<string>(?=\n)</string>
 								</dict>
@@ -1215,6 +1225,8 @@
 					<string>#comment_block</string>
 				</dict>
 				<dict>
+					<key>comment</key>
+					<string>Inline comment</string>
 					<key>begin</key>
 					<string>(^[ \t]+)?(?=%)</string>
 					<key>beginCaptures</key>
@@ -1226,10 +1238,12 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?!\G)</string>
+					<string>\Z</string>
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>name</key>
+							<string>comment.line.percentage.matlab</string>
 							<key>begin</key>
 							<string>%</string>
 							<key>beginCaptures</key>
@@ -1242,8 +1256,6 @@
 							</dict>
 							<key>end</key>
 							<string>\n</string>
-							<key>name</key>
-							<string>comment.line.percentage.matlab</string>
 						</dict>
 					</array>
 				</dict>
