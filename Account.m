@@ -1,4 +1,4 @@
-classdef Account < handle & BaseAccount % Models a bank account
+classdef Account < user.handle & BaseAccount % Models a bank account
     % Some properties
     properties
         Value

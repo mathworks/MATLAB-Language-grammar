@@ -1,297 +1,376 @@
->classdef Account < handle & BaseAccount % Models a bank account
+>classdef Account < Handle & BaseAccount % Models a bank account
 #^^^^^^^^ source.matlab meta.class.matlab storage.type.class.matlab
 #        ^ source.matlab meta.class.matlab
-#         ^^^^^^^ source.matlab meta.class.matlab meta.class-declaration.matlab entity.name.section.class.matlab
-#                ^ source.matlab meta.class.matlab meta.class-declaration.matlab
-#                 ^ source.matlab meta.class.matlab meta.class-declaration.matlab keyword.operator.other.matlab
-#                  ^ source.matlab meta.class.matlab meta.class-declaration.matlab
-#                   ^^^^^^ source.matlab meta.class.matlab entity.other.inherited-class.matlab
-#                         ^ source.matlab meta.class.matlab
-#                          ^ source.matlab meta.class.matlab keyword.operator.other.matlab
-#                           ^ source.matlab meta.class.matlab
-#                            ^^^^^^^^^^^ source.matlab meta.class.matlab entity.other.inherited-class.matlab
-#                                       ^ source.matlab meta.class.matlab
-#                                        ^ source.matlab meta.class.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#                                         ^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab comment.line.percentage.matlab
+#         ^^^^^^^ source.matlab meta.class.matlab meta.class.declaration.matlab entity.name.type.class.matlab
+#                ^ source.matlab meta.class.matlab meta.class.declaration.matlab
+#                 ^ source.matlab meta.class.matlab meta.class.declaration.matlab punctuation.separator.lt.inheritance.matlab
+#                  ^ source.matlab meta.class.matlab meta.class.declaration.matlab
+#                   ^^^^^^ source.matlab meta.class.matlab meta.class.declaration.matlab meta.inherited-class.matlab entity.other.inherited-class.matlab
+#                         ^ source.matlab meta.class.matlab meta.class.declaration.matlab
+#                          ^ source.matlab meta.class.matlab meta.class.declaration.matlab keyword.operator.type.matlab
+#                           ^ source.matlab meta.class.matlab meta.class.declaration.matlab
+#                            ^^^^^^^^^^^ source.matlab meta.class.matlab meta.class.declaration.matlab meta.inherited-class.matlab entity.other.inherited-class.matlab
+#                                       ^ source.matlab meta.class.matlab meta.class.declaration.matlab
+#                                        ^ source.matlab meta.class.matlab meta.class.declaration.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#                                         ^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.class.declaration.matlab comment.line.percentage.matlab
 >    % Some properties
-#^^^^ source.matlab meta.class.matlab punctuation.whitespace.comment.leading.matlab
-#    ^ source.matlab meta.class.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#     ^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab comment.line.percentage.matlab
+#^^^^ source.matlab meta.class.matlab meta.class.declaration.matlab punctuation.whitespace.comment.leading.matlab
+#    ^ source.matlab meta.class.matlab meta.class.declaration.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#     ^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.class.declaration.matlab comment.line.percentage.matlab
 >    properties
-#^^^^ source.matlab meta.class.matlab meta.properties.matlab
-#    ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.properties.matlab
+#^^^^ source.matlab meta.class.matlab meta.class.declaration.matlab
+#    ^^^^^^^^^^ source.matlab meta.class.matlab meta.class.declaration.matlab meta.inherited-class.matlab entity.other.inherited-class.matlab
 >        Value
-#^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab
+#^^^^^^^^^^^^^^ source.matlab meta.class.matlab
 >    end
-#^^^^ source.matlab meta.class.matlab meta.properties.matlab
-#    ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.end.properties.matlab
+#^^^^ source.matlab meta.class.matlab
+#    ^^^ source.matlab meta.class.matlab storage.type.class.end.matlab
 >    % Some methods
-#^^^^ source.matlab meta.class.matlab punctuation.whitespace.comment.leading.matlab
-#    ^ source.matlab meta.class.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#     ^^^^^^^^^^^^^ source.matlab meta.class.matlab comment.line.percentage.matlab
+#^^^^ source.matlab punctuation.whitespace.comment.leading.matlab
+#    ^ source.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#     ^^^^^^^^^^^^^ source.matlab comment.line.percentage.matlab
 >    methods % A comment
-#^^^^ source.matlab meta.class.matlab meta.methods.matlab
-#    ^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.methods.matlab
-#           ^ source.matlab meta.class.matlab meta.methods.matlab
-#            ^ source.matlab meta.class.matlab meta.methods.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#             ^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab comment.line.percentage.matlab
+#^^^^^^^^^^^^ source.matlab
+#            ^ source.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#             ^^^^^^^^^^ source.matlab comment.line.percentage.matlab
 >        % Object constructor
-#^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab punctuation.whitespace.comment.leading.matlab
-#        ^ source.matlab meta.class.matlab meta.methods.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#         ^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab comment.line.percentage.matlab
+#^^^^^^^^ source.matlab punctuation.whitespace.comment.leading.matlab
+#        ^ source.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#         ^^^^^^^^^^^^^^^^^^^ source.matlab comment.line.percentage.matlab
 >        function obj = Account(value)
-#^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#        ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.matlab
-#                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                 ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.parameter.output.function.matlab
-#                    ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                       ^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab entity.name.function.matlab
-#                              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
-#                               ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
-#                                    ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+#^^^^^^^^ source.matlab meta.function.matlab
+#        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
+#                ^ source.matlab meta.function.matlab
+#                 ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.matlab variable.parameter.output.matlab
+#                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
+#                     ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
+#                      ^ source.matlab meta.function.matlab meta.function.declaration.matlab
+#                       ^^^^^^^ source.matlab meta.function.matlab meta.function.declaration.matlab entity.name.function.matlab
+#                              ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.begin.matlab
+#                               ^^^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab variable.parameter.input.matlab
+#                                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.end.matlab
 >            obj.Value = value;
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab
+#            ^^^^^^^^^ source.matlab meta.function.matlab meta.assignment.matlab
+#                     ^ source.matlab meta.function.matlab
+#                      ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
+#                       ^^^^^^ source.matlab meta.function.matlab
+#                             ^ source.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
 >        end
-#^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#        ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.control.end.function.matlab
+#^^^^^^^^ source.matlab meta.function.matlab
+#        ^^^ source.matlab meta.function.matlab storage.type.function.end.matlab
 >        function obj = BasicClass(val)
-#^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#        ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.matlab
-#                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                 ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.parameter.output.function.matlab
-#                    ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                       ^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab entity.name.function.matlab
-#                                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
-#                                  ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
-#                                     ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+#^^^^^^^^ source.matlab meta.function.matlab
+#        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
+#                ^ source.matlab meta.function.matlab
+#                 ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.matlab variable.parameter.output.matlab
+#                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
+#                     ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
+#                      ^ source.matlab meta.function.matlab meta.function.declaration.matlab
+#                       ^^^^^^^^^^ source.matlab meta.function.matlab meta.function.declaration.matlab entity.name.function.matlab
+#                                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.begin.matlab
+#                                  ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab variable.parameter.input.matlab
+#                                     ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.end.matlab
 >            if nargin == 1
-#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
-#            ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab keyword.control.if.matlab
-#              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
-#               ^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab variable.other.function.matlab
-#                     ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
-#                      ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab keyword.operator.symbols.matlab
-#                        ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
-#                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab constant.numeric.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab
+#            ^^ source.matlab meta.function.matlab meta.if.matlab keyword.control.if.matlab
+#              ^ source.matlab meta.function.matlab meta.if.matlab
+#               ^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.assignment.matlab
+#                     ^ source.matlab meta.function.matlab meta.if.matlab
+#                      ^^ source.matlab meta.function.matlab meta.if.matlab keyword.operator.logical.matlab
+#                        ^ source.matlab meta.function.matlab meta.if.matlab
+#                         ^ source.matlab meta.function.matlab meta.if.matlab constant.numeric.decimal.matlab
 >                if isnumeric(val)
-#^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab
-#                ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab keyword.control.if.matlab
-#                  ^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab
-#                            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab
-#                             ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab
-#                                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab
+#^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab
+#                ^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab keyword.control.if.matlab
+#                  ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab
+#                   ^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#                            ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#                             ^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab
+#                                ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
 >                    obj.Value = val;
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab
+#^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab
+#                    ^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.assignment.matlab
+#                             ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab
+#                              ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab keyword.operator.assignment.matlab
+#                               ^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab
+#                                   ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab punctuation.terminator.semicolon.matlab
 >                else
-#^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab
-#                ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab keyword.control.else.matlab
+#^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab
+#                ^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab keyword.control.else.matlab
 >                    error('Value must be numeric')
-#^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab
-#                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab
-#                          ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
-#                           ^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab string.quoted.single.matlab
-#                                                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
-#                                                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab
+#^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab
+#                    ^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#                         ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#                          ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#                           ^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab string.quoted.single.matlab
+#                                                ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                                                 ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
 >                end
-#^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab
-#                ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab keyword.control.end.if.matlab
+#^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab
+#                ^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab keyword.control.end.if.matlab
 >            end
-#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
-#            ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab keyword.control.end.if.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab
+#            ^^^ source.matlab meta.function.matlab meta.if.matlab keyword.control.end.if.matlab
 >        end
-#^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#        ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.control.end.function.matlab
+#^^^^^^^^ source.matlab meta.function.matlab
+#        ^^^ source.matlab meta.function.matlab storage.type.function.end.matlab
 >        function r = roundOff(obj)
-#^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#        ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.matlab
-#                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.parameter.output.function.matlab
-#                  ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                     ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab entity.name.function.matlab
-#                             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
-#                              ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
-#                                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+#^^^^^^^^ source.matlab meta.function.matlab
+#        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
+#                ^ source.matlab meta.function.matlab
+#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.matlab variable.parameter.output.matlab
+#                  ^ source.matlab meta.function.matlab meta.function.declaration.matlab
+#                   ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
+#                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
+#                     ^^^^^^^^ source.matlab meta.function.matlab meta.function.declaration.matlab entity.name.function.matlab
+#                             ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.begin.matlab
+#                              ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab variable.parameter.input.matlab
+#                                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.end.matlab
 >            r = round([obj.Value],2);
-#^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                     ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                      ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                       ^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
-#                                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                                    ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab
+#            ^ source.matlab meta.function.matlab meta.assignment.matlab
+#             ^ source.matlab meta.function.matlab
+#              ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
+#               ^ source.matlab meta.function.matlab
+#                ^^^^^ source.matlab meta.function.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#                     ^ source.matlab meta.function.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#                      ^ source.matlab meta.function.matlab meta.function-call.parens.matlab punctuation.section.brackets.begin.matlab
+#                       ^^^ source.matlab meta.function.matlab meta.function-call.parens.matlab meta.brackets.matlab
+#                          ^ source.matlab meta.function.matlab meta.function-call.parens.matlab meta.brackets.matlab punctuation.accessor.dot.matlab
+#                           ^^^^^ source.matlab meta.function.matlab meta.function-call.parens.matlab meta.brackets.matlab
+#                                ^ source.matlab meta.function.matlab meta.function-call.parens.matlab punctuation.section.brackets.end.matlab
+#                                 ^ source.matlab meta.function.matlab meta.function-call.parens.matlab punctuation.separator.comma.matlab
+#                                  ^ source.matlab meta.function.matlab meta.function-call.parens.matlab constant.numeric.decimal.matlab
+#                                   ^ source.matlab meta.function.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
+#                                    ^ source.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
 >            A = zeros(5,100);
-#^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                     ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                      ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
-#                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                        ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
-#                           ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                            ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab
+#            ^ source.matlab meta.function.matlab meta.assignment.matlab
+#             ^ source.matlab meta.function.matlab
+#              ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
+#               ^ source.matlab meta.function.matlab
+#                ^^^^^ source.matlab meta.function.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#                     ^ source.matlab meta.function.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#                      ^ source.matlab meta.function.matlab meta.function-call.parens.matlab constant.numeric.decimal.matlab
+#                       ^ source.matlab meta.function.matlab meta.function-call.parens.matlab punctuation.separator.comma.matlab
+#                        ^^^ source.matlab meta.function.matlab meta.function-call.parens.matlab constant.numeric.decimal.matlab
+#                           ^ source.matlab meta.function.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
+#                            ^ source.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
 >            for m = 1:5
-#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab
-#            ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab keyword.control.for.matlab
-#               ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab
-#                    ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab constant.numeric.matlab
-#                     ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab
-#                      ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab constant.numeric.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab meta.for.matlab
+#            ^^^ source.matlab meta.function.matlab meta.for.matlab keyword.control.for.matlab
+#               ^ source.matlab meta.function.matlab meta.for.matlab
+#                ^ source.matlab meta.function.matlab meta.for.matlab meta.assignment.matlab
+#                 ^ source.matlab meta.function.matlab meta.for.matlab
+#                  ^ source.matlab meta.function.matlab meta.for.matlab keyword.operator.assignment.matlab
+#                   ^ source.matlab meta.function.matlab meta.for.matlab
+#                    ^ source.matlab meta.function.matlab meta.for.matlab constant.numeric.decimal.matlab
+#                     ^ source.matlab meta.function.matlab meta.for.matlab keyword.operator.vector.colon.matlab
+#                      ^ source.matlab meta.function.matlab meta.for.matlab constant.numeric.decimal.matlab
 >                for n = 1:100
-#^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab keyword.control.for.matlab
-#                   ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                        ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab constant.numeric.matlab
-#                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                          ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab constant.numeric.matlab
+#^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab
+#                ^^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab keyword.control.for.matlab
+#                   ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab
+#                    ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.assignment.matlab
+#                     ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab
+#                      ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab keyword.operator.assignment.matlab
+#                       ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab
+#                        ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab constant.numeric.decimal.matlab
+#                         ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab keyword.operator.vector.colon.matlab
+#                          ^^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab constant.numeric.decimal.matlab
 >                    A(m, n) = 1/(m + n - 1);
-#^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                     ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                      ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                          ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                           ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab constant.numeric.matlab
-#                               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                                 ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab keyword.operator.symbols.matlab
-#                                    ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab keyword.operator.symbols.matlab
-#                                        ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab constant.numeric.matlab
-#                                          ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                                           ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
+#^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab
+#                    ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#                     ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#                      ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab
+#                       ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab punctuation.separator.comma.matlab
+#                        ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab
+#                         ^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab meta.assignment.matlab
+#                           ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab
+#                            ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab keyword.operator.assignment.matlab
+#                             ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab
+#                              ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab constant.numeric.decimal.matlab
+#                               ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab
+#                                ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#                                 ^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab meta.parens.matlab
+#                                   ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab meta.parens.matlab keyword.operator.arithmetic.matlab
+#                                    ^^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab meta.parens.matlab
+#                                       ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab meta.parens.matlab keyword.operator.arithmetic.matlab
+#                                        ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab meta.parens.matlab
+#                                         ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab meta.parens.matlab constant.numeric.decimal.matlab
+#                                          ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
+#                                           ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab punctuation.terminator.semicolon.matlab
 >                end
-#^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab meta.for.matlab keyword.control.end.for.matlab
+#^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab
+#                ^^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab keyword.control.end.for.matlab
 >            end
-#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab
-#            ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.for.matlab keyword.control.end.for.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab meta.for.matlab
+#            ^^^ source.matlab meta.function.matlab meta.for.matlab keyword.control.end.for.matlab
 >        end
-#^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#        ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.control.end.function.matlab
+#^^^^^^^^ source.matlab meta.function.matlab
+#        ^^^ source.matlab meta.function.matlab storage.type.function.end.matlab
 >        function r = multiplyBy(obj,n)
-#^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#        ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.matlab
-#                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.parameter.output.function.matlab
-#                  ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                     ^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab entity.name.function.matlab
-#                               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
-#                                ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
-#                                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
-#                                    ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
-#                                     ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+#^^^^^^^^ source.matlab meta.function.matlab
+#        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
+#                ^ source.matlab meta.function.matlab
+#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.matlab variable.parameter.output.matlab
+#                  ^ source.matlab meta.function.matlab meta.function.declaration.matlab
+#                   ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
+#                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
+#                     ^^^^^^^^^^ source.matlab meta.function.matlab meta.function.declaration.matlab entity.name.function.matlab
+#                               ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.begin.matlab
+#                                ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab variable.parameter.input.matlab
+#                                   ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.separator.parameter.comma.matlab
+#                                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab variable.parameter.input.matlab
+#                                     ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.end.matlab
 >            r = [obj.Value( end ) ]* n;
-#^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                 ^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                          ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                           ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                            ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.operator.symbols.matlab
-#                               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                                   ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab
+#            ^ source.matlab meta.function.matlab meta.assignment.matlab
+#             ^ source.matlab meta.function.matlab
+#              ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
+#               ^ source.matlab meta.function.matlab
+#                ^ source.matlab meta.function.matlab punctuation.section.brackets.begin.matlab
+#                 ^^^ source.matlab meta.function.matlab meta.brackets.matlab
+#                    ^ source.matlab meta.function.matlab meta.brackets.matlab punctuation.accessor.dot.matlab
+#                     ^^^^^ source.matlab meta.function.matlab meta.brackets.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#                          ^ source.matlab meta.function.matlab meta.brackets.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#                           ^ source.matlab meta.function.matlab meta.brackets.matlab meta.function-call.parens.matlab
+#                            ^^^ source.matlab meta.function.matlab meta.brackets.matlab meta.function-call.parens.matlab keyword.operator.word.matlab
+#                               ^ source.matlab meta.function.matlab meta.brackets.matlab meta.function-call.parens.matlab
+#                                ^ source.matlab meta.function.matlab meta.brackets.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
+#                                 ^ source.matlab meta.function.matlab meta.brackets.matlab
+#                                  ^ source.matlab meta.function.matlab punctuation.section.brackets.end.matlab
+#                                   ^^^ source.matlab meta.function.matlab
+#                                      ^ source.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
 >            n = 1;
-#^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
-#                 ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab
+#            ^ source.matlab meta.function.matlab meta.assignment.matlab
+#             ^ source.matlab meta.function.matlab
+#              ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
+#               ^ source.matlab meta.function.matlab
+#                ^ source.matlab meta.function.matlab constant.numeric.decimal.matlab
+#                 ^ source.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
 >            nFactorial = 1;
-#^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab constant.numeric.matlab
-#                          ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab
+#            ^^^^^^^^^^ source.matlab meta.function.matlab meta.assignment.matlab
+#                      ^ source.matlab meta.function.matlab
+#                       ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
+#                        ^ source.matlab meta.function.matlab
+#                         ^ source.matlab meta.function.matlab constant.numeric.decimal.matlab
+#                          ^ source.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
 >            while nFactorial < 1e100
-#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab
-#            ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab keyword.control.while.matlab
-#                 ^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab
-#                             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab keyword.operator.symbols.matlab
-#                              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab
-#                               ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab constant.numeric.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab meta.while.matlab
+#            ^^^^^ source.matlab meta.function.matlab meta.while.matlab keyword.control.while.matlab
+#                 ^^^^^^^^^^^^ source.matlab meta.function.matlab meta.while.matlab
+#                             ^ source.matlab meta.function.matlab meta.while.matlab keyword.operator.relational.matlab
+#                              ^ source.matlab meta.function.matlab meta.while.matlab
+#                               ^^^^^ source.matlab meta.function.matlab meta.while.matlab constant.numeric.decimal.matlab
 >                n = n + 1;
-#^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab
-#                      ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab keyword.operator.symbols.matlab
-#                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab
-#                        ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab constant.numeric.matlab
-#                         ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab
+#^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.while.matlab
+#                ^ source.matlab meta.function.matlab meta.while.matlab meta.assignment.matlab
+#                 ^ source.matlab meta.function.matlab meta.while.matlab
+#                  ^ source.matlab meta.function.matlab meta.while.matlab keyword.operator.assignment.matlab
+#                   ^^^ source.matlab meta.function.matlab meta.while.matlab
+#                      ^ source.matlab meta.function.matlab meta.while.matlab keyword.operator.arithmetic.matlab
+#                       ^ source.matlab meta.function.matlab meta.while.matlab
+#                        ^ source.matlab meta.function.matlab meta.while.matlab constant.numeric.decimal.matlab
+#                         ^ source.matlab meta.function.matlab meta.while.matlab punctuation.terminator.semicolon.matlab
 >                nFactorial = nFactorial * n;
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab
-#                                        ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab keyword.operator.symbols.matlab
-#                                         ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab
+#^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.while.matlab
+#                ^^^^^^^^^^ source.matlab meta.function.matlab meta.while.matlab meta.assignment.matlab
+#                          ^ source.matlab meta.function.matlab meta.while.matlab
+#                           ^ source.matlab meta.function.matlab meta.while.matlab keyword.operator.assignment.matlab
+#                            ^^^^^^^^^^^^ source.matlab meta.function.matlab meta.while.matlab
+#                                        ^ source.matlab meta.function.matlab meta.while.matlab keyword.operator.arithmetic.matlab
+#                                         ^^ source.matlab meta.function.matlab meta.while.matlab
+#                                           ^ source.matlab meta.function.matlab meta.while.matlab punctuation.terminator.semicolon.matlab
 >            end
-#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab
-#            ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab keyword.control.end.while.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab meta.while.matlab
+#            ^^^ source.matlab meta.function.matlab meta.while.matlab keyword.control.end.while.matlab
 >        end
-#^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#        ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.control.end.function.matlab
+#^^^^^^^^ source.matlab meta.function.matlab
+#        ^^^ source.matlab meta.function.matlab storage.type.function.end.matlab
 >        function r = plus(o1,o2)
-#^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#        ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.matlab
-#                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.parameter.output.function.matlab
-#                  ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                     ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab entity.name.function.matlab
-#                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
-#                          ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
-#                            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
-#                             ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab variable.parameter.input.matlab
-#                               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.arguments.function.matlab
+#^^^^^^^^ source.matlab meta.function.matlab
+#        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
+#                ^ source.matlab meta.function.matlab
+#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.matlab variable.parameter.output.matlab
+#                  ^ source.matlab meta.function.matlab meta.function.declaration.matlab
+#                   ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
+#                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
+#                     ^^^^ source.matlab meta.function.matlab meta.function.declaration.matlab entity.name.function.matlab
+#                         ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.begin.matlab
+#                          ^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab variable.parameter.input.matlab
+#                            ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.separator.parameter.comma.matlab
+#                             ^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab variable.parameter.input.matlab
+#                               ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.end.matlab
 >            r = o1.Value + o2.Value;
-#^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.operator.symbols.matlab
-#                          ^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
+#^^^^^^^^^^^^ source.matlab meta.function.matlab
+#            ^ source.matlab meta.function.matlab meta.assignment.matlab
+#             ^ source.matlab meta.function.matlab
+#              ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
+#               ^^^ source.matlab meta.function.matlab
+#                  ^ source.matlab meta.function.matlab punctuation.accessor.dot.matlab
+#                   ^^^^^^ source.matlab meta.function.matlab
+#                         ^ source.matlab meta.function.matlab keyword.operator.arithmetic.matlab
+#                          ^^^ source.matlab meta.function.matlab
+#                             ^ source.matlab meta.function.matlab punctuation.accessor.dot.matlab
+#                              ^^^^^ source.matlab meta.function.matlab
+#                                   ^ source.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
 >        end
-#^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#        ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.control.end.function.matlab
+#^^^^^^^^ source.matlab meta.function.matlab
+#        ^^^ source.matlab meta.function.matlab storage.type.function.end.matlab
 >    end
-#^^^^ source.matlab meta.class.matlab meta.methods.matlab
-#    ^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.end.methods.matlab
+#^^^^^^^^ source.matlab
 >    % Some events
-#^^^^ source.matlab meta.class.matlab punctuation.whitespace.comment.leading.matlab
-#    ^ source.matlab meta.class.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#     ^^^^^^^^^^^^ source.matlab meta.class.matlab comment.line.percentage.matlab
+#^^^^ source.matlab punctuation.whitespace.comment.leading.matlab
+#    ^ source.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#     ^^^^^^^^^^^^ source.matlab comment.line.percentage.matlab
 >    events (ListenAccess = protected) % A comment
-#^^^^ source.matlab meta.class.matlab meta.events.matlab
-#    ^^^^^^ source.matlab meta.class.matlab meta.events.matlab keyword.control.events.matlab
-#          ^^ source.matlab meta.class.matlab meta.events.matlab
-#            ^^^^^^^^^^^^ source.matlab meta.class.matlab meta.events.matlab variable.parameter.events.matlab
-#                        ^ source.matlab meta.class.matlab meta.events.matlab
-#                         ^^ source.matlab meta.class.matlab meta.events.matlab
-#                           ^^^^^^^^^ source.matlab meta.class.matlab meta.events.matlab constant.language.access.matlab
-#                                    ^^ source.matlab meta.class.matlab meta.events.matlab
-#                                      ^ source.matlab meta.class.matlab meta.events.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#                                       ^^^^^^^^^^ source.matlab meta.class.matlab meta.events.matlab comment.line.percentage.matlab
+#^^^^ source.matlab
+#    ^^^^^^ source.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#          ^ source.matlab meta.function-call.parens.matlab
+#           ^ source.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#            ^^^^^^^^^^^^ source.matlab meta.function-call.parens.matlab meta.assignment.matlab
+#                        ^ source.matlab meta.function-call.parens.matlab
+#                         ^ source.matlab meta.function-call.parens.matlab keyword.operator.assignment.matlab
+#                          ^^^^^^^^^^ source.matlab meta.function-call.parens.matlab
+#                                    ^ source.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
+#                                     ^ source.matlab
+#                                      ^ source.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#                                       ^^^^^^^^^^ source.matlab comment.line.percentage.matlab
 >        % Event comment
-#^^^^^^^^ source.matlab meta.class.matlab meta.events.matlab punctuation.whitespace.comment.leading.matlab
-#        ^ source.matlab meta.class.matlab meta.events.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#         ^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.events.matlab comment.line.percentage.matlab
+#^^^^^^^^ source.matlab punctuation.whitespace.comment.leading.matlab
+#        ^ source.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#         ^^^^^^^^^^^^^^ source.matlab comment.line.percentage.matlab
 >        StateChanged
-#^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.events.matlab
+#^^^^^^^^^^^^^^^^^^^^^ source.matlab
 >    end
-#^^^^ source.matlab meta.class.matlab meta.events.matlab
-#    ^^^ source.matlab meta.class.matlab meta.events.matlab keyword.control.end.events.matlab
+#^^^^^^^^ source.matlab
 >    % Some enumeration
-#^^^^ source.matlab meta.class.matlab punctuation.whitespace.comment.leading.matlab
-#    ^ source.matlab meta.class.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#     ^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab comment.line.percentage.matlab
+#^^^^ source.matlab punctuation.whitespace.comment.leading.matlab
+#    ^ source.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#     ^^^^^^^^^^^^^^^^^ source.matlab comment.line.percentage.matlab
 >    enumeration % A comment
-#^^^^ source.matlab meta.class.matlab meta.enumeration.matlab
-#    ^^^^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab keyword.control.enumeration.matlab
-#               ^ source.matlab meta.class.matlab meta.enumeration.matlab
-#                ^ source.matlab meta.class.matlab meta.enumeration.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#                 ^^^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab comment.line.percentage.matlab
+#^^^^^^^^^^^^^^^^ source.matlab
+#                ^ source.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#                 ^^^^^^^^^^ source.matlab comment.line.percentage.matlab
 >        No  (0)
-#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab
-#            ^ source.matlab meta.class.matlab meta.enumeration.matlab
-#             ^ source.matlab meta.class.matlab meta.enumeration.matlab constant.numeric.matlab
-#              ^ source.matlab meta.class.matlab meta.enumeration.matlab
+#^^^^^^^^ source.matlab
+#        ^^ source.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#          ^^ source.matlab meta.function-call.parens.matlab
+#            ^ source.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#             ^ source.matlab meta.function-call.parens.matlab constant.numeric.decimal.matlab
+#              ^ source.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
 >        Yes (1)
-#^^^^^^^^^^^^ source.matlab meta.class.matlab meta.enumeration.matlab
-#            ^ source.matlab meta.class.matlab meta.enumeration.matlab
-#             ^ source.matlab meta.class.matlab meta.enumeration.matlab constant.numeric.matlab
-#              ^ source.matlab meta.class.matlab meta.enumeration.matlab
+#^^^^^^^^ source.matlab
+#        ^^^ source.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#           ^ source.matlab meta.function-call.parens.matlab
+#            ^ source.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#             ^ source.matlab meta.function-call.parens.matlab constant.numeric.decimal.matlab
+#              ^ source.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
 >    end
-#^^^^ source.matlab meta.class.matlab meta.enumeration.matlab
-#    ^^^ source.matlab meta.class.matlab meta.enumeration.matlab keyword.control.end.enumeration.matlab
+#^^^^^^^^ source.matlab
 >end
-#^^^ source.matlab meta.class.matlab keyword.control.end.class.matlab
+#^^^^ source.matlab
