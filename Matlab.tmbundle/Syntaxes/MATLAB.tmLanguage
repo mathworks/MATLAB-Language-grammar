@@ -1625,7 +1625,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.globalpersistent.matlab</string>
+					<string>storage.modifier.matlab</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -1922,25 +1922,25 @@
 		</dict>
 		<key>line_continuation</key>
 		<dict>
+			<key>comment</key>
+			<string>Line continuations</string>
+			<key>name</key>
+			<string>meta.continuation.line.matlab</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator.symbols.matlab</string>
+					<string>punctuation.separator.continuation.line.matlab</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>comment.line.continuation.matlab</string>
+					<string>comment.continuation.line.matlab</string>
 				</dict>
 			</dict>
-			<key>comment</key>
-			<string>Line continuations</string>
 			<key>match</key>
 			<string>(\.\.\.)(.*)$</string>
-			<key>name</key>
-			<string>meta.linecontinuation.matlab</string>
 		</dict>
 		<key>shell_string</key>
 		<dict>
@@ -2086,35 +2086,35 @@
 		</dict>
 		<key>conjugate_transpose</key>
 		<dict>
-			<key>match</key>
-			<string>((?&lt;=[^\s])|(?&lt;=\])|(?&lt;=\))|(?&lt;=\}))'</string>
 			<key>name</key>
 			<string>keyword.operator.transpose.matlab</string>
+			<key>match</key>
+			<string>((?&lt;=[^\s])|(?&lt;=\])|(?&lt;=\))|(?&lt;=\}))'</string>
 		</dict>
 		<key>transpose</key>
 		<dict>
-			<key>match</key>
-			<string>\.'</string>
 			<key>name</key>
 			<string>keyword.operator.transpose.matlab</string>
+			<key>match</key>
+			<string>\.'</string>
 		</dict>
 		<key>constants</key>
 		<dict>
 			<key>comment</key>
-			<string>MATLAB Constants</string>
-			<key>match</key>
-			<string>(?&lt;!\.)\b(eps|false|Inf|inf|intmax|intmin|namelengthmax|NaN|nan|on|off|realmax|realmin|true|pi)\b</string>
+			<string>MATLAB constants</string>
 			<key>name</key>
 			<string>constant.language.matlab</string>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(eps|false|Inf|inf|intmax|intmin|namelengthmax|NaN|nan|NaT|nat|on|off|realmax|realmin|true|pi)\b</string>
 		</dict>
 		<key>variables</key>
 		<dict>
 			<key>comment</key>
 			<string>MATLAB variables</string>
+			<key>name</key>
+			<string>variable.language.function.matlab</string>
 			<key>match</key>
 			<string>(?&lt;!\.)\b(nargin|nargout|varargin|varargout)\b</string>
-			<key>name</key>
-			<string>variable.other.function.matlab</string>
 		</dict>
 		<key>end_in_parentheses</key>
 		<dict>
