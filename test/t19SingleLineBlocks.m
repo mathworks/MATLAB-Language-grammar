@@ -28,7 +28,6 @@ function y = t19SingleLineBlocks(x)
 %             ^^^^ keyword.control.case.matlab
 %                  ^ constant.numeric.decimal.matlab
 %                   ^ punctuation.separator.comma.matlab
-%                     ^^^^^^^ meta.function-call.parens.matlab
 %                     ^^^^ entity.name.function.matlab
 %                         ^ punctuation.section.parens.begin.matlab
 %                          ^ constant.numeric.decimal.matlab
@@ -38,18 +37,10 @@ function y = t19SingleLineBlocks(x)
 %                                   ^ constant.numeric.decimal.matlab
 %                                    ^ punctuation.separator.comma.matlab○
 %                                      ^^^^^^^ meta.function-call.parens.matlab
-%                                      ^^^^ entity.name.function.matlab
-%                                          ^ punctuation.section.parens.begin.matlab
-%                                           ^ constant.numeric.decimal.matlab
-%                                            ^ punctuation.section.parens.end.matlab
 %                                             ^ punctuation.separator.comma.matlab
 %                                               ^^^^^^^^^ keyword.control.otherwise.matlab
 %                                                        ^ punctuation.separator.comma.matlab
 %                                                          ^^^^^^^ meta.function-call.parens.matlab
-%                                                          ^^^^ entity.name.function.matlab
-%                                                              ^ punctuation.section.parens.begin.matlab
-%                                                               ^ constant.numeric.decimal.matlab
-%                                                                ^ punctuation.section.parens.end.matlab
 %                                                                 ^ punctuation.terminator.semicolon.matlab
 %                                                                   ^^^ keyword.control.end.switch.matlab
     if y > 2, exit_code = 1; else, exit_code = 0; end
@@ -69,12 +60,11 @@ function y = t19SingleLineBlocks(x)
 %                                               ^ punctuation.terminator.semicolon.matlab
 %                                                 ^^^ keyword.control.end.if.matlab
     print(["exited with code " exit_code])
-%   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call.parens.matlab
 %   ^^^^^ entity.name.function.matlab
 %        ^ punctuation.section.parens.begin.matlab
 %         ^ punctuation.section.brackets.begin.matlab
-%          ^^^^^^^^^^^^^^^^^^^ string.quoted.double.matlab
 %          ^ punctuation.definition.string.begin.matlab
+%           ^^^^^^^^^^^^^^^^^ string.quoted.double.matlab
 %                            ^ punctuation.definition.string.end.matlab
 %                                       ^ punctuation.section.brackets.end.matlab
 %                                        ^ punctuation.section.parens.end.matlab
