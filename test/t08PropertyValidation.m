@@ -24,7 +24,6 @@ classdef t08PropertyValidation
 %                      ^^^^^^^^^ comment.line.percentage.matlab
         PropSizeType (:, 3) int64; % another comment
 %                    ^ punctuation.section.parens.begin.matlab
-%                     ^^^^ meta.parens.size.matlab
 %                     ^ meta.parens.size.matlab keyword.operator.vector.colon.matlab
 %                      ^ meta.parens.size.matlab punctuation.separator.comma.matlab
 %                        ^ meta.parens.size.matlab constant.numeric.decimal.matlab
@@ -40,8 +39,8 @@ classdef t08PropertyValidation
 %                                                      ^ punctuation.section.block.end.matlab
         PropInit = "string"
 %                ^ keyword.operator.assignment.matlab
-%                  ^^^^^^^^ string.quoted.double.matlab
 %                  ^ punctuation.definition.string.begin.matlab
+%                   ^^^^^^ string.quoted.double.matlab
 %                         ^ punctuation.definition.string.end.matlab
         PropTypeInit some.type = some.type(1)
 %                    ^^^^^^^^^ storage.type.matlab
@@ -52,8 +51,8 @@ classdef t08PropertyValidation
 %                                           ^ punctuation.section.parens.end.matlab
         PropSizeInit (1,2) = 'char'
 %                     ^^^ meta.parens.size.matlab
-%                            ^^^^^^ string.quoted.single.matlab
 %                            ^ punctuation.definition.string.begin.matlab
+%                             ^^^^ string.quoted.single.matlab
 %                                 ^ punctuation.definition.string.end.matlab
         PropSizeTypeInit (:, 3, 6) int64 = rand
 %                         ^^^^^^^ meta.parens.size.matlab

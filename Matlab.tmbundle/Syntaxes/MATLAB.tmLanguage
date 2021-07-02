@@ -1677,7 +1677,7 @@
 			<key>contentName</key>
 			<string>meta.assignment.group.matlab</string>
 			<key>begin</key>
-			<string>\[(?=[^\]]+\]\s{,4}=\b)</string>
+			<string>\[(?=[^\]]+\]\s*=[a-zA-Z0-9_\s(])</string>
 			<key>end</key>
 			<string>\]</string>
 			<key>beginCaptures</key>
@@ -1771,7 +1771,7 @@
 			<key>name</key>
 			<string>meta.assignment.matlab</string>
 			<key>match</key>
-			<string>[a-zA-Z][a-zA-Z0-9_,.(){}]*(?=\s*=)</string>
+			<string>[a-zA-Z][a-zA-Z0-9_,.(){}]*(?=\s*=[a-zA-Z0-9_\s])</string>
 			<key>patterns</key>
 			<array>
 				<dict>

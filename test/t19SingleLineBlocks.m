@@ -11,14 +11,14 @@ function y = t19SingleLineBlocks(x)
         otherwise
 %       ^^^^^^^^^ keyword.control.otherwise.matlab
             if nargin == 0, return; end
-    %       ^^ keyword.control.if.matlab
-    %          ^^^^^^^ variable.language.function.matlab
-    %                  ^^ keyword.operator.logical.matlab
-    %                     ^ constant.numeric.decimal.matlab
-    %                      ^ punctuation.separator.comma.matlab
-    %                        ^^^^^^ keyword.control.flow.matlab
-    %                              ^ punctuation.terminator.semicolon.matlab
-    %                                ^^^ keyword.control.end.if.matlab
+%           ^^ keyword.control.if.matlab
+%              ^^^^^^ variable.language.function.matlab
+%                     ^^ keyword.operator.logical.matlab
+%                        ^ constant.numeric.decimal.matlab
+%                         ^ punctuation.separator.comma.matlab
+%                           ^^^^^^ keyword.control.flow.matlab
+%                                 ^ punctuation.terminator.semicolon.matlab
+%                                   ^^^ keyword.control.end.if.matlab
             y = 0;
     end
     switch x, case 1, disp(1), case 2, disp(2), otherwise, disp(0); end
@@ -35,7 +35,7 @@ function y = t19SingleLineBlocks(x)
 %                            ^ punctuation.separator.comma.matlab
 %                              ^^^^ keyword.control.case.matlab
 %                                   ^ constant.numeric.decimal.matlab
-%                                    ^ punctuation.separator.comma.matlab○
+%                                    ^ punctuation.separator.comma.matlab
 %                                      ^^^^^^^ meta.function-call.parens.matlab
 %                                             ^ punctuation.separator.comma.matlab
 %                                               ^^^^^^^^^ keyword.control.otherwise.matlab
@@ -87,5 +87,5 @@ function y = t19SingleLineBlocks(x)
 %                                                                     ^ punctuation.section.parens.begin.matlab
 %                                                                                                  ^ punctuation.section.parens.end.matlab
 %                                                                                                   ^ punctuation.terminator.semicolon.matlab
-%                                                                                                     ^^^ keyword.control.end.try.matlab○
+%                                                                                                     ^^^ keyword.control.end.try.matlab
 end
