@@ -1587,6 +1587,15 @@
 				<dict>
 					<key>name</key>
 					<string>entity.name.function.matlab</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>comment</key>
+							<string>Embed MATLAB into function calls to allow keyword grammar injection.</string>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
 				</dict>
 				<key>2</key>
 				<dict>
