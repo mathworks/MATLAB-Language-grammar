@@ -75,7 +75,7 @@
 #^^^^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab
 #            ^^ source.matlab meta.function.matlab meta.if.matlab keyword.control.if.matlab
 #              ^ source.matlab meta.function.matlab meta.if.matlab
-#               ^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.assignment.matlab
+#               ^^^^^^ source.matlab meta.function.matlab meta.if.matlab variable.language.function.matlab
 #                     ^ source.matlab meta.function.matlab meta.if.matlab
 #                      ^^ source.matlab meta.function.matlab meta.if.matlab keyword.operator.logical.matlab
 #                        ^ source.matlab meta.function.matlab meta.if.matlab
