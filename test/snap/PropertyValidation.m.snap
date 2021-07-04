@@ -28,136 +28,136 @@
 #        ^ source.matlab meta.class.matlab meta.properties.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
 #         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab comment.line.percentage.matlab
 >        Prop % comment
-#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#        ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab variable.object.property.matlab
-#            ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#             ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#              ^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab comment.line.percentage.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#        ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
+#            ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#             ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#              ^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab comment.line.percentage.matlab
 >        PropType some.type
-#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#        ^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab variable.object.property.matlab
-#                ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                 ^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab storage.type.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#        ^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
+#                ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                 ^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab storage.type.matlab
 >        PropSize (1,2) % comment
-#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#        ^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab variable.object.property.matlab
-#                ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.parens.begin.matlab
-#                  ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
-#                   ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
-#                    ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
-#                     ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.parens.end.matlab
-#                      ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                       ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#                        ^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab comment.line.percentage.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#        ^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
+#                ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.begin.matlab
+#                  ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
+#                   ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
+#                    ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
+#                     ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.end.matlab
+#                      ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                       ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#                        ^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab comment.line.percentage.matlab
 >        PropSizeType (:, 3) int64; % another comment
-#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#        ^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab variable.object.property.matlab
-#                    ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                     ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.parens.begin.matlab
-#                      ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab keyword.operator.vector.colon.matlab
-#                       ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
-#                        ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab
-#                         ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
-#                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.parens.end.matlab
-#                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                            ^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab storage.type.matlab
-#                                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.terminator.semicolon.matlab
-#                                  ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                                   ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#                                    ^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab comment.line.percentage.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#        ^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
+#                    ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                     ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.begin.matlab
+#                      ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab keyword.operator.vector.colon.matlab
+#                       ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
+#                        ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab
+#                         ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
+#                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.end.matlab
+#                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                            ^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab storage.type.matlab
+#                                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.terminator.semicolon.matlab
+#                                  ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                   ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#                                    ^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab comment.line.percentage.matlab
 >        PropSizeTypeFcn  (:, 3) foo.bar.baz {mustBeReal}
-#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#        ^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab variable.object.property.matlab
-#                       ^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                         ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.parens.begin.matlab
-#                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab keyword.operator.vector.colon.matlab
-#                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
-#                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab
-#                             ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
-#                              ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.parens.end.matlab
-#                               ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                                ^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab storage.type.matlab
-#                                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.block.begin.matlab
-#                                             ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.block.validation.matlab
-#                                                       ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.block.end.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#        ^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
+#                       ^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                         ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.begin.matlab
+#                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab keyword.operator.vector.colon.matlab
+#                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
+#                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab
+#                             ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
+#                              ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.end.matlab
+#                               ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                ^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab storage.type.matlab
+#                                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.block.begin.matlab
+#                                             ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                                                       ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.block.end.matlab
 >        PropInit = "string"
-#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#        ^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab variable.object.property.matlab
-#                ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab keyword.operator.assignment.matlab
-#                  ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                   ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab string.quoted.double.matlab punctuation.definition.string.begin.matlab
-#                    ^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab string.quoted.double.matlab
-#                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab string.quoted.double.matlab punctuation.definition.string.end.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#        ^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
+#                ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab keyword.operator.assignment.matlab
+#                  ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                   ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab string.quoted.double.matlab punctuation.definition.string.begin.matlab
+#                    ^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab string.quoted.double.matlab
+#                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab string.quoted.double.matlab punctuation.definition.string.end.matlab
 >        PropTypeInit some.type = some.type(1)
-#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#        ^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab variable.object.property.matlab
-#                    ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                     ^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab storage.type.matlab
-#                              ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                               ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab keyword.operator.assignment.matlab
-#                                ^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                                     ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.accessor.dot.matlab
-#                                      ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.function-call.parens.matlab entity.name.function.matlab
-#                                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
-#                                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.function-call.parens.matlab constant.numeric.decimal.matlab
-#                                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#        ^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
+#                    ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                     ^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab storage.type.matlab
+#                              ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                               ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab keyword.operator.assignment.matlab
+#                                ^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                     ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.accessor.dot.matlab
+#                                      ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#                                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#                                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.function-call.parens.matlab constant.numeric.decimal.matlab
+#                                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
 >        PropSizeInit (1,2) = 'char'
-#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#        ^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab variable.object.property.matlab
-#                    ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                     ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.parens.begin.matlab
-#                      ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
-#                       ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
-#                        ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
-#                         ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.parens.end.matlab
-#                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab keyword.operator.assignment.matlab
-#                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                             ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
-#                              ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab string.quoted.single.matlab
-#                                  ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#        ^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
+#                    ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                     ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.begin.matlab
+#                      ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
+#                       ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
+#                        ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
+#                         ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.end.matlab
+#                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab keyword.operator.assignment.matlab
+#                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                             ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#                              ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab string.quoted.single.matlab
+#                                  ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
 >        PropSizeTypeInit (:, 3, 6) int64 = rand
-#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#        ^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab variable.object.property.matlab
-#                        ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                         ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.parens.begin.matlab
-#                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab keyword.operator.vector.colon.matlab
-#                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
-#                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab
-#                             ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
-#                              ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
-#                               ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab
-#                                ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
-#                                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.parens.end.matlab
-#                                  ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                                   ^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab storage.type.matlab
-#                                        ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                                         ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab keyword.operator.assignment.matlab
-#                                          ^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#        ^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
+#                        ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                         ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.begin.matlab
+#                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab keyword.operator.vector.colon.matlab
+#                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
+#                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab
+#                             ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
+#                              ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
+#                               ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab
+#                                ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
+#                                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.end.matlab
+#                                  ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                   ^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab storage.type.matlab
+#                                        ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                         ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab keyword.operator.assignment.matlab
+#                                          ^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
 >        PropSizeTypeFcnInit  (:, 3) foo.bar.baz {mustBeReal} = pi;
-#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#        ^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab variable.object.property.matlab
-#                           ^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                             ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.parens.begin.matlab
-#                              ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab keyword.operator.vector.colon.matlab
-#                               ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
-#                                ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab
-#                                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
-#                                  ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.parens.end.matlab
-#                                   ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                                    ^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab storage.type.matlab
-#                                               ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                                                ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.block.begin.matlab
-#                                                 ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab meta.block.validation.matlab
-#                                                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.section.block.end.matlab
-#                                                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                                                             ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab keyword.operator.assignment.matlab
-#                                                              ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab
-#                                                               ^^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab constant.language.matlab
-#                                                                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.definition.property.assignment.matlab punctuation.terminator.semicolon.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#        ^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
+#                           ^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                             ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.begin.matlab
+#                              ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab keyword.operator.vector.colon.matlab
+#                               ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab punctuation.separator.comma.matlab
+#                                ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab
+#                                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.size.matlab constant.numeric.decimal.matlab
+#                                  ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.end.matlab
+#                                   ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                    ^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab storage.type.matlab
+#                                               ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                                ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.block.begin.matlab
+#                                                 ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                                                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.block.end.matlab
+#                                                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                                             ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab keyword.operator.assignment.matlab
+#                                                              ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                                               ^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab constant.language.matlab
+#                                                                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.terminator.semicolon.matlab
 >        % Ending commentary
 #^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab punctuation.whitespace.comment.leading.matlab
 #        ^ source.matlab meta.class.matlab meta.properties.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab

@@ -13,8 +13,8 @@
 #        ^ source.matlab meta.class.matlab meta.enum.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
 #         ^^^^^^^^^ source.matlab meta.class.matlab meta.enum.matlab comment.line.percentage.matlab
 >        One (1); % Line comments
-#^^^^^^^^ source.matlab meta.class.matlab meta.enum.matlab
-#        ^^^ source.matlab meta.class.matlab meta.enum.matlab variable.other.enummember.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.enum.matlab meta.assignment.definition.enummember.matlab
+#        ^^^ source.matlab meta.class.matlab meta.enum.matlab meta.assignment.definition.enummember.matlab variable.other.enummember.matlab
 #           ^ source.matlab meta.class.matlab meta.enum.matlab
 #            ^ source.matlab meta.class.matlab meta.enum.matlab punctuation.section.parens.begin.matlab
 #             ^ source.matlab meta.class.matlab meta.enum.matlab meta.parens.matlab constant.numeric.decimal.matlab
@@ -23,15 +23,15 @@
 #                 ^ source.matlab meta.class.matlab meta.enum.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
 #                  ^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.enum.matlab comment.line.percentage.matlab
 >        Two (2)
-#^^^^^^^^ source.matlab meta.class.matlab meta.enum.matlab
-#        ^^^ source.matlab meta.class.matlab meta.enum.matlab variable.other.enummember.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.enum.matlab meta.assignment.definition.enummember.matlab
+#        ^^^ source.matlab meta.class.matlab meta.enum.matlab meta.assignment.definition.enummember.matlab variable.other.enummember.matlab
 #           ^ source.matlab meta.class.matlab meta.enum.matlab
 #            ^ source.matlab meta.class.matlab meta.enum.matlab punctuation.section.parens.begin.matlab
 #             ^ source.matlab meta.class.matlab meta.enum.matlab meta.parens.matlab constant.numeric.decimal.matlab
 #              ^ source.matlab meta.class.matlab meta.enum.matlab punctuation.section.parens.end.matlab
 >        Ten (10)
-#^^^^^^^^ source.matlab meta.class.matlab meta.enum.matlab
-#        ^^^ source.matlab meta.class.matlab meta.enum.matlab variable.other.enummember.matlab
+#^^^^^^^^ source.matlab meta.class.matlab meta.enum.matlab meta.assignment.definition.enummember.matlab
+#        ^^^ source.matlab meta.class.matlab meta.enum.matlab meta.assignment.definition.enummember.matlab variable.other.enummember.matlab
 #           ^ source.matlab meta.class.matlab meta.enum.matlab
 #            ^ source.matlab meta.class.matlab meta.enum.matlab punctuation.section.parens.begin.matlab
 #             ^^ source.matlab meta.class.matlab meta.enum.matlab meta.parens.matlab constant.numeric.decimal.matlab
