@@ -1029,9 +1029,17 @@
 							<array>
 								<dict>
 									<key>name</key>
-									<string>entity.name.type.event.matlab</string>
+									<string>meta.assignment.definition.event.matlab</string>
 									<key>match</key>
-									<string>(?&lt;=^\s*|,\s*)[a-zA-Z0-9_]+</string>
+									<string>(?:^\s*|,\s*)([a-zA-Z0-9_]+)</string>
+									<key>captures</key>
+									<dict>
+										<key>1</key>
+										<dict>
+											<key>name</key>
+											<string>entity.name.type.event.matlab</string>
+										</dict>
+									</dict>
 								</dict>
 								<dict>
 									<key>include</key>
@@ -1070,9 +1078,17 @@
 							<array>
 								<dict>
 									<key>name</key>
-									<string>variable.other.enummember.matlab</string>
+									<string>meta.assignment.definition.enummember.matlab</string>
 									<key>match</key>
-									<string>(?&lt;=^\s*|,\s*)[a-zA-Z0-9_]+</string>
+									<string>(?:^\s*|,\s*)([a-zA-Z0-9_]+)</string>
+									<key>captures</key>
+									<dict>
+										<key>1</key>
+										<dict>
+											<key>name</key>
+											<string>variable.other.enummember.matlab</string>
+										</dict>
+									</dict>
 								</dict>
 								<dict>
 									<key>name</key>
@@ -2291,7 +2307,7 @@
 			<key>comment</key>
 			<string>Property and argument validation. Match an identifier allowing . and ?.</string>
 			<key>name</key>
-			<string>meta.definition.property.assignment.matlab</string>
+			<string>meta.assignment.definition.property.matlab</string>
 			<key>begin</key>
 			<string>\s*[;]?\s*([a-zA-Z][a-zA-Z0-9_\.\?]*)</string>
 			<key>beginCaptures</key>
