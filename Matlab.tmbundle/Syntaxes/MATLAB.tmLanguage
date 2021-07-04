@@ -1360,7 +1360,7 @@
 									<key>comment</key>
 									<string>Function output</string>
 									<key>contentName</key>
-									<string>meta.assignment.matlab</string>
+									<string>meta.assignment.variable.matlab</string>
 									<key>begin</key>
 									<string>\G(?=.*?=)</string>
 									<key>end</key>
@@ -1700,7 +1700,7 @@
 				We don't include $self here to avoid matching command syntax inside (), [], {}
 			</string>
 			<key>contentName</key>
-			<string>meta.assignment.group.matlab</string>
+			<string>meta.assignment.variable.group.matlab</string>
 			<key>begin</key>
 			<string>\[(?=[^\]]+\]\s*=[a-zA-Z0-9_\s(])</string>
 			<key>end</key>
@@ -1794,7 +1794,7 @@
 				We don't include $self here to avoid matching command syntax inside (), [], {}
 			</string>
 			<key>name</key>
-			<string>meta.assignment.matlab</string>
+			<string>meta.assignment.variable.single.matlab</string>
 			<key>match</key>
 			<string>[a-zA-Z][a-zA-Z0-9_,.(){}]*(?=\s*=[a-zA-Z0-9_\s])</string>
 			<key>patterns</key>

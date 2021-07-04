@@ -41,7 +41,7 @@
 #^^^^^^^^ source.matlab meta.function.matlab
 #        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
 #                ^ source.matlab meta.function.matlab
-#                 ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.matlab variable.parameter.output.matlab
+#                 ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.matlab variable.parameter.output.matlab
 #                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
 #                     ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
 #                      ^ source.matlab meta.function.matlab meta.function.declaration.matlab
@@ -51,7 +51,7 @@
 #                                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.end.matlab
 >            obj.Value = value;
 #^^^^^^^^^^^^ source.matlab meta.function.matlab
-#            ^^^^^^^^^ source.matlab meta.function.matlab meta.assignment.matlab
+#            ^^^^^^^^^ source.matlab meta.function.matlab meta.assignment.variable.single.matlab
 #                     ^ source.matlab meta.function.matlab
 #                      ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
 #                       ^^^^^^ source.matlab meta.function.matlab
@@ -63,7 +63,7 @@
 #^^^^^^^^ source.matlab meta.function.matlab
 #        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
 #                ^ source.matlab meta.function.matlab
-#                 ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.matlab variable.parameter.output.matlab
+#                 ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.matlab variable.parameter.output.matlab
 #                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
 #                     ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
 #                      ^ source.matlab meta.function.matlab meta.function.declaration.matlab
@@ -90,7 +90,7 @@
 #                                ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
 >                    obj.Value = val;
 #^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab
-#                    ^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.assignment.matlab
+#                    ^^^^^^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.assignment.variable.single.matlab
 #                             ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab
 #                              ^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab keyword.operator.assignment.matlab
 #                               ^^^^ source.matlab meta.function.matlab meta.if.matlab meta.if.matlab
@@ -119,7 +119,7 @@
 #^^^^^^^^ source.matlab meta.function.matlab
 #        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
 #                ^ source.matlab meta.function.matlab
-#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.matlab variable.parameter.output.matlab
+#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.matlab variable.parameter.output.matlab
 #                  ^ source.matlab meta.function.matlab meta.function.declaration.matlab
 #                   ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
 #                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
@@ -129,7 +129,7 @@
 #                                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.end.matlab
 >            r = round([obj.Value],2);
 #^^^^^^^^^^^^ source.matlab meta.function.matlab
-#            ^ source.matlab meta.function.matlab meta.assignment.matlab
+#            ^ source.matlab meta.function.matlab meta.assignment.variable.single.matlab
 #             ^ source.matlab meta.function.matlab
 #              ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
 #               ^ source.matlab meta.function.matlab
@@ -146,7 +146,7 @@
 #                                    ^ source.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
 >            A = zeros(5,100);
 #^^^^^^^^^^^^ source.matlab meta.function.matlab
-#            ^ source.matlab meta.function.matlab meta.assignment.matlab
+#            ^ source.matlab meta.function.matlab meta.assignment.variable.single.matlab
 #             ^ source.matlab meta.function.matlab
 #              ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
 #               ^ source.matlab meta.function.matlab
@@ -161,7 +161,7 @@
 #^^^^^^^^^^^^ source.matlab meta.function.matlab meta.for.matlab
 #            ^^^ source.matlab meta.function.matlab meta.for.matlab keyword.control.for.matlab
 #               ^ source.matlab meta.function.matlab meta.for.matlab
-#                ^ source.matlab meta.function.matlab meta.for.matlab meta.assignment.matlab
+#                ^ source.matlab meta.function.matlab meta.for.matlab meta.assignment.variable.single.matlab
 #                 ^ source.matlab meta.function.matlab meta.for.matlab
 #                  ^ source.matlab meta.function.matlab meta.for.matlab keyword.operator.assignment.matlab
 #                   ^ source.matlab meta.function.matlab meta.for.matlab
@@ -172,7 +172,7 @@
 #^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab
 #                ^^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab keyword.control.for.matlab
 #                   ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab
-#                    ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.assignment.matlab
+#                    ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.assignment.variable.single.matlab
 #                     ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab
 #                      ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab keyword.operator.assignment.matlab
 #                       ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab
@@ -186,7 +186,7 @@
 #                      ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab
 #                       ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab punctuation.separator.comma.matlab
 #                        ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab
-#                         ^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab meta.assignment.matlab
+#                         ^^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab meta.assignment.variable.single.matlab
 #                           ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab
 #                            ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab keyword.operator.assignment.matlab
 #                             ^ source.matlab meta.function.matlab meta.for.matlab meta.for.matlab meta.function-call.parens.matlab
@@ -214,7 +214,7 @@
 #^^^^^^^^ source.matlab meta.function.matlab
 #        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
 #                ^ source.matlab meta.function.matlab
-#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.matlab variable.parameter.output.matlab
+#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.matlab variable.parameter.output.matlab
 #                  ^ source.matlab meta.function.matlab meta.function.declaration.matlab
 #                   ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
 #                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
@@ -226,7 +226,7 @@
 #                                     ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.end.matlab
 >            r = [obj.Value( end ) ]* n;
 #^^^^^^^^^^^^ source.matlab meta.function.matlab
-#            ^ source.matlab meta.function.matlab meta.assignment.matlab
+#            ^ source.matlab meta.function.matlab meta.assignment.variable.single.matlab
 #             ^ source.matlab meta.function.matlab
 #              ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
 #               ^ source.matlab meta.function.matlab
@@ -245,7 +245,7 @@
 #                                      ^ source.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
 >            n = 1;
 #^^^^^^^^^^^^ source.matlab meta.function.matlab
-#            ^ source.matlab meta.function.matlab meta.assignment.matlab
+#            ^ source.matlab meta.function.matlab meta.assignment.variable.single.matlab
 #             ^ source.matlab meta.function.matlab
 #              ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
 #               ^ source.matlab meta.function.matlab
@@ -253,7 +253,7 @@
 #                 ^ source.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
 >            nFactorial = 1;
 #^^^^^^^^^^^^ source.matlab meta.function.matlab
-#            ^^^^^^^^^^ source.matlab meta.function.matlab meta.assignment.matlab
+#            ^^^^^^^^^^ source.matlab meta.function.matlab meta.assignment.variable.single.matlab
 #                      ^ source.matlab meta.function.matlab
 #                       ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
 #                        ^ source.matlab meta.function.matlab
@@ -268,7 +268,7 @@
 #                               ^^^^^ source.matlab meta.function.matlab meta.while.matlab constant.numeric.decimal.matlab
 >                n = n + 1;
 #^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.while.matlab
-#                ^ source.matlab meta.function.matlab meta.while.matlab meta.assignment.matlab
+#                ^ source.matlab meta.function.matlab meta.while.matlab meta.assignment.variable.single.matlab
 #                 ^ source.matlab meta.function.matlab meta.while.matlab
 #                  ^ source.matlab meta.function.matlab meta.while.matlab keyword.operator.assignment.matlab
 #                   ^^^ source.matlab meta.function.matlab meta.while.matlab
@@ -278,7 +278,7 @@
 #                         ^ source.matlab meta.function.matlab meta.while.matlab punctuation.terminator.semicolon.matlab
 >                nFactorial = nFactorial * n;
 #^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.while.matlab
-#                ^^^^^^^^^^ source.matlab meta.function.matlab meta.while.matlab meta.assignment.matlab
+#                ^^^^^^^^^^ source.matlab meta.function.matlab meta.while.matlab meta.assignment.variable.single.matlab
 #                          ^ source.matlab meta.function.matlab meta.while.matlab
 #                           ^ source.matlab meta.function.matlab meta.while.matlab keyword.operator.assignment.matlab
 #                            ^^^^^^^^^^^^ source.matlab meta.function.matlab meta.while.matlab
@@ -295,7 +295,7 @@
 #^^^^^^^^ source.matlab meta.function.matlab
 #        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
 #                ^ source.matlab meta.function.matlab
-#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.matlab variable.parameter.output.matlab
+#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.matlab variable.parameter.output.matlab
 #                  ^ source.matlab meta.function.matlab meta.function.declaration.matlab
 #                   ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
 #                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
@@ -307,7 +307,7 @@
 #                               ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.end.matlab
 >            r = o1.Value + o2.Value;
 #^^^^^^^^^^^^ source.matlab meta.function.matlab
-#            ^ source.matlab meta.function.matlab meta.assignment.matlab
+#            ^ source.matlab meta.function.matlab meta.assignment.variable.single.matlab
 #             ^ source.matlab meta.function.matlab
 #              ^ source.matlab meta.function.matlab keyword.operator.assignment.matlab
 #               ^^^ source.matlab meta.function.matlab
@@ -332,7 +332,7 @@
 #    ^^^^^^ source.matlab meta.function-call.parens.matlab entity.name.function.matlab
 #          ^ source.matlab meta.function-call.parens.matlab
 #           ^ source.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
-#            ^^^^^^^^^^^^ source.matlab meta.function-call.parens.matlab meta.assignment.matlab
+#            ^^^^^^^^^^^^ source.matlab meta.function-call.parens.matlab meta.assignment.variable.single.matlab
 #                        ^ source.matlab meta.function-call.parens.matlab
 #                         ^ source.matlab meta.function-call.parens.matlab keyword.operator.assignment.matlab
 #                          ^^^^^^^^^^ source.matlab meta.function-call.parens.matlab

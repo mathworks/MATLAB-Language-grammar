@@ -48,13 +48,13 @@ function y = t19SingleLineBlocks(x)
 %        ^ keyword.operator.relational.matlab
 %          ^ constant.numeric.decimal.matlab
 %           ^ punctuation.separator.comma.matlab
-%             ^^^^^^^^^ meta.assignment.matlab
+%             ^^^^^^^^^ meta.assignment.variable.single.matlab
 %                       ^ keyword.operator.assignment.matlab
 %                         ^ constant.numeric.decimal.matlab
 %                          ^ punctuation.terminator.semicolon.matlab
 %                            ^^^^ keyword.control.else.matlab
 %                                ^ punctuation.separator.comma.matlab
-%                                  ^^^^^^^^^ meta.assignment.matlab
+%                                  ^^^^^^^^^ meta.assignment.variable.single.matlab
 %                                            ^ keyword.operator.assignment.matlab
 %                                              ^ constant.numeric.decimal.matlab
 %                                               ^ punctuation.terminator.semicolon.matlab

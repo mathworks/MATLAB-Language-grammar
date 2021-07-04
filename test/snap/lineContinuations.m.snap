@@ -1,5 +1,5 @@
 >vector = [ ... comment
-#^^^^^^ source.matlab meta.assignment.matlab
+#^^^^^^ source.matlab meta.assignment.variable.single.matlab
 #      ^ source.matlab
 #       ^ source.matlab keyword.operator.assignment.matlab
 #        ^ source.matlab
@@ -30,7 +30,7 @@
 #     ^ source.matlab punctuation.terminator.semicolon.matlab
 >
 >cellvector = { ... comment
-#^^^^^^^^^^ source.matlab meta.assignment.matlab
+#^^^^^^^^^^ source.matlab meta.assignment.variable.single.matlab
 #          ^ source.matlab
 #           ^ source.matlab keyword.operator.assignment.matlab
 #            ^ source.matlab
@@ -61,7 +61,7 @@
 #     ^ source.matlab punctuation.terminator.semicolon.matlab
 >
 >output = foo( ...
-#^^^^^^ source.matlab meta.assignment.matlab
+#^^^^^^ source.matlab meta.assignment.variable.single.matlab
 #      ^ source.matlab
 #       ^ source.matlab keyword.operator.assignment.matlab
 #        ^ source.matlab

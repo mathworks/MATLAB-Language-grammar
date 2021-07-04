@@ -1,7 +1,7 @@
 >function y = controlFlow(varargin)
 #^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
 #        ^ source.matlab meta.function.matlab
-#         ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.matlab variable.parameter.output.matlab
+#         ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.matlab variable.parameter.output.matlab
 #          ^ source.matlab meta.function.matlab meta.function.declaration.matlab
 #           ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
 #            ^ source.matlab meta.function.matlab meta.function.declaration.matlab
@@ -32,7 +32,7 @@
 #       ^ source.matlab meta.function.matlab meta.switch.matlab constant.numeric.decimal.matlab
 >    y = varargin{1};
 #^^^^ source.matlab meta.function.matlab meta.switch.matlab
-#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.assignment.matlab
+#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.assignment.variable.single.matlab
 #     ^ source.matlab meta.function.matlab meta.switch.matlab
 #      ^ source.matlab meta.function.matlab meta.switch.matlab keyword.operator.assignment.matlab
 #       ^ source.matlab meta.function.matlab meta.switch.matlab
@@ -70,7 +70,7 @@
 #       ^ source.matlab meta.function.matlab meta.switch.matlab constant.numeric.decimal.matlab
 >    y = varargin{1} + varargin{2};
 #^^^^ source.matlab meta.function.matlab meta.switch.matlab
-#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.assignment.matlab
+#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.assignment.variable.single.matlab
 #     ^ source.matlab meta.function.matlab meta.switch.matlab
 #      ^ source.matlab meta.function.matlab meta.switch.matlab keyword.operator.assignment.matlab
 #       ^ source.matlab meta.function.matlab meta.switch.matlab
