@@ -59,7 +59,7 @@ classdef t08PropertyValidation
 %                                  ^^^^^ storage.type.matlab
         PropSizeTypeFcnInit  (:, 3) foo.bar.baz {mustBeReal} = pi;
 %                                                            ^ keyword.operator.assignment.matlab
-%                                                              ^^ constant.language.matlab
+%                                                              ^^ constant.numeric.matlab
 %                                                                ^ punctuation.terminator.semicolon.matlab
         % Ending commentary
     end

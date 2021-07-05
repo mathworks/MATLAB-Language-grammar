@@ -156,7 +156,7 @@
 #                                                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
 #                                                             ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab keyword.operator.assignment.matlab
 #                                                              ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
-#                                                               ^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab constant.language.matlab
+#                                                               ^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab constant.numeric.matlab
 #                                                                 ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.terminator.semicolon.matlab
 >        % Ending commentary
 #^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab punctuation.whitespace.comment.leading.matlab

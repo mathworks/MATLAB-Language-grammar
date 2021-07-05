@@ -30,7 +30,7 @@
 #       ^ source.matlab
 #        ^ source.matlab keyword.operator.assignment.matlab
 #         ^ source.matlab
-#          ^^ source.matlab constant.language.matlab
+#          ^^ source.matlab constant.numeric.matlab
 >   end
 #^^^^^^^ source.matlab
 >   properties (Dependent) % A comment
