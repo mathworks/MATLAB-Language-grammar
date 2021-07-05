@@ -2127,10 +2127,33 @@
 		<dict>
 			<key>comment</key>
 			<string>MATLAB constants</string>
-			<key>name</key>
-			<string>constant.language.matlab</string>
-			<key>match</key>
-			<string>(?&lt;!\.)\b(eps|false|Inf|inf|intmax|intmin|namelengthmax|NaN|nan|NaT|nat|on|off|realmax|realmin|true|pi)\b</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>comment</key>
+					<string>Numeric constants</string>
+					<key>name</key>
+					<string>constant.numeric.matlab</string>
+					<key>match</key>
+					<string>(?&lt;!\.)\b(eps|Inf|inf|intmax|intmin|namelengthmax|realmax|realmin|pi)\b</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Value representations</string>
+					<key>name</key>
+					<string>constant.language.nan.matlab</string>
+					<key>match</key>
+					<string>(?&lt;!\.)\b(NaN|nan|NaT|nat)\b</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Boolean constants</string>
+					<key>name</key>
+					<string>constant.language.boolean.matlab</string>
+					<key>match</key>
+					<string>(?&lt;!\.)\b(on|off|false|true)\b</string>
+				</dict>
+			</array>
 		</dict>
 		<key>variables</key>
 		<dict>
