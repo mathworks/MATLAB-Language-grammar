@@ -1360,7 +1360,7 @@
 									<key>comment</key>
 									<string>Function output</string>
 									<key>contentName</key>
-									<string>meta.assignment.variable.matlab</string>
+									<string>meta.assignment.variable.output.matlab</string>
 									<key>begin</key>
 									<string>\G(?=.*?=)</string>
 									<key>end</key>
