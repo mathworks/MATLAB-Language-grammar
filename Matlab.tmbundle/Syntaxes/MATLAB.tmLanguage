@@ -874,7 +874,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.end.properties.matlab</string>
+									<string>keyword.control.properties.end.matlab</string>
 								</dict>
 							</dict>
 							<key>patterns</key>
@@ -950,7 +950,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.end.methods.matlab</string>
+									<string>keyword.control.methods.end.matlab</string>
 								</dict>
 							</dict>
 							<key>patterns</key>
@@ -1022,7 +1022,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.end.events.matlab</string>
+									<string>keyword.control.events.end.matlab</string>
 								</dict>
 							</dict>
 							<key>patterns</key>
@@ -1071,7 +1071,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.end.enum.matlab</string>
+									<string>keyword.control.enum.end.matlab</string>
 								</dict>
 							</dict>
 							<key>patterns</key>
@@ -1549,7 +1549,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.end.arguments.matlab</string>
+									<string>keyword.control.arguments.end.matlab</string>
 								</dict>
 							</dict>
 							<key>patterns</key>

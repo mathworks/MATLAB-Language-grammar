@@ -41,7 +41,7 @@
 #^^^^^^^^ source.matlab meta.function.matlab
 #        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
 #                ^ source.matlab meta.function.matlab
-#                 ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.matlab variable.parameter.output.matlab
+#                 ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.output.matlab variable.parameter.output.matlab
 #                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
 #                     ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
 #                      ^ source.matlab meta.function.matlab meta.function.declaration.matlab
@@ -63,7 +63,7 @@
 #^^^^^^^^ source.matlab meta.function.matlab
 #        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
 #                ^ source.matlab meta.function.matlab
-#                 ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.matlab variable.parameter.output.matlab
+#                 ^^^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.output.matlab variable.parameter.output.matlab
 #                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
 #                     ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
 #                      ^ source.matlab meta.function.matlab meta.function.declaration.matlab
@@ -119,7 +119,7 @@
 #^^^^^^^^ source.matlab meta.function.matlab
 #        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
 #                ^ source.matlab meta.function.matlab
-#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.matlab variable.parameter.output.matlab
+#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.output.matlab variable.parameter.output.matlab
 #                  ^ source.matlab meta.function.matlab meta.function.declaration.matlab
 #                   ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
 #                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
@@ -214,7 +214,7 @@
 #^^^^^^^^ source.matlab meta.function.matlab
 #        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
 #                ^ source.matlab meta.function.matlab
-#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.matlab variable.parameter.output.matlab
+#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.output.matlab variable.parameter.output.matlab
 #                  ^ source.matlab meta.function.matlab meta.function.declaration.matlab
 #                   ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
 #                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab
@@ -295,7 +295,7 @@
 #^^^^^^^^ source.matlab meta.function.matlab
 #        ^^^^^^^^ source.matlab meta.function.matlab storage.type.function.matlab
 #                ^ source.matlab meta.function.matlab
-#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.matlab variable.parameter.output.matlab
+#                 ^ source.matlab meta.function.matlab meta.function.declaration.matlab meta.assignment.variable.output.matlab variable.parameter.output.matlab
 #                  ^ source.matlab meta.function.matlab meta.function.declaration.matlab
 #                   ^ source.matlab meta.function.matlab meta.function.declaration.matlab keyword.operator.assignment.matlab
 #                    ^ source.matlab meta.function.matlab meta.function.declaration.matlab

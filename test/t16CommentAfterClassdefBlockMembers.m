@@ -9,23 +9,23 @@ classdef t16CommentAfterClassdefBlockMembers < handle
         end
 %       ^^^ storage.type.function.end.matlab
     end
-%   ^^^ keyword.control.end.methods.matlab
+%   ^^^ keyword.control.methods.end.matlab
     events
         AnEvent % comment
 %       ^^^^^^^ entity.name.type.event.matlab
 %               ^^^^^^^^^ comment.line.percentage.matlab
     end
-%   ^^^ keyword.control.end.events.matlab
+%   ^^^ keyword.control.events.end.matlab
     properties
         SomeProperty % comment
 %       ^^^^^^^^^^^^ variable.object.property.matlab
 %                    ^^^^^^^^^ comment.line.percentage.matlab
     end
-%   ^^^ keyword.control.end.properties.matlab
+%   ^^^ keyword.control.properties.end.matlab
     enumeration
         EnumValue % comment
 %       ^^^^^^^^^ variable.other.enummember.matlab
 %                 ^^^^^^^^^ comment.line.percentage.matlab
     end
-%   ^^^ keyword.control.end.enum.matlab
+%   ^^^ keyword.control.enum.end.matlab
 end
