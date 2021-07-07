@@ -1,74 +1,85 @@
 >vector = [ ... comment
-#^^^^^^^^^ source.matlab
-#         ^ source.matlab
-#          ^ source.matlab
-#           ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
-#              ^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+#^^^^^^ source.matlab meta.assignment.variable.single.matlab
+#      ^ source.matlab
+#       ^ source.matlab keyword.operator.assignment.matlab
+#        ^ source.matlab
+#         ^ source.matlab punctuation.section.brackets.begin.matlab
+#          ^ source.matlab meta.brackets.matlab
+#           ^^^ source.matlab meta.brackets.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
+#              ^^^^^^^^ source.matlab meta.brackets.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >    1 ... commentary
-#^^^^ source.matlab
-#    ^ source.matlab constant.numeric.matlab
-#     ^ source.matlab
-#      ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
-#         ^^^^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+#^^^^ source.matlab meta.brackets.matlab
+#    ^ source.matlab meta.brackets.matlab constant.numeric.decimal.matlab
+#     ^ source.matlab meta.brackets.matlab
+#      ^^^ source.matlab meta.brackets.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
+#         ^^^^^^^^^^^ source.matlab meta.brackets.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >    2 ...
-#^^^^ source.matlab
-#    ^ source.matlab constant.numeric.matlab
-#     ^ source.matlab
-#      ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+#^^^^ source.matlab meta.brackets.matlab
+#    ^ source.matlab meta.brackets.matlab constant.numeric.decimal.matlab
+#     ^ source.matlab meta.brackets.matlab
+#      ^^^ source.matlab meta.brackets.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
 >    3 ... some comments
-#^^^^ source.matlab
-#    ^ source.matlab constant.numeric.matlab
-#     ^ source.matlab
-#      ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
-#         ^^^^^^^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+#^^^^ source.matlab meta.brackets.matlab
+#    ^ source.matlab meta.brackets.matlab constant.numeric.decimal.matlab
+#     ^ source.matlab meta.brackets.matlab
+#      ^^^ source.matlab meta.brackets.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
+#         ^^^^^^^^^^^^^^ source.matlab meta.brackets.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >    ];
-#^^^^ source.matlab
-#    ^ source.matlab
-#     ^^ source.matlab
+#^^^^ source.matlab meta.brackets.matlab
+#    ^ source.matlab punctuation.section.brackets.end.matlab
+#     ^ source.matlab punctuation.terminator.semicolon.matlab
 >
 >cellvector = { ... comment
-#^^^^^^^^^^^^^ source.matlab
-#             ^ source.matlab
-#              ^ source.matlab
-#               ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
-#                  ^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+#^^^^^^^^^^ source.matlab meta.assignment.variable.single.matlab
+#          ^ source.matlab
+#           ^ source.matlab keyword.operator.assignment.matlab
+#            ^ source.matlab
+#             ^ source.matlab punctuation.section.braces.begin.matlab
+#              ^ source.matlab meta.cell.literal.matlab
+#               ^^^ source.matlab meta.cell.literal.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
+#                  ^^^^^^^^ source.matlab meta.cell.literal.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >    1 ... comment
-#^^^^ source.matlab
-#    ^ source.matlab constant.numeric.matlab
-#     ^ source.matlab
-#      ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
-#         ^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+#^^^^ source.matlab meta.cell.literal.matlab
+#    ^ source.matlab meta.cell.literal.matlab constant.numeric.decimal.matlab
+#     ^ source.matlab meta.cell.literal.matlab
+#      ^^^ source.matlab meta.cell.literal.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
+#         ^^^^^^^^ source.matlab meta.cell.literal.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >    2 ...
-#^^^^ source.matlab
-#    ^ source.matlab constant.numeric.matlab
-#     ^ source.matlab
-#      ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+#^^^^ source.matlab meta.cell.literal.matlab
+#    ^ source.matlab meta.cell.literal.matlab constant.numeric.decimal.matlab
+#     ^ source.matlab meta.cell.literal.matlab
+#      ^^^ source.matlab meta.cell.literal.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
 >    3 ... comment
-#^^^^ source.matlab
-#    ^ source.matlab constant.numeric.matlab
-#     ^ source.matlab
-#      ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
-#         ^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+#^^^^ source.matlab meta.cell.literal.matlab
+#    ^ source.matlab meta.cell.literal.matlab constant.numeric.decimal.matlab
+#     ^ source.matlab meta.cell.literal.matlab
+#      ^^^ source.matlab meta.cell.literal.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
+#         ^^^^^^^^ source.matlab meta.cell.literal.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >    };
-#^^^^ source.matlab
-#    ^ source.matlab
-#     ^^ source.matlab
+#^^^^ source.matlab meta.cell.literal.matlab
+#    ^ source.matlab punctuation.section.braces.end.matlab
+#     ^ source.matlab punctuation.terminator.semicolon.matlab
 >
 >output = foo( ...
-#^^^^^^^^^^^^ source.matlab
-#            ^ source.matlab
-#             ^ source.matlab
-#              ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
+#^^^^^^ source.matlab meta.assignment.variable.single.matlab
+#      ^ source.matlab
+#       ^ source.matlab keyword.operator.assignment.matlab
+#        ^ source.matlab
+#         ^^^ source.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#            ^ source.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#             ^ source.matlab meta.function-call.parens.matlab
+#              ^^^ source.matlab meta.function-call.parens.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
 >    arg1, ...comment
-#^^^^^^^^^^ source.matlab
-#          ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
-#             ^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+#^^^^^^^^ source.matlab meta.function-call.parens.matlab
+#        ^ source.matlab meta.function-call.parens.matlab punctuation.separator.comma.matlab
+#         ^ source.matlab meta.function-call.parens.matlab
+#          ^^^ source.matlab meta.function-call.parens.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
+#             ^^^^^^^ source.matlab meta.function-call.parens.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >    arg2 ... comment
 #^^^^^^^^^ source.matlab
-#         ^^^ source.matlab meta.linecontinuation.matlab keyword.operator.symbols.matlab
-#            ^^^^^^^^ source.matlab meta.linecontinuation.matlab comment.line.continuation.matlab
+#         ^^^ source.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
+#            ^^^^^^^^ source.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >    );
-#^^^^ source.matlab
-#    ^ source.matlab
-#     ^^ source.matlab
+#^^^^^ source.matlab
+#     ^ source.matlab punctuation.terminator.semicolon.matlab
 >

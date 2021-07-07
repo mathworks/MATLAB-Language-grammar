@@ -6,28 +6,33 @@ arguments % Comment
     % Block comment
 %   ^^^^^^^^^^^^^^^ comment.line.percentage.matlab
     x (1,:) {mustBeNumeric,mustBeReal} % trailing coment
+%      ^^^ meta.parens.size.matlab
+%            ^^^^^^^^^^^^^^^^^^^^^^^^ meta.block.validation.matlab
 %                                      ^^^^^^^^^^^^^^^^^ comment.line.percentage.matlab
-%     ^^^^^ storage.type.matlab
-%           ^^^^^^^^^^^^^^^^^^^^^^^^^^ storage.type.matlab
     ~
     v (1,:) {mustBeNumeric,mustBeReal, mustBeEqualSize(v,x)}
-%     ^^^^^ storage.type.matlab
-%           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ storage.type.matlab
+%      ^^^ meta.parens.size.matlab
+%            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.block.validation.matlab
     method (1,:) char {mustBeMember(method,{'linear','cubic','spline'})} = 'linear' % End of line comment
-%          ^^^^^ storage.type.matlab
+%           ^^^ meta.parens.size.matlab
 %                ^^^^ storage.type.matlab
-%                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ storage.type.matlab
+%                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.block.validation.matlab
+%                                           ^^^^^^^^ string.quoted.single.matlab
+%                                                    ^^^^^^^ string.quoted.single.matlab
+%                                                            ^^^^^^^^ string.quoted.single.matlab
+%                                                                        ^ keyword.operator.assignment.matlab
 %                                                                          ^^^^^^^^ string.quoted.single.matlab
-%                                                                                     ^^^^^^^^^^^^^^^^^^^ comment.line.percentage.matlab
+%                                                                                   ^^^^^^^^^^^^^^^^^^^^^ comment.line.percentage.matlab
 end
 arguments (Repeating) % Comment
-%                       ^^^^^^^^^ comment.line.percentage.matlab
+%          ^^^^^^^^^ storage.modifier.arguments.matlab
+%                     ^^^^^^^^^ comment.line.percentage.matlab
     % Trailing flags
     flag (1,:) string {mustBeMember(flag,["first","second","third"])}
 end
 arguments
     opts.Named (1,:) string {mustBeNumeric(opts.Named), ... Dotdotdot comment
                              mustBeReal}
-%                            ^^^^^^^^^^^ storage.type.matlab
+%                            ^^^^^^^^^^ meta.block.validation.matlab
 end
 end
