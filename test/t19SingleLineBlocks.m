@@ -3,13 +3,13 @@ function y = t19SingleLineBlocks(x)
     switch x
 %          ^ variable.other.constant.matlab
         case 1
-%       ^^^^ keyword.control.case.matlab
+%       ^^^^ keyword.control.switch.case.matlab
 %            ^ constant.numeric.decimal.matlab
             y = 1;
         case 2
             y = 2;
         otherwise
-%       ^^^^^^^^^ keyword.control.otherwise.matlab
+%       ^^^^^^^^^ keyword.control.switch.otherwise.matlab
             if nargin == 0, return; end
 %           ^^ keyword.control.if.matlab
 %              ^^^^^^ variable.language.function.matlab
@@ -25,7 +25,7 @@ function y = t19SingleLineBlocks(x)
 %   ^^^^^^ keyword.control.switch.matlab
 %          ^ variable.other.constant.matlab
 %           ^ punctuation.separator.comma.matlab
-%             ^^^^ keyword.control.case.matlab
+%             ^^^^ keyword.control.switch.case.matlab
 %                  ^ constant.numeric.decimal.matlab
 %                   ^ punctuation.separator.comma.matlab
 %                     ^^^^ entity.name.function.matlab
@@ -33,12 +33,12 @@ function y = t19SingleLineBlocks(x)
 %                          ^ constant.numeric.decimal.matlab
 %                           ^ punctuation.section.parens.end.matlab
 %                            ^ punctuation.separator.comma.matlab
-%                              ^^^^ keyword.control.case.matlab
+%                              ^^^^ keyword.control.switch.case.matlab
 %                                   ^ constant.numeric.decimal.matlab
 %                                    ^ punctuation.separator.comma.matlab
 %                                      ^^^^^^^ meta.function-call.parens.matlab
 %                                             ^ punctuation.separator.comma.matlab
-%                                               ^^^^^^^^^ keyword.control.otherwise.matlab
+%                                               ^^^^^^^^^ keyword.control.switch.otherwise.matlab
 %                                                        ^ punctuation.separator.comma.matlab
 %                                                          ^^^^^^^ meta.function-call.parens.matlab
 %                                                                 ^ punctuation.terminator.semicolon.matlab

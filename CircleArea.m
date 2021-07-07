@@ -43,7 +43,7 @@ classdef CircleArea % A comment
       end
    end
    methods (Static) % A comment
-      function obj = createObj
+      function obj = createObj()
          prompt = {"Enter the Radius"};
          dlgTitle = 'Radius';
          rad = inputdlg(prompt,dlgTitle);

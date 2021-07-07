@@ -110,10 +110,10 @@
 >    arguments (Repeating)
 #^^^^ source.matlab meta.function.matlab meta.arguments.matlab
 #    ^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab keyword.control.arguments.matlab
-#             ^ source.matlab meta.function.matlab meta.arguments.matlab
-#              ^ source.matlab meta.function.matlab meta.arguments.matlab punctuation.section.parens.begin.matlab
-#               ^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab storage.modifier.arguments.matlab
-#                        ^ source.matlab meta.function.matlab meta.arguments.matlab punctuation.section.parens.end.matlab
+#             ^ source.matlab meta.function.matlab meta.arguments.matlab meta.arguments.declaration.matlab
+#              ^ source.matlab meta.function.matlab meta.arguments.matlab meta.arguments.declaration.matlab punctuation.section.parens.begin.matlab
+#               ^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.arguments.declaration.matlab storage.modifier.arguments.matlab
+#                        ^ source.matlab meta.function.matlab meta.arguments.matlab meta.arguments.declaration.matlab punctuation.section.parens.end.matlab
 >        % Trailing flags
 #^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab punctuation.whitespace.comment.leading.matlab
 #        ^ source.matlab meta.function.matlab meta.arguments.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab

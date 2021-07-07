@@ -13,7 +13,7 @@
 	<key>scopeName</key>
 	<string>source.matlab</string>
 	<key>uuid</key>
-	<string>43CD9A4D-351E-4404-A76B-FABEF9B1A3AF</string>
+	<string>0448B0AE-F226-4E07-8F42-845D6324B896</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -76,6 +76,10 @@
 				<dict>
 					<key>include</key>
 					<string>#indexing_curly_brackets</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#indexing_by_expression</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -162,6 +166,8 @@
 					<string>meta.parameters.matlab</string>
 					<key>begin</key>
 					<string>\G(\()</string>
+					<key>end</key>
+					<string>\)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -170,8 +176,6 @@
 							<string>punctuation.definition.parameters.begin.matlab</string>
 						</dict>
 					</dict>
-					<key>end</key>
-					<string>\)</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>0</key>
@@ -201,6 +205,8 @@
 					<string>meta.parameters.matlab</string>
 					<key>begin</key>
 					<string>(?&lt;=\))[^\S\n]*(\()?</string>
+					<key>end</key>
+					<string>(\))?[^\S\n]*(?=;|(?&lt;=[^.])\n|%)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -209,8 +215,6 @@
 							<string>punctuation.section.group.begin.matlab</string>
 						</dict>						
 					</dict>
-					<key>end</key>
-					<string>(\))?[^\S\n]*(?=;|(?&lt;=[^.])\n|%)</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -237,7 +241,9 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\s*(?:^|[\s,;])(for)\b</string>
+					<string>\s*(?&lt;=^|[\s,;])(for)\b</string>
+					<key>end</key>
+					<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -246,8 +252,6 @@
 							<string>keyword.control.for.matlab</string>
 						</dict>
 					</dict>
-					<key>end</key>
-					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -261,14 +265,33 @@
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>name</key>
+							<string>meta.for.declaration.matlab</string>
+							<key>begin</key>
+							<string>\G(?!$)</string>
+							<key>end</key>
+							<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>$self</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
 							<key>include</key>
 							<string>$self</string>
 						</dict>
 					</array>
 				</dict>
 				<dict>
+					<key>name</key>
+					<string>meta.if.matlab</string>
 					<key>begin</key>
-					<string>\s*(?:^|[\s,;])(if)\b</string>
+					<string>\s*(?&lt;=^|[\s,;])(if)\b</string>
+					<key>end</key>
+					<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -277,8 +300,6 @@
 							<string>keyword.control.if.matlab</string>
 						</dict>
 					</dict>
-					<key>end</key>
-					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -297,15 +318,28 @@
 							</array>
 						</dict>
 					</dict>
-					<key>name</key>
-					<string>meta.if.matlab</string>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>name</key>
+							<string>meta.if.declaration.matlab</string>
+							<key>begin</key>
+							<string>\G(?!$)</string>
+							<key>end</key>
+							<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>$self</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>name</key>
 							<string>meta.elseif.matlab</string>
 							<key>match</key>
-							<string>(?:\s*)(?:^|[\s,;])(elseif)\b</string>
+							<string>(?:\s*)(?&lt;=^|[\s,;])(elseif)\b</string>
 							<key>captures</key>
 							<dict>
 								<key>1</key>
@@ -314,14 +348,30 @@
 									<string>keyword.control.elseif.matlab</string>
 								</dict>
 							</dict>
-							<key>end</key>
-							<string>^</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>name</key>
+									<string>meta.elseif.declaration.matlab</string>
+									<key>begin</key>
+									<string>\G(?!$)</string>
+									<key>end</key>
+									<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
+									<key>patterns</key>
+									<array>
+										<dict>
+											<key>include</key>
+											<string>$self</string>
+										</dict>
+									</array>
+								</dict>
+							</array>
 						</dict>
 						<dict>
 							<key>name</key>
 							<string>meta.else.matlab</string>
 							<key>match</key>
-							<string>(?:\s*)(?:^|[\s,;])(else)\b</string>
+							<string>(?:\s*)(?&lt;=^|[\s,;])(else)\b</string>
 							<key>captures</key>
 							<dict>
 								<key>1</key>
@@ -340,8 +390,12 @@
 					</array>
 				</dict>
 				<dict>
+					<key>name</key>
+					<string>meta.for.parallel.matlab</string>
 					<key>begin</key>
-					<string>\s*(?:^|[\s,;])(parfor)\b</string>
+					<string>\s*(?&lt;=^|[\s,;])(parfor)\b</string>
+					<key>end</key>
+					<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -350,8 +404,6 @@
 							<string>keyword.control.for.matlab</string>
 						</dict>
 					</dict>
-					<key>end</key>
-					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -360,17 +412,15 @@
 							<string>keyword.control.end.for.matlab</string>
 						</dict>
 					</dict>
-					<key>name</key>
-					<string>meta.for.parallel.matlab</string>
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>name</key>
+							<string>meta.for.parallel.declaration.matlab</string>
 							<key>begin</key>
 							<string>\G(?!$)</string>
 							<key>end</key>
-							<string>$\n?</string>
-							<key>name</key>
-							<string>meta.for.parallel.declaration.matlab</string>
+							<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -386,8 +436,12 @@
 					</array>
 				</dict>
 				<dict>
+					<key>name</key>
+					<string>meta.repeat.parallel.matlab</string>
 					<key>begin</key>
-					<string>\s*(?:^|[\s,;])(spmd)\b</string>
+					<string>\s*(?&lt;=^|[\s,;])(spmd)\b</string>
+					<key>end</key>
+					<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -396,8 +450,6 @@
 							<string>keyword.control.repeat.parallel.matlab</string>
 						</dict>
 					</dict>
-					<key>end</key>
-					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -406,17 +458,15 @@
 							<string>keyword.control.end.repeat.parallel.matlab</string>
 						</dict>
 					</dict>
-					<key>name</key>
-					<string>meta.repeat.parallel.matlab</string>
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>name</key>
+							<string>meta.repeat.parallel.declaration.matlab</string>
 							<key>begin</key>
 							<string>\G(?!$)</string>
 							<key>end</key>
-							<string>$\n?</string>
-							<key>name</key>
-							<string>meta.block.parallel.matlab</string>
+							<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -435,7 +485,9 @@
 					<key>name</key>
 					<string>meta.switch.matlab</string>
 					<key>begin</key>
-					<string>\s*(?:^|[\s,;])(switch)\s+([a-zA-Z0-9][a-zA-Z0-9_]*)</string>
+					<string>\s*(?&lt;=^|[\s,;])(switch)\s+([a-zA-Z0-9][a-zA-Z0-9_]*)</string>
+					<key>end</key>
+					<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -449,8 +501,6 @@
 							<string>variable.other.constant.matlab</string>
 						</dict>
 					</dict>
-					<key>end</key>
-					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -464,15 +514,23 @@
 						<dict>
 							<key>name</key>
 							<string>meta.case.matlab</string>
+							<key>match</key>
+							<string>(\s*)(?&lt;=^|[\s,;])(case)\b(.*?)(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
 							<key>captures</key>
 							<dict>
 								<key>2</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.case.matlab</string>
+									<string>keyword.control.switch.case.matlab</string>
 								</dict>
 								<key>3</key>
 								<dict>
+									<key>name</key>
+									<string>meta.case.declaration.matlab</string>
+									<key>begin</key>
+									<string>\G(?!$)</string>
+									<key>end</key>
+									<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
 									<key>patterns</key>
 									<array>
 										<dict>
@@ -482,18 +540,18 @@
 									</array>
 								</dict>
 							</dict>
-							<key>match</key>
-							<string>(\s*)(?:^|[\s,;])(case)\b</string>
 						</dict>
 						<dict>
 							<key>name</key>
 							<string>meta.otherwise.matlab</string>
+							<key>match</key>
+							<string>(\s*)(?&lt;=^|[\s,;])(otherwise)\b</string>
 							<key>captures</key>
 							<dict>
 								<key>2</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.otherwise.matlab</string>
+									<string>keyword.control.switch.otherwise.matlab</string>
 								</dict>
 								<key>3</key>
 								<dict>
@@ -506,8 +564,6 @@
 									</array>
 								</dict>
 							</dict>
-							<key>match</key>
-							<string>(\s*)(?:^|[\s,;])(otherwise)\b</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -517,7 +573,9 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>\s*(?:^|[\s,;])(try)\b</string>
+					<string>\s*(?&lt;=^|[\s,;])(try)\b</string>
+					<key>end</key>
+					<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -526,8 +584,6 @@
 							<string>keyword.control.try.matlab</string>
 						</dict>
 					</dict>
-					<key>end</key>
-					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -544,7 +600,7 @@
 							<key>name</key>
 							<string>meta.catch.matlab</string>
 							<key>match</key>
-							<string>(\s*)(?:^|[\s,;])(catch)\b\s*(\w+)?</string>
+							<string>(\s*)(?&lt;=^|[\s,;])(catch)\b\s*(\w+)?</string>
 							<key>captures</key>
 							<dict>
 								<key>2</key>
@@ -566,8 +622,12 @@
 					</array>
 				</dict>
 				<dict>
+					<key>name</key>
+					<string>meta.while.matlab</string>
 					<key>begin</key>
-					<string>\s*(?:^|[\s,;])(while)\b</string>
+					<string>\s*(?&lt;=^|[\s,;])(while)\b</string>
+					<key>end</key>
+					<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -576,8 +636,6 @@
 							<string>keyword.control.while.matlab</string>
 						</dict>
 					</dict>
-					<key>end</key>
-					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -586,10 +644,24 @@
 							<string>keyword.control.end.while.matlab</string>
 						</dict>
 					</dict>
-					<key>name</key>
-					<string>meta.while.matlab</string>
 					<key>patterns</key>
 					<array>
+						<dict>
+							<key>name</key>
+							<string>meta.while.declaration.matlab</string>
+							<key>begin</key>
+							<string>\G</string>
+							<key>end</key>
+							<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
+							<key>endCaptures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>include</key>
+									<string>$self</string>
+								</dict>
+							</dict>
+						</dict>
 						<dict>
 							<key>include</key>
 							<string>$self</string>
@@ -613,6 +685,8 @@
 							(classdef)
 							\s*
 					</string>
+					<key>end</key>
+					<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -621,8 +695,6 @@
 							<string>storage.type.class.matlab</string>
 						</dict>
 					</dict>
-					<key>end</key>
-					<string>\s*(?:^|[\s,;])(end)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -817,7 +889,9 @@
 										\( [^)]* \)
 									)?
 									\s*($|(?=%))
-								</string>
+							</string>
+							<key>end</key>
+							<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 							<key>beginCaptures</key>
 							<dict>
 								<key>2</key>
@@ -867,8 +941,6 @@
 									</array>
 								</dict>
 							</dict>
-							<key>end</key>
-							<string>\s*(?:^|[\s,;])(end)\b</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>1</key>
@@ -901,7 +973,9 @@
 										\( [^)]* \)
 									)?
 									\s*($|(?=%))
-								</string>
+							</string>
+							<key>end</key>
+							<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 							<key>beginCaptures</key>
 							<dict>
 								<key>2</key>
@@ -943,8 +1017,6 @@
 									</array>
 								</dict>
 							</dict>
-							<key>end</key>
-							<string>\s*(?:^|[\s,;])(end)\b</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>1</key>
@@ -973,7 +1045,9 @@
 										\( [^)]* \)
 									)?
 									\s*($|(?=%))
-								</string>
+							</string>
+							<key>end</key>
+							<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 							<key>beginCaptures</key>
 							<dict>
 								<key>2</key>
@@ -1015,8 +1089,6 @@
 									</array>
 								</dict>
 							</dict>
-							<key>end</key>
-							<string>\s*(?:^|[\s,;])(end)\b</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>1</key>
@@ -1055,7 +1127,9 @@
 									(^\s*)								# Leading whitespace
 									(enumeration)\b([^%]*)
 									\s*($|(?=%))
-								</string>
+							</string>
+							<key>end</key>
+							<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 							<key>beginCaptures</key>
 							<dict>
 								<key>2</key>
@@ -1064,8 +1138,6 @@
 									<string>keyword.control.enum.matlab</string>
 								</dict>
 							</dict>
-							<key>end</key>
-							<string>\s*(?:^|[\s,;])(end)\b</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>1</key>
@@ -1156,6 +1228,8 @@
 		<dict>
 			<key>begin</key>
 			<string>(^[\s]*)(%\{)[^\S\n]*+\n</string>
+			<key>end</key>
+			<string>(^[\s]*)(%\})[^\S\n]*+(?:\n|$)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1169,8 +1243,6 @@
 					<string>punctuation.definition.comment.begin.matlab</string>
 				</dict>
 			</dict>
-			<key>end</key>
-			<string>(^[\s]*)(%\})[^\S\n]*+(?:\n|$)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1291,7 +1363,7 @@
 								</dict>
 							</dict>
 							<key>end</key>
-							<string>\n</string>
+							<string>\Z</string>
 						</dict>
 					</array>
 				</dict>
@@ -1310,7 +1382,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\s*(?:^|[\s,;])(break|continue|return)\b</string>
+			<string>\s*(?&lt;=^|[\s,;])(break|continue|return)\b</string>
 		</dict>
 		<key>function</key>
 		<dict>
@@ -1327,6 +1399,8 @@
 							(function)
 							\s+
 					</string>
+					<key>end</key>
+					<string>\s*(?&lt;=^|[\s,;])(end)\b(\s*\n)?</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>2</key>
@@ -1335,8 +1409,6 @@
 							<string>storage.type.function.matlab</string>
 						</dict>
 					</dict>
-					<key>end</key>
-					<string>\s*(?:^|[\s,;])(end)\b(\s*\n)?</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -1443,6 +1515,8 @@
 									<string>meta.parameters.matlab</string>
 									<key>begin</key>
 									<string>(?&lt;=[a-zA-Z0-9_])\s*\(</string>
+									<key>end</key>
+									<string>\)</string>
 									<key>beginCaptures</key>
 									<dict>
 										<key>0</key>
@@ -1451,8 +1525,6 @@
 											<string>punctuation.definition.parameters.begin.matlab</string>
 										</dict>
 									</dict>
-									<key>end</key>
-									<string>\)</string>
 									<key>endCaptures</key>
 									<dict>
 										<key>0</key>
@@ -1510,6 +1582,8 @@
 									)?
 									\s*($|(?=%))
 								</string>
+							<key>end</key>
+							<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 							<key>beginCaptures</key>
 							<dict>
 								<key>2</key>
@@ -1519,6 +1593,8 @@
 								</dict>
 								<key>3</key>
 								<dict>
+									<key>name</key>
+									<string>meta.arguments.declaration.matlab</string>
 									<key>patterns</key>
 									<array>
 										<dict>
@@ -1542,8 +1618,6 @@
 									</array>
 								</dict>
 							</dict>
-							<key>end</key>
-							<string>\s*(?:^|[\s,;])(end)\b</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>1</key>
@@ -1571,10 +1645,6 @@
 									<string>$self</string>
 								</dict>
 							</array>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#variables</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -1689,6 +1759,54 @@
 					<string>variable.language.wildcard.matlab</string>
 					<key>match</key>
 					<string>\*</string>
+				</dict>
+			</array>
+		</dict>
+		<key>indexing_by_expression</key>
+		<dict>
+			<key>comment</key>
+			<string>Index array with expression evaluated to variable name or number</string>
+			<key>contentName</key>
+			<string>meta.parens.matlab</string>
+			<key>begin</key>
+			<string>([a-zA-Z][a-zA-Z0-9_]*)\s*(\.)(\()</string>
+			<key>end</key>
+			<string>(\)|(?&lt;!\.\.\.)\n)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.other.readwrite.matlab</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.accessor.dot.matlab</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.parens.begin.matlab</string>
+				</dict>
+			</dict>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.parens.end.matlab</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#rules_before_command_dual</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#rules_after_command_dual</string>
 				</dict>
 			</array>
 		</dict>
@@ -2007,6 +2125,8 @@
 			<string>string.quoted.double.matlab</string>
 			<key>begin</key>
 			<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^))|^)"</string>
+			<key>end</key>
+			<string>"(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^|\||\s|;|:|,)|$)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
@@ -2015,8 +2135,6 @@
 					<string>punctuation.definition.string.begin.matlab</string>
 				</dict>
 			</dict>
-			<key>end</key>
-			<string>"(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^|\||\s|;|:|,)|$)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>0</key>
@@ -2049,6 +2167,8 @@
 			<string>string.quoted.single.matlab</string>
 			<key>begin</key>
 			<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,|~|&lt;|&gt;|&amp;|\||-|\+|\*|/|\\|\.|\^))|^)'</string>
+			<key>end</key>
+			<string>'(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|/|\\|\.|\^|\s|;|:|,)|$)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
@@ -2057,8 +2177,6 @@
 					<string>punctuation.definition.string.begin.matlab</string>
 				</dict>
 			</dict>
-			<key>end</key>
-			<string>'(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|/|\\|\.|\^|\s|;|:|,)|$)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>0</key>
@@ -2305,7 +2423,7 @@
 					<key>name</key>
 					<string>punctuation.accessor.dot.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=\w)\.</string>
+					<string>(?&lt;=\w)\.(?!\()</string>
 				</dict>
 				<dict>
 					<key>comment</key>
@@ -2333,6 +2451,8 @@
 			<string>meta.assignment.definition.property.matlab</string>
 			<key>begin</key>
 			<string>\s*[;]?\s*([a-zA-Z][a-zA-Z0-9_\.\?]*)</string>
+			<key>end</key>
+			<string>([;\n%=].*)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -2341,8 +2461,6 @@
 					<string>variable.object.property.matlab</string>
 				</dict>
 			</dict>
-			<key>end</key>
-			<string>([;\n%=].*)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -2480,6 +2598,8 @@
 			<string>meta.block.validation.matlab</string>
 			<key>begin</key>
 			<string>\s*({)\s*</string>
+			<key>end</key>
+			<string>}</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -2488,8 +2608,6 @@
 					<string>punctuation.section.block.begin.matlab</string>
 				</dict>
 			</dict>
-			<key>end</key>
-			<string>}</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>0</key>
@@ -2536,6 +2654,8 @@
 							<string>string.quoted.single.matlab</string>
 							<key>begin</key>
 							<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^))|^)'</string>
+							<key>end</key>
+							<string>'(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^|\s|;|:|,)|$)</string>
 							<key>beginCaptures</key>
 							<dict>
 								<key>0</key>
@@ -2544,8 +2664,6 @@
 									<string>punctuation.definition.string.begin.matlab</string>
 								</dict>
 							</dict>
-							<key>end</key>
-							<string>'(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^|\s|;|:|,)|$)</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>0</key>
@@ -2577,6 +2695,8 @@
 							<string>string.quoted.double.matlab</string>
 							<key>begin</key>
 							<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^))|^)"</string>
+							<key>end</key>
+							<string>"(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^|\||\s|;|:|,)|$|\z)</string>
 							<key>beginCaptures</key>
 							<dict>
 								<key>0</key>
@@ -2585,8 +2705,6 @@
 									<string>punctuation.definition.string.begin.matlab</string>
 								</dict>
 							</dict>
-							<key>end</key>
-							<string>"(?=(\[|\(|\{|\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|\/|\\|\.|\^|\||\s|;|:|,)|$|\z)</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>0</key>
