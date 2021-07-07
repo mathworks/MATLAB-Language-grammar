@@ -1911,21 +1911,27 @@
 				Assignment for single output variable
 				We don't include $self here to avoid matching command syntax inside (), [], {}
 			</string>
-			<key>name</key>
-			<string>meta.assignment.variable.single.matlab</string>
 			<key>match</key>
-			<string>[a-zA-Z][a-zA-Z0-9_,.(){}]*(?=\s*=[a-zA-Z0-9_\s])</string>
-			<key>patterns</key>
-			<array>
+			<string>(?&lt;=^|,|;|for)\s*([a-zA-Z][a-zA-Z0-9_.(){}]*)(?=\s*=)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
 				<dict>
-					<key>include</key>
-					<string>#rules_before_command_dual</string>
+					<key>name</key>
+					<string>meta.assignment.variable.single.matlab</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#rules_before_command_dual</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#rules_after_command_dual</string>
+						</dict>
+					</array>
 				</dict>
-				<dict>
-					<key>include</key>
-					<string>#rules_after_command_dual</string>
-				</dict>
-			</array>
+			</dict>
 		</dict>
 		<key>square_brackets</key>
 		<dict>

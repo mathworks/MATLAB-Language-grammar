@@ -73,7 +73,9 @@
 #                     ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.declaration.matlab constant.numeric.decimal.matlab
 >            obj.Radius = r;
 #^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
-#            ^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.assignment.variable.single.matlab
+#            ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.assignment.variable.single.matlab
+#               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.assignment.variable.single.matlab punctuation.accessor.dot.matlab
+#                ^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.assignment.variable.single.matlab
 #                      ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
 #                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab keyword.operator.assignment.matlab
 #                        ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
@@ -148,7 +150,9 @@
 #         ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab keyword.control.end.if.matlab
 >         obj.Radius = val;
 #^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#         ^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.assignment.variable.single.matlab
+#         ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.assignment.variable.single.matlab
+#            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.assignment.variable.single.matlab punctuation.accessor.dot.matlab
+#             ^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.assignment.variable.single.matlab
 #                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
 #                    ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.operator.assignment.matlab
 #                     ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
