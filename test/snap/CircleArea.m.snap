@@ -304,7 +304,7 @@
 #          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab comment.line.percentage.matlab
 >         axis equal
 #^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.command.matlab
-#         ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.command.matlab variable.function.command.matlab
+#         ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.command.matlab entity.name.function.command.matlab
 #             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.command.matlab
 #              ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.command.matlab string.unquoted.matlab
 >      end

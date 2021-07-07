@@ -1195,7 +1195,7 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>variable.function.command.matlab</string>
+					<string>entity.name.function.command.matlab</string>
 					<key>patterns</key>
 					<array>
 						<dict>
