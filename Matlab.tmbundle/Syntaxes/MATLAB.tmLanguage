@@ -1732,35 +1732,42 @@
 			<string>Import statement</string>
 			<key>name</key>
 			<string>meta.import.matlab</string>
-			<key>contentName</key>
-			<string>entity.name.namespace.matlab</string>
-			<key>begin</key>
-			<string>\b(import)\b[^\S\n]+(?=\w)</string>
-			<key>beginCaptures</key>
+			<key>match</key>
+			<string>\b(import)\b[^\S\n]+([a-zA-Z0-9.]*)(?=;|%|$)</string>
+			<key>captures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>keyword.other.import.matlab</string>
 				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.namespace.matlab</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>entity.name.module.matlab</string>
+							<key>match</key>
+							<string>\w+</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>punctuation.separator.matlab</string>
+							<key>match</key>
+							<string>\.</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>variable.language.wildcard.matlab</string>
+							<key>match</key>
+							<string>\*</string>
+						</dict>
+					</array>
+				</dict>
 			</dict>
-			<key>end</key>
-			<string>(?=;|\n|%)</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>name</key>
-					<string>punctuation.separator.matlab</string>
-					<key>match</key>
-					<string>\.</string>
-				</dict>
-				<dict>
-					<key>name</key>
-					<string>variable.language.wildcard.matlab</string>
-					<key>match</key>
-					<string>\*</string>
-				</dict>
-			</array>
 		</dict>
 		<key>indexing_by_expression</key>
 		<dict>
