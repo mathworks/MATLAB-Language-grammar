@@ -1094,7 +1094,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.end.event.matlab</string>
+									<string>keyword.control.end.events.matlab</string>
 								</dict>
 							</dict>
 							<key>patterns</key>
