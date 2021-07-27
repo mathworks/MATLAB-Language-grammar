@@ -46,7 +46,7 @@
 #         ^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.enum.matlab comment.line.percentage.matlab
 >    end
 #^^^^ source.matlab meta.class.matlab meta.enum.matlab
-#    ^^^ source.matlab meta.class.matlab meta.enum.matlab keyword.control.enum.end.matlab
+#    ^^^ source.matlab meta.class.matlab meta.enum.matlab keyword.control.end.enum.matlab
 >end
 #^^^ source.matlab meta.class.matlab storage.type.class.end.matlab
 >

@@ -164,7 +164,7 @@
 #         ^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab comment.line.percentage.matlab
 >    end
 #^^^^ source.matlab meta.class.matlab meta.properties.matlab
-#    ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.properties.end.matlab
+#    ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.end.properties.matlab
 >end
 #^^^ source.matlab meta.class.matlab storage.type.class.end.matlab
 >

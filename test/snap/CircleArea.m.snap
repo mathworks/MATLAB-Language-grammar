@@ -16,7 +16,7 @@
 #      ^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
 >   end
 #^^^ source.matlab meta.class.matlab meta.properties.matlab
-#   ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.properties.end.matlab
+#   ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.end.properties.matlab
 >   properties (Constant)
 #^^^ source.matlab meta.class.matlab meta.properties.matlab
 #   ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.properties.matlab
@@ -32,7 +32,7 @@
 #          ^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab constant.numeric.matlab
 >   end
 #^^^ source.matlab meta.class.matlab meta.properties.matlab
-#   ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.properties.end.matlab
+#   ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.end.properties.matlab
 >   properties (Dependent) % A comment
 #^^^ source.matlab meta.class.matlab meta.properties.matlab
 #   ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.properties.matlab
@@ -46,7 +46,7 @@
 #      ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
 >   end
 #^^^ source.matlab meta.class.matlab meta.properties.matlab
-#   ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.properties.end.matlab
+#   ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.end.properties.matlab
 >   methods
 #^^^ source.matlab meta.class.matlab meta.methods.matlab
 #   ^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.methods.matlab
@@ -347,7 +347,7 @@
 #      ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.end.matlab
 >   end
 #^^^ source.matlab meta.class.matlab meta.methods.matlab
-#   ^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.methods.end.matlab
+#   ^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.end.methods.matlab
 >   methods (Static) % A comment
 #^^^ source.matlab meta.class.matlab meta.methods.matlab
 #   ^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.methods.matlab
@@ -432,7 +432,7 @@
 #      ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.end.matlab
 >   end
 #^^^ source.matlab meta.class.matlab meta.methods.matlab
-#   ^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.methods.end.matlab
+#   ^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.end.methods.matlab
 >end
 #^^^ source.matlab meta.class.matlab storage.type.class.end.matlab
 >
