@@ -2414,7 +2414,7 @@
 					<key>name</key>
 					<string>keyword.operator.vector.colon.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=[a-zA-Z0-9_\s(),]|^):(?=[a-zA-Z0-9_\s(),]|$)</string>
+					<string>(?&lt;=[a-zA-Z0-9_\s(){,]|^):(?=[a-zA-Z0-9_\s()},]|$)</string>
 				</dict>
 				<dict>
 					<key>comment</key>
