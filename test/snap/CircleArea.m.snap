@@ -412,7 +412,7 @@
 #                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
 #                        ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.parens.matlab
 #                           ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.parens.matlab
-#                            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.parens.matlab
+#                            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.parens.matlab keyword.operator.vector.colon.matlab
 #                             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.parens.matlab
 #                              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
 #                               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
