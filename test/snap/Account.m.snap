@@ -25,7 +25,7 @@
 #        ^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
 >    end
 #^^^^ source.matlab meta.class.matlab meta.properties.matlab
-#    ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.properties.end.matlab
+#    ^^^ source.matlab meta.class.matlab meta.properties.matlab keyword.control.end.properties.matlab
 >    % Some methods
 #^^^^ source.matlab meta.class.matlab punctuation.whitespace.comment.leading.matlab
 #    ^ source.matlab meta.class.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
@@ -327,7 +327,7 @@
 #        ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.end.matlab
 >    end
 #^^^^ source.matlab meta.class.matlab meta.methods.matlab
-#    ^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.methods.end.matlab
+#    ^^^ source.matlab meta.class.matlab meta.methods.matlab keyword.control.end.methods.matlab
 >    % Some events
 #^^^^ source.matlab meta.class.matlab punctuation.whitespace.comment.leading.matlab
 #    ^ source.matlab meta.class.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
@@ -352,7 +352,7 @@
 #        ^^^^^^^^^^^^ source.matlab meta.class.matlab meta.events.matlab meta.assignment.definition.event.matlab entity.name.type.event.matlab
 >    end
 #^^^^ source.matlab meta.class.matlab meta.events.matlab
-#    ^^^ source.matlab meta.class.matlab meta.events.matlab keyword.control.events.end.matlab
+#    ^^^ source.matlab meta.class.matlab meta.events.matlab keyword.control.end.events.matlab
 >    % Some enumeration
 #^^^^ source.matlab meta.class.matlab punctuation.whitespace.comment.leading.matlab
 #    ^ source.matlab meta.class.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
@@ -379,6 +379,6 @@
 #              ^ source.matlab meta.class.matlab meta.enum.matlab punctuation.section.parens.end.matlab
 >    end
 #^^^^ source.matlab meta.class.matlab meta.enum.matlab
-#    ^^^ source.matlab meta.class.matlab meta.enum.matlab keyword.control.enum.end.matlab
+#    ^^^ source.matlab meta.class.matlab meta.enum.matlab keyword.control.end.enum.matlab
 >end
 #^^^ source.matlab meta.class.matlab storage.type.class.end.matlab

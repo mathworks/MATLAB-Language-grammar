@@ -946,7 +946,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.properties.end.matlab</string>
+									<string>keyword.control.end.properties.matlab</string>
 								</dict>
 							</dict>
 							<key>patterns</key>
@@ -1022,7 +1022,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.methods.end.matlab</string>
+									<string>keyword.control.end.methods.matlab</string>
 								</dict>
 							</dict>
 							<key>patterns</key>
@@ -1094,7 +1094,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.events.end.matlab</string>
+									<string>keyword.control.end.events.matlab</string>
 								</dict>
 							</dict>
 							<key>patterns</key>
@@ -1143,7 +1143,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.enum.end.matlab</string>
+									<string>keyword.control.end.enum.matlab</string>
 								</dict>
 							</dict>
 							<key>patterns</key>
@@ -1623,7 +1623,7 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.control.arguments.end.matlab</string>
+									<string>keyword.control.end.arguments.matlab</string>
 								</dict>
 							</dict>
 							<key>patterns</key>
@@ -1732,35 +1732,42 @@
 			<string>Import statement</string>
 			<key>name</key>
 			<string>meta.import.matlab</string>
-			<key>contentName</key>
-			<string>entity.name.namespace.matlab</string>
-			<key>begin</key>
-			<string>\b(import)\b[^\S\n]+(?=\w)</string>
-			<key>beginCaptures</key>
+			<key>match</key>
+			<string>\b(import)\b[^\S\n]+([a-zA-Z0-9.]*)(?=;|%|$)</string>
+			<key>captures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>keyword.other.import.matlab</string>
 				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.namespace.matlab</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>entity.name.module.matlab</string>
+							<key>match</key>
+							<string>\w+</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>punctuation.separator.matlab</string>
+							<key>match</key>
+							<string>\.</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>variable.language.wildcard.matlab</string>
+							<key>match</key>
+							<string>\*</string>
+						</dict>
+					</array>
+				</dict>
 			</dict>
-			<key>end</key>
-			<string>(?=;|\n|%)</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>name</key>
-					<string>punctuation.separator.matlab</string>
-					<key>match</key>
-					<string>\.</string>
-				</dict>
-				<dict>
-					<key>name</key>
-					<string>variable.language.wildcard.matlab</string>
-					<key>match</key>
-					<string>\*</string>
-				</dict>
-			</array>
 		</dict>
 		<key>indexing_by_expression</key>
 		<dict>
@@ -2407,7 +2414,7 @@
 					<key>name</key>
 					<string>keyword.operator.vector.colon.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=[a-zA-Z0-9_\s(),]|^):(?=[a-zA-Z0-9_\s(),]|$)</string>
+					<string>(?&lt;=[a-zA-Z0-9_\s(){,]|^):(?=[a-zA-Z0-9_\s()},]|$)</string>
 				</dict>
 				<dict>
 					<key>comment</key>
