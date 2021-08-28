@@ -1,5 +1,5 @@
 >vector = [ ... comment
-#^^^^^^ source.matlab meta.assignment.variable.single.matlab
+#^^^^^^ source.matlab meta.assignment.variable.single.matlab variable.other.readwrite.matlab
 #      ^ source.matlab
 #       ^ source.matlab keyword.operator.assignment.matlab
 #        ^ source.matlab
@@ -30,7 +30,7 @@
 #     ^ source.matlab punctuation.terminator.semicolon.matlab
 >
 >cellvector = { ... comment
-#^^^^^^^^^^ source.matlab meta.assignment.variable.single.matlab
+#^^^^^^^^^^ source.matlab meta.assignment.variable.single.matlab variable.other.readwrite.matlab
 #          ^ source.matlab
 #           ^ source.matlab keyword.operator.assignment.matlab
 #            ^ source.matlab
@@ -61,7 +61,7 @@
 #     ^ source.matlab punctuation.terminator.semicolon.matlab
 >
 >output = foo( ...
-#^^^^^^ source.matlab meta.assignment.variable.single.matlab
+#^^^^^^ source.matlab meta.assignment.variable.single.matlab variable.other.readwrite.matlab
 #      ^ source.matlab
 #       ^ source.matlab keyword.operator.assignment.matlab
 #        ^ source.matlab
@@ -70,13 +70,16 @@
 #             ^ source.matlab meta.function-call.parens.matlab
 #              ^^^ source.matlab meta.function-call.parens.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
 >    arg1, ...comment
-#^^^^^^^^ source.matlab meta.function-call.parens.matlab
+#^^^^ source.matlab meta.function-call.parens.matlab
+#    ^^^^ source.matlab meta.function-call.parens.matlab variable.other.readwrite.matlab
 #        ^ source.matlab meta.function-call.parens.matlab punctuation.separator.comma.matlab
 #         ^ source.matlab meta.function-call.parens.matlab
 #          ^^^ source.matlab meta.function-call.parens.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
 #             ^^^^^^^ source.matlab meta.function-call.parens.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >    arg2 ... comment
-#^^^^^^^^^ source.matlab
+#^^^^ source.matlab
+#    ^^^^ source.matlab variable.other.readwrite.matlab
+#        ^ source.matlab
 #         ^^^ source.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
 #            ^^^^^^^^ source.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >    );

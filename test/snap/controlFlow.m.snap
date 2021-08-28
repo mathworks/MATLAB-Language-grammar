@@ -32,7 +32,7 @@
 #       ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.case.declaration.matlab constant.numeric.decimal.matlab
 >    y = varargin{1};
 #^^^^ source.matlab meta.function.matlab meta.switch.matlab
-#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.assignment.variable.single.matlab
+#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.assignment.variable.single.matlab variable.other.readwrite.matlab
 #     ^ source.matlab meta.function.matlab meta.switch.matlab
 #      ^ source.matlab meta.function.matlab meta.switch.matlab keyword.operator.assignment.matlab
 #       ^ source.matlab meta.function.matlab meta.switch.matlab
@@ -70,7 +70,7 @@
 #       ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.case.declaration.matlab constant.numeric.decimal.matlab
 >    y = varargin{1} + varargin{2};
 #^^^^ source.matlab meta.function.matlab meta.switch.matlab
-#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.assignment.variable.single.matlab
+#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.assignment.variable.single.matlab variable.other.readwrite.matlab
 #     ^ source.matlab meta.function.matlab meta.switch.matlab
 #      ^ source.matlab meta.function.matlab meta.switch.matlab keyword.operator.assignment.matlab
 #       ^ source.matlab meta.function.matlab meta.switch.matlab
@@ -119,7 +119,9 @@
 >    elseif y < 20
 #^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab
 #    ^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab keyword.control.elseif.matlab
-#          ^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#          ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#           ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab variable.other.readwrite.matlab
+#            ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
 #             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab keyword.operator.relational.matlab
 #              ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
 #               ^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab constant.numeric.decimal.matlab
@@ -155,18 +157,20 @@
 #^^^^ source.matlab meta.function.matlab meta.try.matlab
 #    ^^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.function-call.parens.matlab entity.name.function.matlab
 #           ^ source.matlab meta.function.matlab meta.try.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
-#            ^^ source.matlab meta.function.matlab meta.try.matlab meta.function-call.parens.matlab
+#            ^^ source.matlab meta.function.matlab meta.try.matlab meta.function-call.parens.matlab variable.other.readwrite.matlab
 #              ^ source.matlab meta.function.matlab meta.try.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
 #               ^ source.matlab meta.function.matlab meta.try.matlab punctuation.terminator.semicolon.matlab
 >end
 #^^^ source.matlab meta.function.matlab meta.try.matlab keyword.control.end.try.matlab
 >while c1
 #^^^^^ source.matlab meta.function.matlab meta.while.matlab keyword.control.while.matlab
-#     ^^^ source.matlab meta.function.matlab meta.while.matlab meta.while.declaration.matlab
+#     ^ source.matlab meta.function.matlab meta.while.matlab meta.while.declaration.matlab
+#      ^^ source.matlab meta.function.matlab meta.while.matlab meta.while.declaration.matlab variable.other.readwrite.matlab
 >  if c2, break; end
 #^^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab
 #  ^^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab keyword.control.if.matlab
-#    ^^^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab meta.if.declaration.matlab
+#    ^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab meta.if.declaration.matlab
+#     ^^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab meta.if.declaration.matlab variable.other.readwrite.matlab
 #       ^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab punctuation.separator.comma.matlab
 #        ^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab meta.control.matlab
 #         ^^^^^ source.matlab meta.function.matlab meta.while.matlab meta.if.matlab meta.control.matlab keyword.control.flow.matlab
