@@ -38,7 +38,9 @@
 #              ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab punctuation.section.parens.end.matlab
 #               ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab
 #                ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab punctuation.section.block.begin.matlab
-#                 ^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                 ^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.readwrite.matlab
+#                              ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                               ^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.readwrite.matlab
 #                                         ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab punctuation.section.block.end.matlab
 #                                          ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab
 #                                           ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
@@ -60,7 +62,14 @@
 #              ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab punctuation.section.parens.end.matlab
 #               ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab
 #                ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab punctuation.section.block.begin.matlab
-#                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                 ^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.readwrite.matlab
+#                              ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                               ^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.readwrite.matlab
+#                                         ^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                                                           ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.readwrite.matlab
+#                                                            ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                                                             ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.readwrite.matlab
+#                                                              ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
 #                                                               ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab punctuation.section.block.end.matlab
 >        method (1,:) char {mustBeMember(method,{'linear','cubic','spline'})} = 'linear' % End of line comment
 #^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab
@@ -75,7 +84,9 @@
 #                     ^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab storage.type.matlab
 #                         ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab
 #                          ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab punctuation.section.block.begin.matlab
-#                           ^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                           ^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                                        ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.readwrite.matlab
+#                                              ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
 #                                               ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab punctuation.section.block.begin.matlab
 #                                                ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab meta.block.validation.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
 #                                                 ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab meta.block.validation.matlab string.quoted.single.matlab
@@ -131,7 +142,9 @@
 #                   ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab storage.type.matlab
 #                         ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab
 #                          ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab punctuation.section.block.begin.matlab
-#                           ^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                           ^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                                        ^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.readwrite.matlab
+#                                            ^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
 #                                              ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab string.quoted.double.matlab punctuation.definition.string.begin.matlab
 #                                               ^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab string.quoted.double.matlab
 #                                                    ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab string.quoted.double.matlab punctuation.definition.string.end.matlab
@@ -164,13 +177,16 @@
 #                         ^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab storage.type.matlab
 #                               ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab
 #                                ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab punctuation.section.block.begin.matlab
-#                                 ^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                                 ^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                                               ^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.readwrite.matlab
 #                                                   ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab punctuation.accessor.dot.matlab
-#                                                    ^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                                                    ^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.property.matlab
+#                                                         ^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
 #                                                            ^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
 #                                                               ^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >                                 mustBeReal}
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                                 ^^^^^^^^^^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.readwrite.matlab
 #                                           ^ source.matlab meta.function.matlab meta.arguments.matlab meta.assignment.definition.property.matlab punctuation.section.block.end.matlab
 >    end
 #^^^^ source.matlab meta.function.matlab meta.arguments.matlab

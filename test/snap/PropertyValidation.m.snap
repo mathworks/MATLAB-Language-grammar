@@ -80,7 +80,7 @@
 #                                ^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab storage.type.matlab
 #                                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
 #                                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.block.begin.matlab
-#                                             ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                                             ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.readwrite.matlab
 #                                                       ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.block.end.matlab
 >        PropInit = "string"
 #^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
@@ -98,7 +98,8 @@
 #                     ^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab storage.type.matlab
 #                              ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
 #                               ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab keyword.operator.assignment.matlab
-#                                ^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                 ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.other.readwrite.matlab
 #                                     ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.accessor.dot.matlab
 #                                      ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.function-call.parens.matlab entity.name.function.matlab
 #                                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
@@ -136,7 +137,8 @@
 #                                   ^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab storage.type.matlab
 #                                        ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
 #                                         ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab keyword.operator.assignment.matlab
-#                                          ^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                           ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.other.readwrite.matlab
 >        PropSizeTypeFcnInit  (:, 3) foo.bar.baz {mustBeReal} = pi;
 #^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
 #        ^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
@@ -151,7 +153,7 @@
 #                                    ^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab storage.type.matlab
 #                                               ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
 #                                                ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.block.begin.matlab
-#                                                 ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab
+#                                                 ^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.block.validation.matlab variable.other.readwrite.matlab
 #                                                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.block.end.matlab
 #                                                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
 #                                                             ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab keyword.operator.assignment.matlab
