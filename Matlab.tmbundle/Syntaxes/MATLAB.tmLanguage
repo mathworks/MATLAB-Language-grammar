@@ -226,7 +226,7 @@
 						<dict>
 							<key>name</key>
 							<string>punctuation.section.group.begin.matlab</string>
-						</dict>						
+						</dict>
 					</dict>
 					<key>endCaptures</key>
 					<dict>
@@ -791,11 +791,11 @@
 												</dict>
 												<dict>
 													<key>include</key>
-													<string>#comments</string>									
+													<string>#comments</string>
 												</dict>
 												<dict>
 													<key>include</key>
-													<string>#line_continuation</string>									
+													<string>#line_continuation</string>
 												</dict>
 											</array>
 										</dict>
@@ -868,21 +868,21 @@
 												</dict>
 												<dict>
 													<key>include</key>
-													<string>#comments</string>									
+													<string>#comments</string>
 												</dict>
 												<dict>
 													<key>include</key>
-													<string>#line_continuation</string>									
+													<string>#line_continuation</string>
 												</dict>
 											</array>
 										</dict>
 										<dict>
 											<key>include</key>
-											<string>#comments</string>									
+											<string>#comments</string>
 										</dict>
 										<dict>
 											<key>include</key>
-											<string>#line_continuation</string>									
+											<string>#line_continuation</string>
 										</dict>
 									</array>
 									<key>end</key>
@@ -1438,7 +1438,7 @@
 							<key>begin</key>
 							<string>\G</string>
 							<key>end</key>
-							<string>(?&lt;=\))</string>
+							<string>(?&lt;=[\)\n])</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -1492,11 +1492,11 @@
 										</dict>
 										<dict>
 											<key>include</key>
-											<string>#comments</string>									
+											<string>#comments</string>
 										</dict>
 										<dict>
 											<key>include</key>
-											<string>#line_continuation</string>									
+											<string>#line_continuation</string>
 										</dict>
 									</array>
 								</dict>
@@ -1506,7 +1506,7 @@
 									<key>name</key>
 									<string>entity.name.function.matlab</string>
 									<key>match</key>
-									<string>[a-zA-Z][a-zA-Z0-9_.]*(?=\s*\()</string>
+									<string>[a-zA-Z][a-zA-Z0-9_.]*(?=[^a-zA-Z0-9_.])</string>
 									<key>patterns</key>
 									<array>
 										<dict>
@@ -1517,7 +1517,7 @@
 										</dict>
 										<dict>
 											<key>include</key>
-											<string>#line_continuation</string>									
+											<string>#line_continuation</string>
 										</dict>
 									</array>
 								</dict>
@@ -1568,17 +1568,17 @@
 										</dict>
 										<dict>
 											<key>include</key>
-											<string>#comments</string>									
+											<string>#comments</string>
 										</dict>
 										<dict>
 											<key>include</key>
-											<string>#line_continuation</string>									
+											<string>#line_continuation</string>
 										</dict>
 									</array>
 								</dict>
 								<dict>
 									<key>include</key>
-									<string>#comments</string>									
+									<string>#comments</string>
 								</dict>
 							</array>
 						</dict>
