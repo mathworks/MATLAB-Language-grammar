@@ -37,7 +37,7 @@ classdef Account < user.handle & BaseAccount % Models a bank account
             end
         end
         function r = plus(o1,o2)
-            r = o1.Value + o2.Value;
+            r = plus@BaseAccount(o1,o2);
         end
     end
     % Some events
