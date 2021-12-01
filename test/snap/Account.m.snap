@@ -323,22 +323,21 @@
 #                            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.separator.parameter.comma.matlab
 #                             ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab variable.parameter.input.matlab
 #                               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.function.declaration.matlab meta.parameters.matlab punctuation.definition.parameters.end.matlab
->            r = o1.Value + o2.Value;
+>            r = plus@BaseAccount(o1,o2);
 #^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
 #            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.assignment.variable.single.matlab variable.other.readwrite.matlab
 #             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
 #              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.operator.assignment.matlab
 #               ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.other.readwrite.matlab
-#                  ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab punctuation.accessor.dot.matlab
-#                   ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.other.property.matlab
-#                        ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab keyword.operator.arithmetic.matlab
-#                          ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
-#                           ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.other.readwrite.matlab
-#                             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab punctuation.accessor.dot.matlab
-#                              ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab variable.other.property.matlab
-#                                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
+#                ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.method-call.parens.matlab entity.name.function.matlab
+#                    ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.method-call.parens.matlab punctuation.accessor.scope-resolution.superclass.matlab
+#                     ^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.method-call.parens.matlab entity.name.type.class.matlab
+#                                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.method-call.parens.matlab punctuation.section.parens.begin.matlab
+#                                 ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.method-call.parens.matlab variable.other.readwrite.matlab
+#                                   ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.method-call.parens.matlab punctuation.separator.comma.matlab
+#                                    ^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.method-call.parens.matlab variable.other.readwrite.matlab
+#                                      ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.method-call.parens.matlab punctuation.section.parens.end.matlab
+#                                       ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab punctuation.terminator.semicolon.matlab
 >        end
 #^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab
 #        ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab storage.type.function.end.matlab
@@ -399,3 +398,4 @@
 #    ^^^ source.matlab meta.class.matlab meta.enum.matlab keyword.control.end.enum.matlab
 >end
 #^^^ source.matlab meta.class.matlab storage.type.class.end.matlab
+>

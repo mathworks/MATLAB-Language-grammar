@@ -76,6 +76,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#superclass_method_call</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#anonymous_function</string>
 				</dict>
 				<dict>
@@ -2250,6 +2254,103 @@
 				<dict>
 					<key>include</key>
 					<string>#string_quoted_double</string>
+				</dict>
+			</array>
+		</dict>
+		<key>superclass_method_call</key>
+		<dict>
+			<key>comment</key>
+			<string>
+				Superclass method call; matrix or array index (subscript)
+				We don't include $self here to avoid matching command syntax inside (), [], {}
+			</string>
+			<key>name</key>
+			<string>meta.method-call.parens.matlab</string>
+			<key>begin</key>
+			<string>([a-zA-Z][a-zA-Z0-9_]*)(@)\s*([a-zA-Z][a-zA-Z0-9_]*(?:\.[a-zA-Z][a-zA-Z0-9_]*)*)(\()</string>
+			<key>end</key>
+			<string>(\)|(?&lt;!\.\.\.)\n)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.matlab</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>comment</key>
+							<string>Embed MATLAB into function calls to allow keyword grammar injection.</string>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.accessor.scope-resolution.superclass.matlab</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>patterns</key>
+					<array>
+                        <dict>
+                            <key>name</key>
+                            <string>entity.name.type.class.matlab</string>
+                            <key>match</key>
+                            <string>(\w+)(?=\s*\z)</string>
+                        </dict>
+						<dict>
+							<key>match</key>
+							<string>([a-zA-Z][a-zA-Z0-9_]*)(\.)</string>
+							<key>captures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>name</key>
+									<string>entity.name.module.matlab</string>
+								</dict>
+								<key>2</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.accessor.dot.matlab</string>
+								</dict>
+							</dict>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.parens.begin.matlab</string>
+				</dict>
+			</dict>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.parens.end.matlab</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#end_in_parentheses</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#rules_before_command_dual</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#rules_after_command_dual</string>
 				</dict>
 			</array>
 		</dict>
