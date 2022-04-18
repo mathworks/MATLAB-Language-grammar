@@ -1,5 +1,4 @@
 {
-  "name": "matlab-language-grammar",
   "version": "1.2.1",
   "description": "MATLAB TextMate grammar",
   "scripts": {
