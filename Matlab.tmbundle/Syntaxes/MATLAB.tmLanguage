@@ -215,6 +215,10 @@
 							<key>match</key>
 							<string>,</string>
 						</dict>
+						<dict>
+							<key>include</key>
+							<string>#line_continuation</string>
+						</dict>
 					</array>
 				</dict>
 				<dict>
@@ -246,7 +250,15 @@
 							<key>include</key>
 							<string>$self</string>
 						</dict>
+						<dict>
+							<key>include</key>
+							<string>#line_continuation</string>
+						</dict>
 					</array>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#line_continuation</string>
 				</dict>
 			</array>
 			<key>end</key>
