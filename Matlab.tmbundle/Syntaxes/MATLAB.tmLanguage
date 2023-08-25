@@ -2536,7 +2536,7 @@
 					<key>name</key>
 					<string>keyword.operator.relational.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=[a-zA-Z0-9\s])(&gt;|&gt;=|&lt;|&lt;=)(?=\s)</string>
+					<string>(?&lt;=[a-zA-Z0-9\s])(&gt;|&gt;=|&lt;|&lt;=)(?=[a-zA-Z0-9\s])</string>
 				</dict>
 			</array>
 		</dict>
