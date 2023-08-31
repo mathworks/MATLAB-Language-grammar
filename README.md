@@ -2,7 +2,7 @@
 
 Regular expression based grammar for the MATLAB Language
 
-[![Build Status](https://travis-ci.com/mathworks/MATLAB-Language-grammar.svg?branch=master)](https://travis-ci.com/mathworks/MATLAB-Language-grammar)
+[![Build Status](https://app.travis-ci.com/mathworks/MATLAB-Language-grammar.svg?branch=master)](https://app.travis-ci.com/mathworks/MATLAB-Language-grammar)
 
 # Clients
 
