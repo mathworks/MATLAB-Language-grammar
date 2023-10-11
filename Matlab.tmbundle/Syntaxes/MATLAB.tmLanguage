@@ -2500,7 +2500,7 @@
 					<key>name</key>
 					<string>keyword.operator.storage.at.matlab</string>
 					<key>match</key>
-					<string>(?&lt;!\w)@(?=[\t ]*\w)</string>
+					<string>(?&lt;!\w)@(?=\s{,4}\w)</string>
 				</dict>
 				<dict>
 					<key>comment</key>
