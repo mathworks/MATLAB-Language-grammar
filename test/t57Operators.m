@@ -1,5 +1,11 @@
 % SYNTAX TEST "source.matlab"  "Imports: https://github.com/mathworks/MATLAB-Language-grammar/pull/51"
 
+%% Assignment and metadata query
+
+mc = ?class
+%  ^ keyword.operator.assignment.matlab
+%    ^ 	keyword.operator.other.question.matlab
+
 %% Arithmatic operations
 
 arithmetic1 = 1+2;
