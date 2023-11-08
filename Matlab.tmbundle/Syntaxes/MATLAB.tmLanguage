@@ -1695,7 +1695,7 @@
 			<key>begin</key>
 			<string>([a-zA-Z][a-zA-Z0-9_]*)\s*(\()</string>
 			<key>end</key>
-			<string>(\)|(?&lt;!\.\.\.)\n)</string>
+			<string>(\)|(?&lt;!\.\.\..*)\n)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1807,7 +1807,7 @@
 			<key>begin</key>
 			<string>([a-zA-Z][a-zA-Z0-9_]*)\s*(\.)(\()</string>
 			<key>end</key>
-			<string>(\)|(?&lt;!\.\.\.)\n)</string>
+			<string>(\)|(?&lt;!\.\.\..*)\n)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1907,7 +1907,7 @@
 			<key>begin</key>
 			<string>\(</string>
 			<key>end</key>
-			<string>(\)|(?&lt;!\.\.\.)\n)</string>
+			<string>(\)|(?&lt;!\.\.\..*)\n)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
@@ -2071,6 +2071,10 @@
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>include</key>
+							<string>#variables</string>
+						</dict>
+						<dict>
 							<key>comment</key>
 							<string>Indexed cell reference</string>
 							<key>name</key>
@@ -2078,15 +2082,11 @@
 							<key>match</key>
 							<string>([a-zA-Z][a-zA-Z0-9_]*)(?=\s*\{)</string>
 						</dict>
-						<dict>
-							<key>include</key>
-							<string>$self</string>
-						</dict>
 					</array>
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(\}|(?&lt;!\.\.\.)\n)</string>
+			<string>(\}|(?&lt;!\.\.\..*)\n)</string>
 			<key>comment</key>
 			<string>We don't include $self here to avoid matching command syntax inside (), [], {}</string>
 			<key>patterns</key>
@@ -2281,7 +2281,7 @@
 			<key>begin</key>
 			<string>([a-zA-Z][a-zA-Z0-9_]*)(@)\s*([a-zA-Z][a-zA-Z0-9_]*(?:\.[a-zA-Z][a-zA-Z0-9_]*)*)(\()</string>
 			<key>end</key>
-			<string>(\)|(?&lt;!\.\.\.)\n)</string>
+			<string>(\)|(?&lt;!\.\.\..*)\n)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>

@@ -77,12 +77,13 @@
 #          ^^^ source.matlab meta.function-call.parens.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
 #             ^^^^^^^ source.matlab meta.function-call.parens.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >    arg2 ... comment
-#^^^^ source.matlab
-#    ^^^^ source.matlab variable.other.readwrite.matlab
-#        ^ source.matlab
-#         ^^^ source.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
-#            ^^^^^^^^ source.matlab meta.continuation.line.matlab comment.continuation.line.matlab
+#^^^^ source.matlab meta.function-call.parens.matlab
+#    ^^^^ source.matlab meta.function-call.parens.matlab variable.other.readwrite.matlab 
+#        ^ source.matlab meta.function-call.parens.matlab
+#         ^^^ source.matlab meta.function-call.parens.matlab meta.continuation.line.matlab punctuation.separator.continuation.line.matlab
+#            ^^^^^^^^ source.matlab meta.function-call.parens.matlab meta.continuation.line.matlab comment.continuation.line.matlab
 >    );
-#^^^^^ source.matlab
+#^^^^ source.matlab meta.function-call.parens.matlab
+#    ^ source.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
 #     ^ source.matlab punctuation.terminator.semicolon.matlab
 >
