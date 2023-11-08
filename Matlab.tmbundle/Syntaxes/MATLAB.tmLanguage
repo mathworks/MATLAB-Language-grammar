@@ -1251,7 +1251,7 @@
 			<key>comment</key>
 			<string>					  1 				   2		3 				   4																															   </string>
 			<key>match</key>
-			<string>(?&lt;=^|[^.]\n|;|,|=)([^\S\n]*)(?# A&gt; )(\b\w+\b)([^\S\n]+)(?# B&gt; )((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=|\.\.\.)[^\S\n])[^\s({=;%][^\n;%]*)</string>
+			<string>(?&lt;=^|[^.]\n|;|,|=)([^\S\n]*)(?# A&gt; )(\b\w+\b)([^\S\n]+)(?# B&gt; )((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=|\.\.\.)[^\S\n]?)[^\s({=;%][^\n;%]*)</string>
 		</dict>
 		<key>comment_block</key>
 		<dict>
@@ -2516,7 +2516,7 @@
 					<key>name</key>
 					<string>keyword.operator.arithmetic.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=[a-zA-Z0-9\s])(\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)(?=[a-zA-Z0-9\s])</string>
+					<string>(?&lt;=[a-zA-Z0-9\s])(\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)(?=[a-zA-Z0-9\s]|(?:\.\.\.))</string>
 				</dict>
 				<dict>
 					<key>comment</key>
@@ -2524,7 +2524,7 @@
 					<key>name</key>
 					<string>keyword.operator.logical.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=[a-zA-Z0-9\s])(==|~=|&amp;|&amp;&amp;|\||\|\|)(?=[a-zA-Z0-9\s])</string>
+					<string>(?&lt;=[a-zA-Z0-9\s])(==|~=|&amp;|&amp;&amp;|\||\|\|)(?=[a-zA-Z0-9\s]|(?:\.\.\.))</string>
 				</dict>
 				<dict>
 					<key>comment</key>
@@ -2540,7 +2540,7 @@
 					<key>name</key>
 					<string>keyword.operator.vector.colon.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=[a-zA-Z0-9_\s(){,]|^):(?=[a-zA-Z0-9_\s()},]|$)</string>
+					<string>(?&lt;=[a-zA-Z0-9_\s(){,]|^):(?=[a-zA-Z0-9_\s()},]|$||(?:\.\.\.))</string>
 				</dict>
 				<dict>
 					<key>comment</key>
@@ -2548,7 +2548,7 @@
 					<key>name</key>
 					<string>keyword.operator.relational.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=[a-zA-Z0-9\s])(&gt;|&gt;=|&lt;|&lt;=)(?=\s)</string>
+					<string>(?&lt;=[a-zA-Z0-9\s])(&gt;|&gt;=|&lt;|&lt;=)(?=[a-zA-Z0-9\s]|(?:\.\.\.))</string>
 				</dict>
 			</array>
 		</dict>
