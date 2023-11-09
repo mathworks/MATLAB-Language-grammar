@@ -2071,16 +2071,8 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>comment</key>
-							<string>Indexed cell reference</string>
-							<key>name</key>
-							<string>variable.other.readwrite.matlab</string>
-							<key>match</key>
-							<string>([a-zA-Z][a-zA-Z0-9_]*)(?=\s*\{)</string>
-						</dict>
-						<dict>
 							<key>include</key>
-							<string>$self</string>
+							<string>#variables</string>
 						</dict>
 					</array>
 				</dict>
