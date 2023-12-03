@@ -1454,7 +1454,7 @@
 							<key>begin</key>
 							<string>\G</string>
 							<key>end</key>
-							<string>(?&lt;=[\)\n])</string>
+							<string>(?&lt;=\))|(?&gt;(?&lt;!\.\.\..*)\n)</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -1463,7 +1463,7 @@
 									<key>contentName</key>
 									<string>meta.assignment.variable.output.matlab</string>
 									<key>begin</key>
-									<string>\G(?=.*?=)</string>
+									<string>\G(?=[^\(]*?(?:=|\[|\.{3}))</string>
 									<key>end</key>
 									<string>\s*(=)\s*</string>
 									<key>endCaptures</key>
@@ -1484,7 +1484,7 @@
 										</dict>
 										<dict>
 											<key>match</key>
-											<string>(\])\s*\z</string>
+											<string>(\])\s*</string>
 											<key>captures</key>
 											<dict>
 												<key>1</key>
@@ -1508,11 +1508,11 @@
 										</dict>
 										<dict>
 											<key>include</key>
-											<string>#comments</string>
+											<string>#line_continuation</string>
 										</dict>
 										<dict>
 											<key>include</key>
-											<string>#line_continuation</string>
+											<string>#comments</string>
 										</dict>
 									</array>
 								</dict>
@@ -1522,7 +1522,7 @@
 									<key>name</key>
 									<string>entity.name.function.matlab</string>
 									<key>match</key>
-									<string>[a-zA-Z][a-zA-Z0-9_.]*(?=[^a-zA-Z0-9_.])</string>
+									<string>[a-zA-Z][a-zA-Z0-9_]*(?&gt;\.[a-zA-Z0-9_]+)*</string>
 									<key>patterns</key>
 									<array>
 										<dict>
@@ -1543,7 +1543,7 @@
 									<key>name</key>
 									<string>meta.parameters.matlab</string>
 									<key>begin</key>
-									<string>(?&lt;=[a-zA-Z0-9_])\s*\(</string>
+									<string>\s*\(</string>
 									<key>end</key>
 									<string>\)</string>
 									<key>beginCaptures</key>
@@ -1591,6 +1591,10 @@
 											<string>#line_continuation</string>
 										</dict>
 									</array>
+								</dict>
+								<dict>
+									<key>include</key>
+									<string>#line_continuation</string>
 								</dict>
 								<dict>
 									<key>include</key>
