@@ -8,7 +8,7 @@ classdef t08PropertyValidation
 %                                               ^ keyword.operator.assignment.matlab
 %                                                  ^^^^^^^ storage.modifier.access.matlab
         % Commentary in the properties block
-%       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.percentage.matlab
+%       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.percentage.matla
         Prop % comment
 %       ^^^^ variable.object.property.matlab
 %            ^^^^^^^^^ comment.line.percentage.matlab
