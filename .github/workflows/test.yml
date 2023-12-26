@@ -1,0 +1,37 @@
+# Run tests against the MATLAB Language Grammar
+
+name: test
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [16.x, 18.x]
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      
+      - name: Install system dependencies
+        run: sudo apt-get -y install libxml2-utils
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Run Tests
+        run: npm test

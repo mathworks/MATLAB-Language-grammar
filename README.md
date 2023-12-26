@@ -1,5 +1,4 @@
 # MATLAB-Language-grammar
-[![Build Status](https://app.travis-ci.com/mathworks/MATLAB-Language-grammar.svg?branch=master)](https://app.travis-ci.com/mathworks/MATLAB-Language-grammar)
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=mathworks/MATLAB-Language-grammar)
 
 Regular expression based grammar for the MATLAB Language
