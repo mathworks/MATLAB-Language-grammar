@@ -11,13 +11,12 @@ on:
 jobs:
   test:
 
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
     strategy:
       fail-fast: false
       matrix:
-        node-version: [16.x, 14.x, 18.x]
-        os: [windows-latest, ubuntu-latest]
+        node-version: [16.x, 18.x]
 
     steps:
       - uses: actions/checkout@v3
@@ -30,7 +29,6 @@ jobs:
       
       - name: Install system dependencies
         run: sudo apt-get -y install libxml2-utils
-        if: ${{ success() && matrix.os == 'ubuntu-latest' }}
 
       - name: Install Node.js dependencies
         run: npm ci
