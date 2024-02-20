@@ -227,7 +227,7 @@
 					<key>begin</key>
 					<string>(?&lt;=\))[^\S\n]*(\()?</string>
 					<key>end</key>
-					<string>(\))?[^\S\n]*(?=;|(?&lt;!(?:\.\.\..*))\n|%)</string>
+					<string>(\))?[^\S\n]*(?=;|(?&lt;!(?:\.{3}.*))\n|%)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -262,7 +262,7 @@
 				</dict>
 			</array>
 			<key>end</key>
-			<string>(?=;|(?&lt;!(?:\.\.\..*))\n|%)</string>
+			<string>(?=;|(?&lt;!(?:\.{3}.*))\n|%)</string>
 		</dict>
 		<key>blocks</key>
 		<dict>
@@ -299,7 +299,7 @@
 							<key>begin</key>
 							<string>\G(?!$)</string>
 							<key>end</key>
-							<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
+							<string>(?&lt;!\.{3})(?:(?=([,;])(?![^(]*\)))|$)</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -355,7 +355,7 @@
 							<key>begin</key>
 							<string>\G(?!$)</string>
 							<key>end</key>
-							<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
+							<string>(?&lt;!\.{3})(?:(?=([,;])(?![^(]*\)))|$)</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -385,7 +385,7 @@
 									<key>begin</key>
 									<string>\G(?!$)</string>
 									<key>end</key>
-									<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
+									<string>(?&lt;!\.{3})(?:(?=([,;])(?![^(]*\)))|$)</string>
 									<key>patterns</key>
 									<array>
 										<dict>
@@ -449,7 +449,7 @@
 							<key>begin</key>
 							<string>\G(?!$)</string>
 							<key>end</key>
-							<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
+							<string>(?&lt;!\.{3})(?:(?=([,;])(?![^(]*\)))|$)</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -495,7 +495,7 @@
 							<key>begin</key>
 							<string>\G(?!$)</string>
 							<key>end</key>
-							<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
+							<string>(?&lt;!\.{3})(?:(?=([,;])(?![^(]*\)))|$)</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -544,7 +544,7 @@
 							<key>name</key>
 							<string>meta.case.matlab</string>
 							<key>match</key>
-							<string>(\s*)(?&lt;=^|[\s,;])(case)\b(.*?)(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
+							<string>(\s*)(?&lt;=^|[\s,;])(case)\b(.*?)(?&lt;!\.{3})(?:(?=([,;])(?![^(]*\)))|$)</string>
 							<key>captures</key>
 							<dict>
 								<key>2</key>
@@ -559,7 +559,7 @@
 									<key>begin</key>
 									<string>\G(?!$)</string>
 									<key>end</key>
-									<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
+									<string>(?&lt;!\.{3})(?:(?=([,;])(?![^(]*\)))|$)</string>
 									<key>patterns</key>
 									<array>
 										<dict>
@@ -681,7 +681,7 @@
 							<key>begin</key>
 							<string>\G</string>
 							<key>end</key>
-							<string>(?&lt;!\.\.\.)(?:(?=([,;])(?![^(]*\)))|$)</string>
+							<string>(?&lt;!\.{3})(?:(?=([,;])(?![^(]*\)))|$)</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>1</key>
@@ -740,7 +740,7 @@
 							<key>begin</key>
 							<string>\G</string>
 							<key>end</key>
-							<string>(?&lt;!\.\.\.)(?=\n)</string>
+							<string>(?&lt;!\.{3})(?=\n)</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -832,7 +832,7 @@
 												</dict>
 											</dict>
 											<key>end</key>
-											<string>(?&lt;!\.\.\.)(?=\n)</string>
+											<string>(?&lt;!\.{3})(?=\n)</string>
 											<key>patterns</key>
 											<array>
 												<dict>
@@ -902,7 +902,7 @@
 										</dict>
 									</array>
 									<key>end</key>
-									<string>(?&lt;!\.\.\.)(?=\s*%|\n)</string>
+									<string>(?&lt;!\.{3})(?=\s*%|\n)</string>
 								</dict>
 							</array>
 						</dict>
@@ -1251,7 +1251,7 @@
 			<key>comment</key>
 			<string>					  1 				   2		3 				   4																															   </string>
 			<key>match</key>
-			<string>(?&lt;=^|[^.]\n|;|,|=)([^\S\n]*)(?# A&gt; )(\b\w+\b)([^\S\n]+)(?# B&gt; )((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=|\.\.\.)[^\S\n]?)[^\s({=;%][^\n;%]*)</string>
+			<string>(?&lt;=^|[^.]\n|;|,|=)([^\S\n]*)(?# A&gt; )(\b\w+\b)([^\S\n]+)(?# B&gt; )((?!(\+|-|\*|\.\*|\/|\.\/|\\|\.\\|\^|\.\^|==|~=|&amp;|&amp;&amp;|\||\|\||=|:|&gt;|&gt;=|&lt;|&lt;=|\.{3})[^\S\n]?)[^\s({=;%][^\n;%]*)</string>
 		</dict>
 		<key>comment_block</key>
 		<dict>
@@ -1454,7 +1454,7 @@
 							<key>begin</key>
 							<string>\G</string>
 							<key>end</key>
-							<string>(?&lt;=[\)\n])</string>
+							<string>(?&lt;=\))|(?&gt;(?&lt;!\.{3}.*)\n)</string>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -1463,7 +1463,7 @@
 									<key>contentName</key>
 									<string>meta.assignment.variable.output.matlab</string>
 									<key>begin</key>
-									<string>\G(?=.*?=)</string>
+									<string>\G(?=[^\(]*?(?:=|\[|\.{3}))</string>
 									<key>end</key>
 									<string>\s*(=)\s*</string>
 									<key>endCaptures</key>
@@ -1484,7 +1484,7 @@
 										</dict>
 										<dict>
 											<key>match</key>
-											<string>(\])\s*\z</string>
+											<string>(\])\s*</string>
 											<key>captures</key>
 											<dict>
 												<key>1</key>
@@ -1508,11 +1508,11 @@
 										</dict>
 										<dict>
 											<key>include</key>
-											<string>#comments</string>
+											<string>#line_continuation</string>
 										</dict>
 										<dict>
 											<key>include</key>
-											<string>#line_continuation</string>
+											<string>#comments</string>
 										</dict>
 									</array>
 								</dict>
@@ -1522,7 +1522,7 @@
 									<key>name</key>
 									<string>entity.name.function.matlab</string>
 									<key>match</key>
-									<string>[a-zA-Z][a-zA-Z0-9_.]*(?=[^a-zA-Z0-9_.])</string>
+									<string>[a-zA-Z][a-zA-Z0-9_]*(?&gt;\.[a-zA-Z0-9_]+)*</string>
 									<key>patterns</key>
 									<array>
 										<dict>
@@ -1543,7 +1543,7 @@
 									<key>name</key>
 									<string>meta.parameters.matlab</string>
 									<key>begin</key>
-									<string>(?&lt;=[a-zA-Z0-9_])\s*\(</string>
+									<string>\s*\(</string>
 									<key>end</key>
 									<string>\)</string>
 									<key>beginCaptures</key>
@@ -1591,6 +1591,10 @@
 											<string>#line_continuation</string>
 										</dict>
 									</array>
+								</dict>
+								<dict>
+									<key>include</key>
+									<string>#line_continuation</string>
 								</dict>
 								<dict>
 									<key>include</key>
@@ -1695,7 +1699,7 @@
 			<key>begin</key>
 			<string>([a-zA-Z][a-zA-Z0-9_]*)\s*(\()</string>
 			<key>end</key>
-			<string>(\)|(?&lt;!\.\.\..*)\n)</string>
+			<string>(\)|(?&lt;!\.{3}.*)\n)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1807,7 +1811,7 @@
 			<key>begin</key>
 			<string>([a-zA-Z][a-zA-Z0-9_]*)\s*(\.)(\()</string>
 			<key>end</key>
-			<string>(\)|(?&lt;!\.\.\..*)\n)</string>
+			<string>(\)|(?&lt;!\.{3}.*)\n)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1907,7 +1911,7 @@
 			<key>begin</key>
 			<string>\(</string>
 			<key>end</key>
-			<string>(\)|(?&lt;!\.\.\..*)\n)</string>
+			<string>(\)|(?&lt;!\.{3}.*)\n)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
@@ -2078,7 +2082,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(\}|(?&lt;!\.\.\..*)\n)</string>
+			<string>(\}|(?&lt;!\.{3}.*)\n)</string>
 			<key>comment</key>
 			<string>We don't include $self here to avoid matching command syntax inside (), [], {}</string>
 			<key>patterns</key>
@@ -2117,7 +2121,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\.\.\.)(.*)$</string>
+			<string>(\.{3})(.*)$</string>
 		</dict>
 		<key>shell_string</key>
 		<dict>
@@ -2273,7 +2277,7 @@
 			<key>begin</key>
 			<string>([a-zA-Z][a-zA-Z0-9_]*)(@)\s*([a-zA-Z][a-zA-Z0-9_]*(?:\.[a-zA-Z][a-zA-Z0-9_]*)*)(\()</string>
 			<key>end</key>
-			<string>(\)|(?&lt;!\.\.\..*)\n)</string>
+			<string>(\)|(?&lt;!\.{3}.*)\n)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -2508,7 +2512,7 @@
 					<key>name</key>
 					<string>keyword.operator.arithmetic.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=[a-zA-Z0-9\s])(\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)(?=[a-zA-Z0-9\s]|(?:\.\.\.))</string>
+					<string>(?&lt;=[a-zA-Z0-9\s])(\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)(?=[a-zA-Z0-9\s]|(?:\.{3}))</string>
 				</dict>
 				<dict>
 					<key>comment</key>
@@ -2516,7 +2520,7 @@
 					<key>name</key>
 					<string>keyword.operator.logical.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=[a-zA-Z0-9\s])(==|~=|&amp;|&amp;&amp;|\||\|\|)(?=[a-zA-Z0-9\s]|(?:\.\.\.))</string>
+					<string>(?&lt;=[a-zA-Z0-9\s])(==|~=|&amp;|&amp;&amp;|\||\|\|)(?=[a-zA-Z0-9\s]|(?:\.{3}))</string>
 				</dict>
 				<dict>
 					<key>comment</key>
@@ -2532,7 +2536,7 @@
 					<key>name</key>
 					<string>keyword.operator.vector.colon.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=[a-zA-Z0-9_\s(){,]|^):(?=[a-zA-Z0-9_\s()},]|$||(?:\.\.\.))</string>
+					<string>(?&lt;=[a-zA-Z0-9_\s(){,]|^):(?=[a-zA-Z0-9_\s()},]|$||(?:\.{3}))</string>
 				</dict>
 				<dict>
 					<key>comment</key>
@@ -2540,7 +2544,7 @@
 					<key>name</key>
 					<string>keyword.operator.relational.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=[a-zA-Z0-9\s])(&gt;|&gt;=|&lt;|&lt;=)(?=[a-zA-Z0-9\s]|(?:\.\.\.))</string>
+					<string>(?&lt;=[a-zA-Z0-9\s])(&gt;|&gt;=|&lt;|&lt;=)(?=[a-zA-Z0-9\s]|(?:\.{3}))</string>
 				</dict>
 			</array>
 		</dict>
