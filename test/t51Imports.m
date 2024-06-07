@@ -22,8 +22,8 @@ import module.submodule.class.function
 %                            ^ punctuation.separator.matlab
 %                             ^^^^^^^^ entity.name.module.matlab
 
-import module.*
-% <------ keyword.other.import.matlab
-%      ^^^^^^ entity.name.module.matlab
-%            ^ punctuation.separator.matlab
-%             ^ variable.language.wildcard.matlab
+   import module.*
+%  ^^^^^^ keyword.other.import.matlab
+%         ^^^^^^ entity.name.module.matlab
+%               ^ punctuation.separator.matlab
+%                ^ variable.language.wildcard.matlab
