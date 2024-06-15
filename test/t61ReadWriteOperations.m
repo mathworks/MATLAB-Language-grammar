@@ -1,4 +1,4 @@
-% SYNTAX TEST "source.matlab"  "Imports: https://github.com/mathworks/MATLAB-Language-grammar/pull/51"
+% SYNTAX TEST "source.matlab"  "ReadWriteOperations: https://github.com/mathworks/MATLAB-Language-grammar/pull/51"
 
 variable
 % <------- variable.other.readwrite.matlab
