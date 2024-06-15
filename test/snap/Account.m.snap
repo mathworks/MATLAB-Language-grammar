@@ -108,15 +108,15 @@
 #^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab
 #                ^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab keyword.control.else.matlab
 >                    error('Value must be numeric')
-#^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab
-#                    ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab entity.name.function.matlab
-#                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
-#                          ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
-#                           ^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab string.quoted.single.matlab
-#                                                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
-#                                                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
+#^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab
+#                    ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#                         ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#                          ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#                           ^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab string.quoted.single.matlab
+#                                                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                                                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
 >                end
-#^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab
+#^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab meta.else.matlab
 #                ^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab meta.if.matlab keyword.control.end.if.matlab
 >            end
 #^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.if.matlab
