@@ -692,17 +692,16 @@
 							<key>name</key>
 							<string>meta.while.declaration.matlab</string>
 							<key>begin</key>
-							<string>\G</string>
+							<string>\G(?!$)</string>
 							<key>end</key>
-							<string>(?&lt;!\.{3}.*)(?:(?=([,;])(?![^(]*\)))|$)</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>1</key>
+							<string>(?&lt;!\.{3}.*)(?:(?=[,;](?![^(]*\)))|$)</string>
+							<key>patterns</key>
+							<array>
 								<dict>
 									<key>include</key>
 									<string>$self</string>
 								</dict>
-							</dict>
+							</array>
 						</dict>
 						<dict>
 							<key>include</key>

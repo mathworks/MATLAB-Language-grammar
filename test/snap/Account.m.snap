@@ -278,7 +278,10 @@
 #            ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab keyword.control.while.matlab
 #                 ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab meta.while.declaration.matlab
 #                  ^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab meta.while.declaration.matlab variable.other.readwrite.matlab
-#                            ^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab meta.while.declaration.matlab
+#                            ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab meta.while.declaration.matlab
+#                             ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab meta.while.declaration.matlab keyword.operator.relational.matlab
+#                              ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab meta.while.declaration.matlab
+#                               ^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab meta.while.declaration.matlab constant.numeric.decimal.matlab
 >                n = n + 1;
 #^^^^^^^^^^^^^^^^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab
 #                ^ source.matlab meta.class.matlab meta.methods.matlab meta.function.matlab meta.while.matlab meta.assignment.variable.single.matlab variable.other.readwrite.matlab
