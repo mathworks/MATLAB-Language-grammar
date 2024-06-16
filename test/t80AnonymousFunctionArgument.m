@@ -1,4 +1,4 @@
-% SYNTAX TEST "source.matlab"  "AnonymousFunctionArgument: https://github.com/mathworks/MATLAB-Language-grammar/pull/51"
+% SYNTAX TEST "source.matlab"  "AnonymousFunctionArgument: https://github.com/mathworks/MATLAB-Language-grammar/pull/80"
 
 q = integral(@(x) x.^2, 0, 1);
 %            ^^^^^^^^^ meta.function.anonymous.matlab

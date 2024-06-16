@@ -1,4 +1,4 @@
-% SYNTAX TEST "source.matlab"  "LineContinationInAnonymousFunctions: https://github.com/mathworks/MATLAB-Language-grammar/pull/52"
+% SYNTAX TEST "source.matlab"  "LineContinationInAnonymousFunctions: https://github.com/mathworks/MATLAB-Language-grammar/pull/54"
 
 
 @(x, y) x.^2+y;
