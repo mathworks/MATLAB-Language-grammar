@@ -1,7 +1,7 @@
 % SYNTAX TEST "source.matlab"  "Blocks like if, for, etc. on a single line: https://github.com/mathworks/MATLAB-Language-grammar/issues/19"
 function y = t19SingleLineBlocks(x)
     switch x
-%          ^ variable.other.constant.matlab
+%          ^ meta.switch.declaration.matlab
         case 1
 %       ^^^^ keyword.control.switch.case.matlab
 %            ^ constant.numeric.decimal.matlab
@@ -23,7 +23,7 @@ function y = t19SingleLineBlocks(x)
     end
     switch x, case 1, disp(1), case 2, disp(2), otherwise, disp(0); end
 %   ^^^^^^ keyword.control.switch.matlab
-%          ^ variable.other.constant.matlab
+%          ^ meta.switch.declaration.matlab
 %           ^ punctuation.separator.comma.matlab
 %             ^^^^ keyword.control.switch.case.matlab
 %                  ^ constant.numeric.decimal.matlab

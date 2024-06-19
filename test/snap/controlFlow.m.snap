@@ -15,79 +15,79 @@
 #   ^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab comment.line.double-percentage.matlab entity.name.section.matlab
 >switch nargin
 #^^^^^^ source.matlab meta.function.matlab meta.switch.matlab keyword.control.switch.matlab
-#      ^ source.matlab meta.function.matlab meta.switch.matlab
-#       ^^^^^^ source.matlab meta.function.matlab meta.switch.matlab variable.other.constant.matlab
+#      ^ source.matlab meta.function.matlab meta.switch.matlab meta.switch.declaration.matlab
+#       ^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.switch.declaration.matlab variable.language.function.matlab
 >  case 0
 #^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
 #  ^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab keyword.control.switch.case.matlab
 #      ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.case.declaration.matlab
 #       ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.case.declaration.matlab constant.numeric.decimal.matlab
 >    return
-#^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.control.matlab
-#    ^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.control.matlab keyword.control.flow.matlab
+#^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.control.matlab
+#    ^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.control.matlab keyword.control.flow.matlab
 >  case 1
 #^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
 #  ^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab keyword.control.switch.case.matlab
 #      ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.case.declaration.matlab
 #       ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.case.declaration.matlab constant.numeric.decimal.matlab
 >    y = varargin{1};
-#^^^^ source.matlab meta.function.matlab meta.switch.matlab
-#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.assignment.variable.single.matlab variable.other.readwrite.matlab
-#     ^ source.matlab meta.function.matlab meta.switch.matlab
-#      ^ source.matlab meta.function.matlab meta.switch.matlab keyword.operator.assignment.matlab
-#       ^ source.matlab meta.function.matlab meta.switch.matlab
-#        ^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab variable.language.function.matlab
-#                ^ source.matlab meta.function.matlab meta.switch.matlab
-#                 ^ source.matlab meta.function.matlab meta.switch.matlab constant.numeric.decimal.matlab
-#                  ^ source.matlab meta.function.matlab meta.switch.matlab
-#                   ^ source.matlab meta.function.matlab meta.switch.matlab punctuation.terminator.semicolon.matlab
+#^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.assignment.variable.single.matlab variable.other.readwrite.matlab
+#     ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#      ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab keyword.operator.assignment.matlab
+#       ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#        ^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab variable.language.function.matlab
+#                ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#                 ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab constant.numeric.decimal.matlab
+#                  ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#                   ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab punctuation.terminator.semicolon.matlab
 >    % Check single-line if inside switch for https://github.com/mathworks/MATLAB-Language-grammar/issues/19
-#^^^^ source.matlab meta.function.matlab meta.switch.matlab punctuation.whitespace.comment.leading.matlab
-#    ^ source.matlab meta.function.matlab meta.switch.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
-#     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab comment.line.percentage.matlab
+#^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab punctuation.whitespace.comment.leading.matlab
+#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab
+#     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab comment.line.percentage.matlab
 >    if varargin{1} < 0, return; end
-#^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab
-#    ^^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab keyword.control.if.matlab
-#      ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.if.declaration.matlab
-#       ^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.if.declaration.matlab variable.language.function.matlab
-#               ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.if.declaration.matlab
-#                ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.if.declaration.matlab constant.numeric.decimal.matlab
-#                 ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.if.declaration.matlab
-#                  ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.if.declaration.matlab
-#                   ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.if.declaration.matlab keyword.operator.relational.matlab
-#                    ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.if.declaration.matlab
-#                     ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.if.declaration.matlab constant.numeric.decimal.matlab
-#                      ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab punctuation.separator.comma.matlab
-#                       ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.control.matlab
-#                        ^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab meta.control.matlab keyword.control.flow.matlab
-#                              ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab punctuation.terminator.semicolon.matlab
-#                               ^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab
-#                                ^^^ source.matlab meta.function.matlab meta.switch.matlab meta.if.matlab keyword.control.end.if.matlab
+#^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab
+#    ^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab keyword.control.if.matlab
+#      ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab meta.if.declaration.matlab
+#       ^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab meta.if.declaration.matlab variable.language.function.matlab
+#               ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab meta.if.declaration.matlab
+#                ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab meta.if.declaration.matlab constant.numeric.decimal.matlab
+#                 ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab meta.if.declaration.matlab
+#                  ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab meta.if.declaration.matlab
+#                   ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab meta.if.declaration.matlab keyword.operator.relational.matlab
+#                    ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab meta.if.declaration.matlab
+#                     ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab meta.if.declaration.matlab constant.numeric.decimal.matlab
+#                      ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab punctuation.separator.comma.matlab
+#                       ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab meta.control.matlab
+#                        ^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab meta.control.matlab keyword.control.flow.matlab
+#                              ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab punctuation.terminator.semicolon.matlab
+#                               ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab
+#                                ^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.if.matlab keyword.control.end.if.matlab
 >  case 2
 #^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
 #  ^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab keyword.control.switch.case.matlab
 #      ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.case.declaration.matlab
 #       ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.case.declaration.matlab constant.numeric.decimal.matlab
 >    y = varargin{1} + varargin{2};
-#^^^^ source.matlab meta.function.matlab meta.switch.matlab
-#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.assignment.variable.single.matlab variable.other.readwrite.matlab
-#     ^ source.matlab meta.function.matlab meta.switch.matlab
-#      ^ source.matlab meta.function.matlab meta.switch.matlab keyword.operator.assignment.matlab
-#       ^ source.matlab meta.function.matlab meta.switch.matlab
-#        ^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab variable.language.function.matlab
-#                ^ source.matlab meta.function.matlab meta.switch.matlab
-#                 ^ source.matlab meta.function.matlab meta.switch.matlab constant.numeric.decimal.matlab
-#                  ^ source.matlab meta.function.matlab meta.switch.matlab
-#                   ^ source.matlab meta.function.matlab meta.switch.matlab
-#                    ^ source.matlab meta.function.matlab meta.switch.matlab keyword.operator.arithmetic.matlab
-#                     ^ source.matlab meta.function.matlab meta.switch.matlab
-#                      ^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab variable.language.function.matlab
-#                              ^ source.matlab meta.function.matlab meta.switch.matlab
-#                               ^ source.matlab meta.function.matlab meta.switch.matlab constant.numeric.decimal.matlab
-#                                ^ source.matlab meta.function.matlab meta.switch.matlab
-#                                 ^ source.matlab meta.function.matlab meta.switch.matlab punctuation.terminator.semicolon.matlab
+#^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#    ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab meta.assignment.variable.single.matlab variable.other.readwrite.matlab
+#     ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#      ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab keyword.operator.assignment.matlab
+#       ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#        ^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab variable.language.function.matlab
+#                ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#                 ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab constant.numeric.decimal.matlab
+#                  ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#                   ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#                    ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab keyword.operator.arithmetic.matlab
+#                     ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#                      ^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab variable.language.function.matlab
+#                              ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#                               ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab constant.numeric.decimal.matlab
+#                                ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
+#                                 ^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab punctuation.terminator.semicolon.matlab
 >  otherwise
-#^^ source.matlab meta.function.matlab meta.switch.matlab meta.otherwise.matlab
+#^^ source.matlab meta.function.matlab meta.switch.matlab meta.case.matlab
 #  ^^^^^^^^^ source.matlab meta.function.matlab meta.switch.matlab meta.otherwise.matlab keyword.control.switch.otherwise.matlab
 >end
 #^^^ source.matlab meta.function.matlab meta.switch.matlab keyword.control.end.switch.matlab

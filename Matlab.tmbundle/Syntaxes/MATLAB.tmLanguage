@@ -527,7 +527,7 @@
 					<key>name</key>
 					<string>meta.switch.matlab</string>
 					<key>begin</key>
-					<string>\s*(?&lt;=^|[\s,;])(switch)\s+([a-zA-Z0-9][a-zA-Z0-9_]*)</string>
+					<string>\s*(?&lt;=^|[\s,;])(switch)\b</string>
 					<key>end</key>
 					<string>\s*(?&lt;=^|[\s,;])(end)\b</string>
 					<key>beginCaptures</key>
@@ -537,11 +537,6 @@
 							<key>name</key>
 							<string>keyword.control.switch.matlab</string>
 						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>variable.other.constant.matlab</string>
-						</dict>
 					</dict>
 					<key>endCaptures</key>
 					<dict>
@@ -550,22 +545,51 @@
 							<key>name</key>
 							<string>keyword.control.end.switch.matlab</string>
 						</dict>
+						<key>2</key>
+						<dict>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>$self</string>
+								</dict>
+							</array>
+						</dict>
 					</dict>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>name</key>
+							<string>meta.switch.declaration.matlab</string>
+							<key>begin</key>
+							<string>\G(?!$)</string>
+							<key>end</key>
+							<string>(?&lt;!\.{3}.*)(?:(?=[,;](?![^(]*\)))|$)</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>$self</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>name</key>
 							<string>meta.case.matlab</string>
-							<key>match</key>
-							<string>(\s*)(?&lt;=^|[\s,;])(case)\b(.*?)(?&lt;!\.{3}.*)(?:(?=([,;])(?![^(]*\)))|$)</string>
-							<key>captures</key>
+							<key>begin</key>
+							<string>\s*(?&lt;=^|[\s,;])(case)\b</string>
+							<key>beginCaptures</key>
 							<dict>
-								<key>2</key>
+								<key>1</key>
 								<dict>
 									<key>name</key>
 									<string>keyword.control.switch.case.matlab</string>
 								</dict>
-								<key>3</key>
+							</dict>
+							<key>end</key>
+							<string>\s*(?&lt;=^|[\s,;])(?=case|otherwise|end)\b</string>
+							<key>patterns</key>
+							<array>
 								<dict>
 									<key>name</key>
 									<string>meta.case.declaration.matlab</string>
@@ -581,31 +605,34 @@
 										</dict>
 									</array>
 								</dict>
-							</dict>
+								<dict>
+									<key>include</key>
+									<string>$self</string>
+								</dict>
+							</array>
 						</dict>
 						<dict>
 							<key>name</key>
 							<string>meta.otherwise.matlab</string>
-							<key>match</key>
-							<string>(\s*)(?&lt;=^|[\s,;])(otherwise)\b</string>
-							<key>captures</key>
+							<key>begin</key>
+							<string>\s*(?&lt;=^|[\s,;])(otherwise)\b</string>
+							<key>beginCaptures</key>
 							<dict>
-								<key>2</key>
+								<key>1</key>
 								<dict>
 									<key>name</key>
 									<string>keyword.control.switch.otherwise.matlab</string>
 								</dict>
-								<key>3</key>
-								<dict>
-									<key>patterns</key>
-									<array>
-										<dict>
-											<key>include</key>
-											<string>$self</string>
-										</dict>
-									</array>
-								</dict>
 							</dict>
+							<key>end</key>
+							<string>\s*(?&lt;=^|[\s,;])(?=end)\b</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>$self</string>
+								</dict>
+							</array>
 						</dict>
 						<dict>
 							<key>include</key>
