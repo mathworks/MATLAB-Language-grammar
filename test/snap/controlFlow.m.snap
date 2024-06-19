@@ -119,35 +119,35 @@
 >    elseif y < 20
 #^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab
 #    ^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab keyword.control.elseif.matlab
-#          ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
-#           ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab variable.other.readwrite.matlab
-#            ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
-#             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab keyword.operator.relational.matlab
-#              ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
-#               ^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab constant.numeric.decimal.matlab
+#          ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.elseif.declaration.matlab
+#           ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.elseif.declaration.matlab variable.other.readwrite.matlab 
+#            ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.elseif.declaration.matlab
+#             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.elseif.declaration.matlab keyword.operator.relational.matlab
+#              ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.elseif.declaration.matlab
+#               ^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.elseif.declaration.matlab constant.numeric.decimal.matlab
 >        disp('y < 20');
-#^^^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
-#        ^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.function-call.parens.matlab entity.name.function.matlab
-#            ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
-#             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.function-call.parens.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
-#              ^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.function-call.parens.matlab string.quoted.single.matlab
-#                    ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.function-call.parens.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
-#                     ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
-#                      ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab punctuation.terminator.semicolon.matlab
+#^^^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab
+#        ^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#            ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.function-call.parens.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#              ^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.function-call.parens.matlab string.quoted.single.matlab
+#                    ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.function-call.parens.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                     ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
+#                      ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab punctuation.terminator.semicolon.matlab
 >    else
-#^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab
+#^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab
 #    ^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab keyword.control.else.matlab
 >        disp("y >= 20");
-#^^^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
-#        ^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.function-call.parens.matlab entity.name.function.matlab
-#            ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
-#             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.function-call.parens.matlab string.quoted.double.matlab punctuation.definition.string.begin.matlab
-#              ^^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.function-call.parens.matlab string.quoted.double.matlab
-#                     ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.function-call.parens.matlab string.quoted.double.matlab punctuation.definition.string.end.matlab
-#                      ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
-#                       ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab punctuation.terminator.semicolon.matlab
+#^^^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab
+#        ^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab entity.name.function.matlab
+#            ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
+#             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab string.quoted.double.matlab punctuation.definition.string.begin.matlab
+#              ^^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab string.quoted.double.matlab
+#                     ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab string.quoted.double.matlab punctuation.definition.string.end.matlab
+#                      ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
+#                       ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab punctuation.terminator.semicolon.matlab
 >    end
-#^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab
+#^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab 
 #    ^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab keyword.control.end.if.matlab
 >catch ME
 #^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.catch.matlab keyword.control.catch.matlab
