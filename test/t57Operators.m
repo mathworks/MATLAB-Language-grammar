@@ -1,4 +1,4 @@
-% SYNTAX TEST "source.matlab"  "Imports: https://github.com/mathworks/MATLAB-Language-grammar/pull/57"
+% SYNTAX TEST "source.matlab"  "Operators: https://github.com/mathworks/MATLAB-Language-grammar/pull/57"
 
 %% Assignment and metadata query
 
