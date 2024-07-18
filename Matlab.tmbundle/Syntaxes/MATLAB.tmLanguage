@@ -114,6 +114,10 @@
 					<key>include</key>
 					<string>#curly_brackets</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#metaclass_literal</string>
+				</dict>
 			</array>
 		</dict>
 		<key>rules_after_command_dual</key>
@@ -2992,7 +2996,7 @@
 			<key>name</key>
 			<string>variable.other.readwrite.matlab</string>
 			<key>match</key>
-			<string>(?&lt;![a-zA-Z0-9_]|\.)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|(?:\(|\{|\.\())</string>
+			<string>(?&lt;![a-zA-Z0-9_]|\.|\?)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|(?:\(|\{|\.\())</string>
 		</dict>
 		<key>property_access</key>
 		<dict>
@@ -3002,6 +3006,32 @@
 			<string>punctuation.accessor.dot.matlab</string>
 			<key>match</key>
 			<string>\.</string>
+		</dict>
+		<key>metaclass_literal</key>
+		<dict>
+			<key>comment</key>
+			<string>Accessing a metaclass via the ? operator</string>
+			<key>name</key>
+			<string>meta.metaclass.matlab</string>
+			<key>begin</key>
+			<string>(?&lt;=\?)(?=[a-zA-Z])</string>
+			<key>end</key>
+			<string>(?&lt;=[a-zA-Z0-9_])(?![a-zA-Z0-9_]|\.|\(|{)</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>entity.other.class.matlab</string>
+					<key>match</key>
+					<string>(?&lt;=[.\?])[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_.])</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>entity.name.namespace.matlab</string>
+					<key>match</key>
+					<string>[a-zA-Z][a-zA-Z0-9_]*</string>
+				</dict>
+			</array>
 		</dict>
 	</dict>
 </dict>
