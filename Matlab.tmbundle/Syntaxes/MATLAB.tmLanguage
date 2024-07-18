@@ -783,78 +783,87 @@
 							<key>patterns</key>
 							<array>
 								<dict>
+									<key>name</key>
+									<string>storage.modifier.section.class.matlab</string>
+									<!-- <key>comment</key> -->
+									<!-- <string>This breaks if there is a line continuation between end of attrs and name, but works for line continuations inside attrs. Line continuations are a mistake.</string> -->
 									<key>begin</key>
-									<string>\G\s*(\((.|\s)*\))?(?=\s* \w+)\s*(\w+)\s*</string>
-									<key>beginCaptures</key>
-									<dict>
-										<key>1</key>
+									<string>\G\(</string>
+									<key>end</key>
+									<string>\)(?=\s*\w+)</string>
+									<key>patterns</key>
+									<array>
 										<dict>
-											<key>comment</key>
-											<string>Optional attributes</string>
+											<key>name</key>
+											<string>punctuation.separator.modifier.comma.matlab</string>
+											<key>match</key>
+											<string>,</string>
+										</dict>
+										<dict>
+											<key>name</key>
+											<string>storage.modifier.class.matlab</string>
+											<key>match</key>
+											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
+										</dict>
+										<dict>
+											<key>begin</key>
+											<string>(=)\s*</string>
+											<key>beginCaptures</key>
+											<dict>
+												<key>1</key>
+												<dict>
+													<key>name</key>
+													<string>keyword.operator.assignment.matlab</string>
+												</dict>
+											</dict>
+											<key>end</key>
+											<string>(?=\)|,)</string>
 											<key>patterns</key>
 											<array>
 												<dict>
 													<key>name</key>
-													<string>punctuation.section.parens.begin.matlab</string>
+													<string>constant.language.boolean.matlab</string>
 													<key>match</key>
-													<string>(?&lt;=\s)\(</string>
-												</dict>
-												<dict>
-													<key>name</key>
-													<string>punctuation.section.parens.end.matlab</string>
-													<key>match</key>
-													<string>\)\z</string>
-												</dict>
-												<dict>
-													<key>name</key>
-													<string>punctuation.separator.modifier.comma.matlab</string>
-													<key>match</key>
-													<string>,</string>
-												</dict>
-												<dict>
-													<key>name</key>
-													<string>storage.modifier.class.matlab</string>
-													<key>match</key>
-													<string>[a-zA-Z][a-zA-Z0-9_]*</string>
-												</dict>
-												<dict>
-													<key>begin</key>
-													<string>(=)\s*</string>
-													<key>beginCaptures</key>
-													<dict>
-														<key>1</key>
-														<dict>
-															<key>name</key>
-															<string>keyword.operator.assignment.matlab</string>
-														</dict>
-													</dict>
-													<key>end</key>
-													<string>(?=\)|,)</string>
-													<key>patterns</key>
-													<array>
-														<dict>
-															<key>name</key>
-															<string>constant.language.boolean.matlab</string>
-															<key>match</key>
-															<string>true|false</string>
-														</dict>
-														<dict>
-															<key>include</key>
-															<string>#string</string>
-														</dict>
-													</array>
+													<string>true|false</string>
 												</dict>
 												<dict>
 													<key>include</key>
-													<string>#comments</string>
+													<string>#string</string>
 												</dict>
 												<dict>
 													<key>include</key>
-													<string>#line_continuation</string>
+													<string>#curly_brackets</string>
+												</dict>
+												<dict>
+													<key>include</key>
+													<string>#line_continuations</string>
 												</dict>
 											</array>
 										</dict>
-										<key>3</key>
+										<dict>
+											<key>include</key>
+											<string>#comments</string>
+										</dict>
+										<dict>
+											<key>include</key>
+											<string>#line_continuation</string>
+										</dict>
+										<dict>
+											<key>include</key>
+											<string>#comments</string>
+										</dict>
+										<dict>
+											<key>include</key>
+											<string>#line_continuation</string>
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>begin</key>
+									<string>\s*(\w+)</string>
+									<key>beginCaptures</key>
+									<dict>
+										<key>1</key>
 										<dict>
 											<key>comment</key>
 											<string>Class name</string>
@@ -862,21 +871,13 @@
 											<string>entity.name.type.class.matlab</string>
 										</dict>
 									</dict>
+									<key>end</key>
+									<string>(?&lt;!\.{3})(?=\s*%|\n)</string>
 									<key>patterns</key>
 									<array>
 										<dict>
 											<key>begin</key>
 											<string>\G</string>
-											<key>beginCaptures</key>
-											<dict>
-												<key>1</key>
-												<dict>
-													<key>comment</key>
-													<string>Class name</string>
-													<key>name</key>
-													<string>entity.name.type.class.matlab</string>
-												</dict>
-											</dict>
 											<key>end</key>
 											<string>(?&lt;!\.{3})(?=\n)</string>
 											<key>patterns</key>
@@ -947,8 +948,6 @@
 											<string>#line_continuation</string>
 										</dict>
 									</array>
-									<key>end</key>
-									<string>(?&lt;!\.{3})(?=\s*%|\n)</string>
 								</dict>
 							</array>
 						</dict>
