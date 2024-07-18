@@ -836,7 +836,7 @@
 												</dict>
 												<dict>
 													<key>include</key>
-													<string>#line_continuations</string>
+													<string>#line_continuation</string>
 												</dict>
 											</array>
 										</dict>
