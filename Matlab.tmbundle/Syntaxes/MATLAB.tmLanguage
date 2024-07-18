@@ -785,8 +785,8 @@
 								<dict>
 									<key>name</key>
 									<string>storage.modifier.section.class.matlab</string>
-									<!-- <key>comment</key> -->
-									<!-- <string>This breaks if there is a line continuation between end of attrs and name, but works for line continuations inside attrs. Line continuations are a mistake.</string> -->
+									<key>comment</key>
+									<string>This breaks if there is a line continuation between end of attrs and name, but works for line continuations inside attrs. Line continuations are a mistake.</string>
 									<key>begin</key>
 									<string>\G\(</string>
 									<key>end</key>
