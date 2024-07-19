@@ -912,6 +912,14 @@
 											<key>patterns</key>
 											<array>
 												<dict>
+													<key>include</key>
+													<string>#comments</string>
+												</dict>
+												<dict>
+													<key>include</key>
+													<string>#line_continuation</string>
+												</dict>
+												<dict>
 													<key>comment</key>
 													<string>Optional inheritance operator</string>
 													<key>name</key>
@@ -958,14 +966,6 @@
 													<key>match</key>
 													<string>&amp;</string>
 												</dict>
-												<dict>
-													<key>include</key>
-													<string>#comments</string>
-												</dict>
-												<dict>
-													<key>include</key>
-													<string>#line_continuation</string>
-												</dict>
 											</array>
 										</dict>
 										<dict>
@@ -977,6 +977,10 @@
 											<string>#line_continuation</string>
 										</dict>
 									</array>
+								</dict>
+								<dict>
+									<key>include</key>
+									<string>#comments</string>
 								</dict>
 							</array>
 						</dict>
