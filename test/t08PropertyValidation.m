@@ -61,6 +61,9 @@ classdef t08PropertyValidation
 %                                                            ^ keyword.operator.assignment.matlab
 %                                                              ^^ constant.numeric.matlab
 %                                                                ^ punctuation.terminator.semicolon.matlab
+        PropFcnArgs {mustBeGreaterThan(PropFcnArgs, 2)}
+%                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call.parens.matlab
+
         % Ending commentary
     end
 end

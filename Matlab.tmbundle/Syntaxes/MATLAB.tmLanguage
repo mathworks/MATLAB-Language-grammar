@@ -2794,6 +2794,10 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>#function_call</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#braced_validator_list</string>
 				</dict>
 				<dict>
