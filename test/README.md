@@ -4,6 +4,13 @@ The tests in this directory leverage:
 
 https://github.com/PanAeon/vscode-tmgrammar-test
 
+# Test requirements
+
+The tests require xmllint which can be installed (on apt using linux distros) using
+```bash
+sudo apt install libxml2-utils
+```
+
 # Running the tests
 
 From the root of the repo
