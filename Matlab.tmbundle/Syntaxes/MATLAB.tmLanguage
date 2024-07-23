@@ -993,6 +993,12 @@
 									<array>
 										<dict>
 											<key>name</key>
+											<string>punctuation.separator.modifier.comma.matlab</string>
+											<key>match</key>
+											<string>,</string>
+										</dict>
+										<dict>
+											<key>name</key>
 											<string>storage.modifier.properties.matlab</string>
 											<key>match</key>
 											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
@@ -1009,7 +1015,7 @@
 												</dict>
 											</dict>
 											<key>end</key>
-											<string>,|(?=\))</string>
+											<string>(?=\)|,)</string>
 											<key>patterns</key>
 											<array>
 												<dict>
@@ -1022,7 +1028,17 @@
 													<key>name</key>
 													<string>storage.modifier.access.matlab</string>
 													<key>match</key>
-													<string>public|protected|private</string>
+													<string>public|protected|private|immutable</string>
+												</dict>
+												<dict>
+													<key>include</key>
+													<string>#curly_brackets</string>
+												</dict>
+												<dict>
+													<key>name</key>
+													<string>constant.integer.matlab</string>
+													<key>match</key>
+													<string>[0-9]+</string>
 												</dict>
 											</array>
 										</dict>
@@ -1077,15 +1093,29 @@
 									<array>
 										<dict>
 											<key>name</key>
+											<string>punctuation.separator.modifier.comma.matlab</string>
+											<key>match</key>
+											<string>,</string>
+										</dict>
+										<dict>
+											<key>name</key>
 											<string>storage.modifier.methods.matlab</string>
 											<key>match</key>
 											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
 										</dict>
 										<dict>
 											<key>begin</key>
-											<string>=\s*</string>
+											<string>(=)\s*</string>
 											<key>end</key>
-											<string>,|(?=\))</string>
+											<string>(?=\)|,)</string>
+											<key>beginCaptures</key>
+											<dict>
+												<key>1</key>
+												<dict>
+													<key>name</key>
+													<string>keyword.operator.assignment.matlab</string>
+												</dict>
+											</dict>
 											<key>patterns</key>
 											<array>
 												<dict>
@@ -1099,6 +1129,10 @@
 													<string>storage.modifier.access.matlab</string>
 													<key>match</key>
 													<string>public|protected|private</string>
+												</dict>
+												<dict>
+													<key>include</key>
+													<string>#curly_brackets</string>
 												</dict>
 											</array>
 										</dict>
@@ -1149,15 +1183,29 @@
 									<array>
 										<dict>
 											<key>name</key>
-											<string>variable.parameter.events.matlab</string>
+											<string>punctuation.separator.modifier.comma.matlab</string>
+											<key>match</key>
+											<string>,</string>
+										</dict>
+										<dict>
+											<key>name</key>
+											<string>storage.modifier.events.matlab</string>
 											<key>match</key>
 											<string>[a-zA-Z][a-zA-Z0-9_]*</string>
 										</dict>
 										<dict>
 											<key>begin</key>
-											<string>=\s*</string>
+											<string>(=)\s*</string>
+											<key>beginCaptures</key>
+											<dict>
+												<key>1</key>
+												<dict>
+													<key>name</key>
+													<string>keyword.operator.assignment.matlab</string>
+												</dict>
+											</dict>
 											<key>end</key>
-											<string>,|(?=\))</string>
+											<string>(?=\)|,)</string>
 											<key>patterns</key>
 											<array>
 												<dict>
@@ -1171,6 +1219,10 @@
 													<string>storage.modifier.access.matlab</string>
 													<key>match</key>
 													<string>public|protected|private</string>
+												</dict>
+												<dict>
+													<key>include</key>
+													<string>#curly_brackets</string>
 												</dict>
 											</array>
 										</dict>
