@@ -789,12 +789,10 @@
 								<dict>
 									<key>name</key>
 									<string>storage.modifier.section.class.matlab</string>
-									<key>comment</key>
-									<string>This breaks if there is a line continuation between end of attrs and name, but works for line continuations inside attrs. Line continuations are a mistake.</string>
 									<key>begin</key>
 									<string>\G\(</string>
 									<key>end</key>
-									<string>\)(?=\s*\w+)</string>
+									<string>\)</string>
 									<key>patterns</key>
 									<array>
 										<dict>
@@ -960,6 +958,10 @@
 								<dict>
 									<key>include</key>
 									<string>#comments</string>
+								</dict>
+								<dict>
+									<key>include</key>
+									<string>#line_continuation</string>
 								</dict>
 							</array>
 						</dict>
