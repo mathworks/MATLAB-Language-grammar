@@ -1019,6 +1019,10 @@
 											<key>patterns</key>
 											<array>
 												<dict>
+													<key>include</key>
+													<string>#string</string>
+												</dict>
+												<dict>
 													<key>name</key>
 													<string>constant.language.boolean.matlab</string>
 													<key>match</key>
@@ -1033,6 +1037,10 @@
 												<dict>
 													<key>include</key>
 													<string>#curly_brackets</string>
+												</dict>
+												<dict>
+													<key>include</key>
+													<string>#metaclass_literal</string>
 												</dict>
 												<dict>
 													<key>name</key>
@@ -1119,6 +1127,10 @@
 											<key>patterns</key>
 											<array>
 												<dict>
+													<key>include</key>
+													<string>#string</string>
+												</dict>
+												<dict>
 													<key>name</key>
 													<string>constant.language.boolean.matlab</string>
 													<key>match</key>
@@ -1128,11 +1140,21 @@
 													<key>name</key>
 													<string>storage.modifier.access.matlab</string>
 													<key>match</key>
-													<string>public|protected|private</string>
+													<string>public|protected|private|immutable</string>
 												</dict>
 												<dict>
 													<key>include</key>
 													<string>#curly_brackets</string>
+												</dict>
+												<dict>
+													<key>include</key>
+													<string>#metaclass_literal</string>
+												</dict>
+												<dict>
+													<key>name</key>
+													<string>constant.integer.matlab</string>
+													<key>match</key>
+													<string>[0-9]+</string>
 												</dict>
 											</array>
 										</dict>
@@ -1209,6 +1231,10 @@
 											<key>patterns</key>
 											<array>
 												<dict>
+													<key>include</key>
+													<string>#string</string>
+												</dict>
+												<dict>
 													<key>name</key>
 													<string>constant.language.boolean.matlab</string>
 													<key>match</key>
@@ -1218,11 +1244,21 @@
 													<key>name</key>
 													<string>storage.modifier.access.matlab</string>
 													<key>match</key>
-													<string>public|protected|private</string>
+													<string>public|protected|private|immutable</string>
 												</dict>
 												<dict>
 													<key>include</key>
 													<string>#curly_brackets</string>
+												</dict>
+												<dict>
+													<key>include</key>
+													<string>#metaclass_literal</string>
+												</dict>
+												<dict>
+													<key>name</key>
+													<string>constant.integer.matlab</string>
+													<key>match</key>
+													<string>[0-9]+</string>
 												</dict>
 											</array>
 										</dict>
