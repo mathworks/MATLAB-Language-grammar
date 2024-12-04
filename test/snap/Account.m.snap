@@ -355,9 +355,10 @@
 #^^^^ source.matlab meta.class.matlab meta.events.matlab
 #    ^^^^^^ source.matlab meta.class.matlab meta.events.matlab keyword.control.events.matlab
 #          ^^ source.matlab meta.class.matlab meta.events.matlab
-#            ^^^^^^^^^^^^ source.matlab meta.class.matlab meta.events.matlab variable.parameter.events.matlab
+#            ^^^^^^^^^^^^ source.matlab meta.class.matlab meta.events.matlab storage.modifier.events.matlab
 #                        ^ source.matlab meta.class.matlab meta.events.matlab
-#                         ^^ source.matlab meta.class.matlab meta.events.matlab
+#                         ^ source.matlab meta.class.matlab meta.events.matlab keyword.operator.assignment.matlab
+#                          ^ source.matlab meta.class.matlab meta.events.matlab
 #                           ^^^^^^^^^ source.matlab meta.class.matlab meta.events.matlab storage.modifier.access.matlab
 #                                    ^^ source.matlab meta.class.matlab meta.events.matlab
 #                                      ^ source.matlab meta.class.matlab meta.events.matlab comment.line.percentage.matlab punctuation.definition.comment.matlab

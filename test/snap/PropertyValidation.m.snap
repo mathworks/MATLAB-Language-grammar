@@ -10,18 +10,18 @@
 #                         ^ source.matlab meta.class.matlab meta.properties.matlab
 #                          ^ source.matlab meta.class.matlab meta.properties.matlab keyword.operator.assignment.matlab
 #                           ^ source.matlab meta.class.matlab meta.properties.matlab
-#                            ^ source.matlab meta.class.matlab meta.properties.matlab
-#                             ^^^^^^ source.matlab meta.class.matlab meta.properties.matlab storage.modifier.access.matlab
-#                                   ^ source.matlab meta.class.matlab meta.properties.matlab
-#                                    ^ source.matlab meta.class.matlab meta.properties.matlab
+#                            ^ source.matlab meta.class.matlab meta.properties.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#                             ^^^^^^ source.matlab meta.class.matlab meta.properties.matlab string.quoted.single.matlab
+#                                   ^ source.matlab meta.class.matlab meta.properties.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
+#                                    ^ source.matlab meta.class.matlab meta.properties.matlab punctuation.separator.modifier.comma.matlab
 #                                     ^ source.matlab meta.class.matlab meta.properties.matlab
 #                                      ^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab storage.modifier.properties.matlab
 #                                               ^ source.matlab meta.class.matlab meta.properties.matlab
 #                                                ^ source.matlab meta.class.matlab meta.properties.matlab keyword.operator.assignment.matlab
 #                                                 ^ source.matlab meta.class.matlab meta.properties.matlab
-#                                                  ^ source.matlab meta.class.matlab meta.properties.matlab
-#                                                   ^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab storage.modifier.access.matlab
-#                                                          ^ source.matlab meta.class.matlab meta.properties.matlab
+#                                                  ^ source.matlab meta.class.matlab meta.properties.matlab string.quoted.single.matlab punctuation.definition.string.begin.matlab
+#                                                   ^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab string.quoted.single.matlab
+#                                                          ^ source.matlab meta.class.matlab meta.properties.matlab string.quoted.single.matlab punctuation.definition.string.end.matlab
 #                                                           ^^ source.matlab meta.class.matlab meta.properties.matlab
 >        % Commentary in the properties block
 #^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab punctuation.whitespace.comment.leading.matlab

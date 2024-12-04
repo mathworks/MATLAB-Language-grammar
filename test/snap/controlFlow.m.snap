@@ -120,7 +120,7 @@
 #^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab
 #    ^^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab keyword.control.elseif.matlab
 #          ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.elseif.declaration.matlab
-#           ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.elseif.declaration.matlab variable.other.readwrite.matlab 
+#           ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.elseif.declaration.matlab variable.other.readwrite.matlab
 #            ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.elseif.declaration.matlab
 #             ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.elseif.declaration.matlab keyword.operator.relational.matlab
 #              ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.elseif.matlab meta.elseif.declaration.matlab
@@ -147,7 +147,7 @@
 #                      ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
 #                       ^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab punctuation.terminator.semicolon.matlab
 >    end
-#^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab 
+#^^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab meta.else.matlab
 #    ^^^ source.matlab meta.function.matlab meta.try.matlab meta.if.matlab keyword.control.end.if.matlab
 >catch ME
 #^^^^^ source.matlab meta.function.matlab meta.try.matlab meta.catch.matlab keyword.control.catch.matlab

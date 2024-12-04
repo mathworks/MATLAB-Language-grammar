@@ -3,10 +3,10 @@ classdef t08PropertyValidation
     properties (GetAccess = 'public', SetAccess = 'private')
 %               ^^^^^^^^^ storage.modifier.properties.matlab
 %                         ^ keyword.operator.assignment.matlab
-%                            ^^^^^^ storage.modifier.access.matlab
+%                           ^^^^^^^^ string.quoted.single.matlab
 %                                     ^^^^^^^^^ storage.modifier.properties.matlab
 %                                               ^ keyword.operator.assignment.matlab
-%                                                  ^^^^^^^ storage.modifier.access.matlab
+%                                                 ^^^^^^^^^ string.quoted.single.matlab
         % Commentary in the properties block
 %       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.percentage.matlab
         Prop % comment
