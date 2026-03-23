@@ -2583,7 +2583,7 @@
 					<key>name</key>
 					<string>constant.numeric.decimal.matlab</string>
 					<key>match</key>
-					<string>(?&lt;=[\s\+\-\*\/\\=:\[\(\{,^]|^)\d*\.?\d+([eE][+-]?\d)?([0-9&amp;&amp;[^\.]])*(i|j)?\b</string>
+					<string>(?&lt;=[\s\+\-\*\/\\=;:\[\(\{,^]|^)\d*\.?\d+([eE][+-]?\d)?([0-9&amp;&amp;[^\.]])*(i|j)?\b</string>
 					<key>captures</key>
 					<dict>
 						<key>3</key>
@@ -2772,7 +2772,7 @@
 							<key>comment</key>
 							<string>Handle things like arg = val; nextArg</string>
 							<key>match</key>
-							<string>(=[^;]*)</string>
+							<string>(=(?:[^\[;]+|\[[^\]]*\])*)</string>
 							<key>captures</key>
 							<dict>
 								<key>1</key>
