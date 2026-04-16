@@ -1844,7 +1844,7 @@
 			<key>name</key>
 			<string>meta.function-call.parens.matlab</string>
 			<key>begin</key>
-			<string>([a-zA-Z][a-zA-Z0-9_]*)\s*(\()</string>
+			<string>(?&lt;!\.)\b([a-zA-Z][a-zA-Z0-9_]*)\s*(\()</string>
 			<key>end</key>
 			<string>(\)|(?&lt;!\.{3}.*)\n)</string>
 			<key>beginCaptures</key>
@@ -3044,15 +3044,6 @@
 					</array>
 				</dict>
 			</dict>
-		</dict>
-		<key>property</key>
-		<dict>
-			<key>comment</key>
-			<string>Class property or enumeration member access</string>
-			<key>name</key>
-			<string>variable.other.property.matlab</string>
-			<key>match</key>
-			<string>(?&lt;=\.)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|(?:\(|\{|\.\())</string>
 		</dict>
 		<key>readwrite_variable</key>
 		<dict>
