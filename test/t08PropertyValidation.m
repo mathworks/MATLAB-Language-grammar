@@ -44,8 +44,6 @@ classdef t08PropertyValidation
 %                         ^ punctuation.definition.string.end.matlab
         PropTypeInit some.type = some.type(1)
 %                    ^^^^^^^^^ storage.type.matlab
-%                                     ^^^^^^^ meta.function-call.parens.matlab
-%                                     ^^^^ entity.name.function.matlab
 %                                         ^ punctuation.section.parens.begin.matlab
 %                                          ^ constant.numeric.decimal.matlab
 %                                           ^ punctuation.section.parens.end.matlab

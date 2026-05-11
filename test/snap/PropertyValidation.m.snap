@@ -101,10 +101,10 @@
 #                                ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
 #                                 ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.other.readwrite.matlab
 #                                     ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.accessor.dot.matlab
-#                                      ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.function-call.parens.matlab entity.name.function.matlab
-#                                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.function-call.parens.matlab punctuation.section.parens.begin.matlab
-#                                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.function-call.parens.matlab constant.numeric.decimal.matlab
-#                                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.function-call.parens.matlab punctuation.section.parens.end.matlab
+#                                      ^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
+#                                          ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.begin.matlab
+#                                           ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab meta.parens.matlab constant.numeric.decimal.matlab
+#                                            ^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab punctuation.section.parens.end.matlab
 >        PropSizeInit (1,2) = 'char'
 #^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab
 #        ^^^^^^^^^^^^ source.matlab meta.class.matlab meta.properties.matlab meta.assignment.definition.property.matlab variable.object.property.matlab
